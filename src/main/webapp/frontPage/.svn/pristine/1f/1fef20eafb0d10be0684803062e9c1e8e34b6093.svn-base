@@ -1,0 +1,192 @@
+/**!
+ * [页面名称]:办件详情
+ * author: [高婧];
+ */
+
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+/* 我的办件 */
+.con-r {
+	width: 968px;
+	height: 804px;
+}
+.content-top {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d4d4d4;
+}
+.small-btn {
+	margin-right: 3px;
+}
+/*全部，已办结按钮*/
+.active.all-btn,
+.active.done-btn {
+    color: #5ab085;
+    border-color: #5ab085;
+    background-color: #ebf6f1;
+}
+/*受理、办理按钮*/
+.active.accept-btn,
+.active.handle-btn {
+    color: #d1942d;
+    border-color: #d1942d;
+    background-color: #fdf7ed;
+}
+/*退回按钮*/
+.active.back-btn {
+    color: #df3737;
+    border-color: #e3aaaa;
+    background-color: #f6ebeb;
+}
+
+/*草稿按钮*/
+.active.draft-btn {
+    color: #df3737;
+    border-color: #e3aaaa;
+    background-color: #f6ebeb;
+}
+.content-top>p {
+	font-size: 13px;
+}
+.content-top .item-count {
+	color: #e01c1c;
+}
+
+.choose-box {
+	margin: 20px 0;
+}
+/* 部门下拉框 */
+.operate-item {
+	float: left;
+	margin-right: 36px;
+}
+.operate-name {
+    line-height: 30px;
+	margin-right: 10px;
+}
+.department
+{
+    clear: both;
+    width: 100px;
+}
+
+/* 搜索框 */
+.search-con {
+    width: 220px;
+    height: 28px;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.int-search {
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 8px;
+    border: 0;
+    outline: none;
+}
+.btn-search {
+    display: inline-block;
+    width: 44px;
+    height: 28px;
+    background: #71c49a url('../images/userCenter/search-icon.png') no-repeat center;
+    cursor: pointer;
+}
+.btn-search:hover {
+    background-color: #65ba8f;
+}
+
+/* 办件列表 */
+.item-list {
+	margin-bottom: 50px;
+}
+.dothing-item {
+	border: 1px solid #d4d4d4;
+	margin-top: 10px;
+}
+.dothing-title {
+	padding: 0 17px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #d4d4d4;
+	background-color: #f4f4f4;
+}
+.application-time {
+	margin-left: 204px;
+}
+.dothing-state {
+	margin-right: 16px;
+	width: 104px;
+	text-align: left;
+}
+.operate-btns {
+	margin-right: 16px;
+	width: 104px;
+
+}
+.operate-btns button {
+	color: #0f0ee5;
+	height: 30px;
+	line-height: 30px;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+.accept-in {
+	color: #009241;
+}
+.dothing-con {
+	padding: 18px 20px 12px 16px;
+}
+.dothing-con>p {
+	margin-bottom: 13px;
+}
+.item-list .distance {
+	margin-right: 120px;
+}
+.in-approval {
+	color: #e68318;
+}
+.count-down {
+	margin-left: 175px;
+	padding-left: 26px;
+	background: url("../images/userCenter/count-down-icon.png") no-repeat 0 center;
+}
+.item-list .red {
+	color: #e51f1f;
+}
+.reject-why {
+	padding-left: 107px;
+}
+.evaluation-btn {
+	margin-top: -13px;
+	width: 68px;
+	height: 26px;
+}
+.evaluation-btn:hover {
+	color: #fff;
+	border: 1px solid #65ba8f;
+	background-color: #65ba8f;
+}
+
+
+/* 办理记录为空 */
+.con-r .empty {
+	margin: 89px auto 0;
+	width: 226px;
+	text-align: center;
+}
+.empty>p {
+	margin-top: 30px;
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+}

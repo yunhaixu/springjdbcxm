@@ -1,0 +1,16 @@
+/**!
+ * [页面名称]:办件详情
+ * author: [高婧];
+ */
+
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+/* 我的办件 */

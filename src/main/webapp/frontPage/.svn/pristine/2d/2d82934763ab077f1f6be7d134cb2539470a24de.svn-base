@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/reply-query.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>信件回复</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <a href="">政务大厅</a> &gt; <span class="now-loc">信件查询</span>
+                </div>
+                <div class="index-content niceScroll">
+                    <h2 class="con-hd">信件回复</h2>
+                    <div class="method-area">
+                        <div class="method-item method1 clearfix">
+                            <p>方式一： 进入用户中心查询</p>
+                            <button class="user-login-btn" id="login-btn2">用户登录</button>
+                        </div>
+                        <div class="method-item method2">
+                            <p>方式二： 信件编号、密码查询</p>
+                            <div class="input-item clearfix">
+                                <label>信件编号</label>
+                                <input type="text" name="" />
+                                <span class="warn-txt">信件编号不正确，请检查</span>
+                            </div>
+                            <div class="input-item clearfix">
+                                <label>密码</label>
+                                <input type="text" name="" />
+                                <span class="warn-txt">查询密码错误，请检查</span>
+                            </div>
+                            <button class="grey-btnStyle">查询</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/tabview.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script src="../../js/reply-query.js"></script>
+</body>
+
+</html>

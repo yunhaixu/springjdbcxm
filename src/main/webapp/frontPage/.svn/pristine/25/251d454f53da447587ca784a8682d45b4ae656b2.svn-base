@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/open-netbar.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>我要开网吧</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">政务大厅</a> &gt; <a href="">场景式服务</a> &gt; <span class="now-loc">我要开网吧</span>
+                </div>
+
+                <div class="index-content clearfix">
+                    <div class="steps-hd clearfix">
+                        <h2>全流程全景画像</h2>
+                        <h3>
+                            <p class="mid-word1">我要开网吧</p>
+                            <p class="mid-word2">(500平以上有限公司)</p>
+                        </h3>
+                        <button id="material-prepared">准备材料预知</button>
+                    </div>
+                    <ul class="steps-bd niceScroll" id="steps-bd">
+                        <li class="step-item">
+                            <span class="step-num">1</span>
+                            <h2 class="step-word">
+                                <p>办理名称核准（马上办、马上办）</p>
+                                <span>获得《名称核准通知书》</span>
+                            </h2>
+                            <div class="step-btns clearfix">
+                                <button class="btn-l">网上办理</button>
+                                <button class="btn-r">窗口办理</button>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-num">2</span>
+                            <h2 class="step-word">
+                                <p>办理网络文化经营许可证（筹建前勘查）（一次办）</p>
+                                <span>获得《互联网上网服务营业场所勘查情况登记表（筹建）》</span>
+                            </h2>
+                            <div class="step-btns clearfix">
+                                <button class="btn-l">网上办理</button>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-num">3</span>
+                            <h2 class="step-word">
+                                <p>办理工商营业执照</p>
+                                <span>获得《工商营业执照》</span>
+                            </h2>
+                            <div class="step-btns clearfix">
+                                <button class="btn-l">网上办理</button>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-num">4</span>
+                            <h2 class="step-word">
+                                <p>办理网络文化经营许可证（筹建）</p>
+                                <span>获得《互联网上网服务营业场所同意筹建意见书》</span>
+                            </h2>
+                            <div class="step-btns clearfix">
+                                <button class="btn-l">网上办理</button>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-num">5</span>
+                            <h2 class="step-word">
+                                <p>办理建设工程消防设计审核</p>
+                                <span>获得《建设工程消防设计审核意见书》</span>
+                            </h2>
+                            <div class="step-btns clearfix">
+                                <button class="btn-l">网上办理</button>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-num">6</span>
+                            <h2 class="step-word">
+                                <p>办理建设工程消防验收</p>
+                                <span>获得《建设工程消防验收意见书》</span>
+                            </h2>
+                            <div class="step-btns clearfix">
+                                <button class="btn-l">网上办理</button>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-num">7</span>
+                            <h2 class="step-word">
+                                <p>公众聚集场所投入使用、营业前消防安全检查</p>
+                                <span>获得《公众聚集场所投入使用、营业前消防安全检查合格证》</span>
+                            </h2>
+                            <div class="step-btns clearfix">
+                                <button class="btn-l">网上办理</button>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-num">8</span>
+                            <h2 class="step-word">
+                                <p>公众聚集场所投入使用、营业前消防安全检查</p>
+                                <span>获得《互联网上网服务营业场所网络信息安全审核意见书》</span>
+                            </h2>
+                            <div class="step-btns clearfix">
+                                <button class="btn-l">网上办理</button>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <span class="step-num">9</span>
+                            <h2 class="step-word">
+                                <p>办理网络文化经营许可证（终审）</p>
+                                <span>获得《网络文化经营许可证》</span>
+                            </h2>
+                            <div class="step-btns clearfix">
+                                <button class="btn-l">网上办理</button>
+                            </div>
+                        </li>
+                        <li class="step-item step10">
+                            <span class="step-num">10</span>
+                            <h2 class="step-word">
+                                <p class="congratulate-word">恭喜您网吧可以开业啦</p>
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/open-netbar.js"></script>
+</body>
+
+</html>

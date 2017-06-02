@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/gov-hall.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>政务大厅</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <span class="now-loc">政务大厅</span>
+                </div>
+
+                <div class="index-content">
+                    <div class="con-title clearfix">
+                        <div class="title-l">
+                            <p>新房办证</p>
+                            <span>立等可取</span>
+                        </div>
+                        <div class="title-r">
+                            <p>自武汉市推行不动产统一登记制度以来，不动产登记全面实施，但原来各部门已法发放的证书是继续有效的。所以不管是持有老证书，还是新证书，办理房产过户并不受影响。</p>
+                        </div>
+                    </div>
+                    <ul class="con-hd-area">
+                        <li class="hd-item">
+                            <p class="step-number">1</p>
+                            <p class="step-name">办理条件</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">2</p>
+                            <p class="step-name">我要办理</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">3</p>
+                            <p class="step-name">准备材料</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">4</p>
+                            <p class="step-name">办理流程</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">5</p>
+                            <p class="step-name">领取证件</p>
+                        </li>
+                    </ul>
+                    <ul class="con-bd-area">
+                        <li class="bd-item">
+                            <p>1、办理之前，需要确认好开发商已办理好初始登记，并获取白色的《不动产权属证明书》或者绿色的《商品房权属证明书》或者绿色的《商品房初始登记证明》（其中一项即可）；</p>
+                            <p>2、2005年1月1日后签订购房合同并已备案的无抵押商品房办证，且不属于托管、插花地带及存在历史遗留问题的房屋；</p>
+                            <p>3、每日16:00前完成窗口收件流程的，可实现当日可取。</p>
+                        </li>
+                        <li class="bd-item">
+                            内容2
+                        </li>
+                        <li class="bd-item">
+                            内容3
+                        </li>
+                        <li class="bd-item">
+                            内容4
+                        </li>
+                        <li class="bd-item">
+                            内容5
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/myTab.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/gov-hall.js"></script>
+</body>
+
+</html>

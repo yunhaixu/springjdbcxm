@@ -1,0 +1,262 @@
+/*!
+ * 公共js
+ * author: chenxuan
+ */
+// 工具方法
+(function($) {
+    if (!window.Util) {
+        window.Util = {};
+    }
+
+    $.extend(Util, {
+        /* 获取URL地址参数
+         * prop:参数名
+         */
+        getUrlParams: function(prop) {
+            var params = {},
+                query = location.search.substring(1),
+                arr = query.split('&'),
+                rt;
+
+            $.each(arr, function(i, item) {
+                var tmp = item.split('='),
+                    key = tmp[0],
+                    val = tmp[1];
+
+                if (typeof params[key] == 'undefined') {
+                    params[key] = val;
+                } else if (typeof params[key] == 'string') {
+                    params[key] = [params[key], val];
+                } else {
+                    params[key].push(val);
+                }
+            });
+            rt = prop ? params[prop] : params;
+            return rt;
+        },
+
+        // 适配f9中的response格式
+        ajax: function(options) {
+            var success = options.success;
+
+            if (success) {
+                options.success = null;
+                delete options.success;
+            }
+
+            var settings = {
+                type: 'post',
+                dataType: 'json',
+                cache: false,
+                success: function(data, status, xhr) {
+                    if (data.status) {
+                        // 配置url则直接跳转
+                        if (data.status.url) {
+                            window.location.replace(data.status.url);
+                        }
+                    }
+                    if (success) {
+                        success.call(this, data.UserArea ? data.UserArea : data);
+                    }
+
+                },
+                error: Util._ajaxErr
+            };
+
+            return $.ajax($.extend(settings, options));
+        },
+
+        // empty function
+        noop: function() {},
+
+        // 去除html标签中的换行符和空格
+        clearHtml: function(html) {
+            return html.replace(/(\r\n|\n|\r)/g, "")
+                .replace(/[\t ]+\</g, "<")
+                .replace(/\>[\t ]+\</g, "><")
+                .replace(/\>[\t ]+$/g, ">");
+        },
+
+        _ajaxErr: function(jqXHR, textStatus, errorThrown) {
+            console.error('status: %s, error: %s', textStatus, errorThrown);
+        }
+    });
+}(jQuery));
+
+// 加载头尾代码片段
+(function(win, $) {
+    // header里面的操作写在这里
+    var header = function() {
+        var $slideBtn = $('#slide-btn'),
+            $fourMicro = $('#four-micro');
+        $slideBtn.click(function() {
+            var $this = $(this);
+            if ($this.hasClass('down')) {
+                $this.text('收起');
+            } else {
+                $this.text('展开');
+            }
+            $this.toggleClass('down');
+            $fourMicro.slideToggle();
+        });
+
+        //纠错弹窗
+        var $error_correction = $("#erroe-correction");
+        $error_correction.on('click', function(e) {
+            e.preventDefault();
+            layer.open({
+                title: '纠错',
+                type: 2,
+                skin: 'layui-layer-rim',
+                area: ['501px', '447px'],
+                content: ['../loginRegister/error-correction.html']
+            });
+        });
+
+        $("input[type='text']").placeholder();
+    };
+    // notice里面的操作写在这里
+    var notice = function() {
+        var noticeUrl = '../../json/notice.json',
+            para = {
+                "ValidateData": "",
+                "paras": {
+                    " CurrentPageIndex ": "",
+                    "PageSize": ""
+                }
+            };
+        var $noticeBtn = $('#notice-btn'),
+            $notice = $('#head-notice'),
+            noticeTmpl = $('#notice-tmpl').html(),
+            M = Mustache,
+            html = [];
+        $noticeBtn.click(function() {
+            $notice.slideToggle();
+            $(this).toggleClass('down');
+        });
+        //notice列表展示
+        Util.ajax({
+            url: noticeUrl,
+            data: JSON.stringify(para),
+            success: function(data) {
+                var temp = Util.clearHtml(noticeTmpl);
+                html.push(M.render(temp, data));
+                $notice.empty().prepend(html.join(''));
+                html = [];
+            }
+        });
+    };
+    // nav导航栏操作js （登录状态判断也写这）
+    var nav = function() {
+        // nav区域对应模块高亮
+        var $nav = $('#nav-ul'),
+            navlist = ["index", "govHall", "freeTrade", "dataAnalysis", "powerSun", "realHome"],
+            current = location.pathname.match(/\/page\/(.+?)\//)[1];
+        index = navlist.indexOf(current);
+        if (index >= 0) {
+            $('.nav-li', $nav).eq(index).addClass('active');
+        }
+
+        //登录弹窗
+        var $login = $("#login");
+        $login.on('click', function() {
+            layer.open({
+                title: '欢迎登陆',
+                type: 2,
+                skin: 'layui-layer-rim',
+                area: ['501px', '407px'],
+                content: ['../loginRegister/login.html']
+            });
+        });
+
+    };
+
+    var Include = function(cfg) {
+        this.cfg = cfg;
+
+        this._init();
+    };
+
+    Include.prototype = {
+        constructor: Include,
+
+        _init: function() {
+            var c = this.cfg;
+
+            if (c.async !== false) c.async = true;
+
+            this.$container = $('#' + c.id);
+        },
+
+        fetch: function() {
+            var c = this.cfg,
+                self = this;
+
+            return $.ajax({
+                url: c.src,
+                type: 'GET',
+                dataType: 'html',
+                async: c.async,
+                success: function(html) {
+                    self.$container.html(html);
+                    c.onload && c.onload(html);
+                }
+            });
+        }
+    };
+
+    // 需要引入的代码片段
+    var includes = [{
+        id: 'header',
+        src: '../../include/header.inc.html',
+        onload: function() {
+            //回调里面执行header内容的操作
+            header();
+            // console.log('...header loaded...');
+        }
+    }, {
+        id: 'notice',
+        src: '../../include/indexList.inc.html',
+        onload: function() {
+            notice();
+            // console.log('...footer loaded...');
+        }
+    }, {
+        id: 'nav',
+        src: '../../include/nav.inc.html',
+        onload: function() {
+            nav();
+            // console.log('...footer loaded...');
+        }
+    }, {
+        id: 'footer',
+        src: '../../include/footer.inc.html',
+        onload: function() {
+            // console.log('...footer loaded...');
+        }
+    }];
+
+    $.each(includes, function(i, cfg) {
+        if ($('#' + cfg.id).length) {
+            new Include(cfg).fetch();
+        }
+    });
+
+}(this, jQuery));
+
+
+(function(win, $) {
+    // 滚动条
+    if ($('.niceScroll').length > 0) {
+        $('.niceScroll').niceScroll({
+            cursorcolor: "#ccc", //#CC0071 光标颜色 
+            cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0 
+            touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备 
+            cursorwidth: "6px", //像素光标的宽度 
+            cursorborder: "0", //     游标边框css定义 
+            cursorborderradius: "6px", //以像素为光标边界半径 
+            autohidemode: false //是否隐藏滚动条 
+        });
+    }
+
+}(this, jQuery));

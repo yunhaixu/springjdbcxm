@@ -1,0 +1,83 @@
+{
+    "ReturnInfo": {
+        "Code": "1",
+        "Description": ""
+    },
+    "BusinessInfo": {
+        "Code": "1",
+        "Description": ""
+    },
+    "UserArea": {
+        "imgList": [{
+            "guid": "123",
+            "imageUrl": "../../images/freeTrade-zone/lunbo-img.jpg",
+            "title": "镇江市公共资源交易中心正式挂牌运行1"
+        }, {
+            "guid": "124",
+            "imageUrl": "../../images/freeTrade-zone/lunbo2.JPG",
+            "title": "镇江市公共资源交易中心正式挂牌运行2"
+        }, {
+            "guid": "124",
+            "imageUrl": "../../images/freeTrade-zone/lunbo3.jpg",
+            "title": "镇江市公共资源交易中心正式挂牌运行3"
+        }, {
+            "guid": "124",
+            "imageUrl": "../../images/freeTrade-zone/lunbo4.JPG",
+            "title": "镇江市公共资源交易中心正式挂牌运行4"
+        }, {
+            "guid": "124",
+            "imageUrl": "../../images/freeTrade-zone/lunbo5.jpg",
+            "title": "镇江市公共资源交易中心正式挂牌运行5"
+        }],
+        "regulations": [{
+            "guid": "123",
+            "title": "河北公共资源交易中心提供网上投标登记功和督查工作",
+            "date": "2015-09-24"
+        }, {
+            "guid": "124",
+            "title": "河北公共资源交易中心提供网上投标登记功和督查工作",
+            "date": "2015-09-24"
+        }, {
+            "guid": "123",
+            "title": "市纪委书记徐大勇来我办调研市软环境建设和督查工作",
+            "date": "2015-09-24"
+        }, {
+            "guid": "123",
+            "title": "河北公共资源交易中心提供网上投标登记功和督查工作",
+            "date": "2015-09-24"
+        }, {
+            "guid": "124",
+            "title": "河北公共资源交易中心提供网上投标登记功和督查工作",
+            "date": "2015-09-24"
+        }, {
+            "guid": "123",
+            "title": "市纪委书记徐大勇来我办调研市软环境建设和督查工作",
+            "date": "2015-09-24"
+        }, {
+            "guid": "123",
+            "title": "河北公共资源交易中心提供网上投标登记功和督查工作",
+            "date": "2015-09-24"
+        }],
+        "tradeWindow": [{
+            "num1": "D66",
+            "title1": "四证联办）外籍人士服务（外事办1）",
+            "num2": "D661",
+            "title2": "四证联办）外籍人士服务（外事办2）"
+        }, {
+            "num1": "D66",
+            "title1": "四证联办）外籍人士服务（外事办1）",
+            "num2": "D661",
+            "title2": "四证联办）外籍人士服务（外事办2）"
+        }, {
+            "num1": "D66",
+            "title1": "四证联办）外籍人士服务（外事办1）",
+            "num2": "D661",
+            "title2": "四证联办）外籍人士服务（外事办2）"
+        }, {
+            "num1": "D66",
+            "title1": "四证联办）外籍人士服务（外事办1）",
+            "num2": "D661",
+            "title2": "四证联办）外籍人士服务（外事办2）"
+        }]
+    }
+}

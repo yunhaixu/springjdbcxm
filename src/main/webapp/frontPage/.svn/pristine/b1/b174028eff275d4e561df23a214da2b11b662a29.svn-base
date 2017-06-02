@@ -1,0 +1,269 @@
+/**!
+ * [页面名称]:预约服务
+ * author: [陈轩];
+ */
+
+
+/* 上面的流程 */
+
+.right-con {
+    width: 870px;
+    margin: 0 auto;
+}
+
+.step-flow {
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 22px;
+}
+
+.step-item {
+    float: left;
+    position: relative;
+    width: 160px;
+    height: 60px;
+    border-top: 1px solid #d7d7d7;
+    text-align: center;
+    font-size: 16px;
+}
+
+.step-item .num {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: -22px auto 0;
+    background-color: #d7d7d7;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.step-item .note {
+    display: block;
+    padding-top: 15px;
+    line-height: 26px;
+    color: #999;
+}
+
+.step-item.first:before,
+.step-item.last:before {
+    content: "";
+    top: -7px;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.step-item.last,
+.step-item.first {
+    width: 195px;
+}
+
+.step-item.first .num {
+    margin: -22px 0 0 82px;
+}
+
+.step-item.first .note {
+    text-indent: 20px;
+}
+
+.step-item.last .num {
+    margin: -22px 0 0 60px;
+}
+
+.step-item.last .note {
+    text-indent: -35px;
+}
+
+.step-item.first:before {
+    background-color: #5ab085;
+}
+
+.step-item.last:before {
+    background-color: #b6e3cc;
+}
+
+.step-item.last.cur:before {
+    background-color: #5ab085;
+}
+
+.step-item.first:before {
+    left: 0;
+}
+
+.step-item.last:before {
+    right: 0;
+}
+
+.step-item.cur {
+    border-top-color: #5ab085;
+}
+
+.step-item.cur .num {
+    background-color: #5ab085;
+    border: 6px solid #b6e3cc;
+    margin-top: -28px;
+}
+
+.step-item.cur .note {
+    font-weight: bold;
+    color: #5ab085;
+    padding-top: 9px;
+}
+
+.step-item.cur:before,
+.step-item.cur:before {
+    background-color: #5ab085;
+}
+
+
+/**/
+.item-class{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.item-class>em {
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.choose-time {
+    margin: 15px 0 6px 0;
+}
+.time-table {
+    text-align: center;
+}
+
+.time-table td {
+    height: 32px;
+    width: 140px;
+    border: 1px solid #dedede;
+}
+.time-table .time {
+    background-color: #ebf6f0;
+}
+.time-table .item-true:hover {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -1px;
+    line-height: 32px;
+    z-index:101;
+    border: 1px solid #e9ae30;
+    background-color: #fddabb;
+    cursor: pointer;
+}
+.time-table .item-false {
+    color: #999;
+}
+.button-area {
+    width: 236px;
+    margin: 15px auto 0 auto;
+}
+.button-area>button {
+    float: left;
+    width: 105px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 15px;
+}
+.button-area .grey-btnStyle{
+    float: left;
+}
+
+/*成功*/
+.success {
+    margin: 0 80px;
+}
+.success-text {
+    text-indent: 28px;
+    line-height: 45px;
+    color: #e77918;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.success-content {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 26px;
+}
+.success-content .matters,
+.success-content .mine {
+    color: #e77918;
+}
+.notice-items {
+    margin: 15px 80px 0;
+}
+.notice-title {
+    color: #e77918;
+    font-size: 13px;
+    font-weight: bold;
+}
+.notice-items li {
+    line-height: 30px;
+}
+
+/**/
+.ewb-form-row {
+    margin-top: 10px;
+}
+
+.ewb-form-label {
+    width: 208px;
+    margin-right: 18px;
+    margin-left: 32px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.ewb-form-input {
+    width: 326px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d9d9d9;
+    font-family: "Microsoft Yahei";
+    text-indent: 10px;
+    font-size: 15px;
+    color: #999;
+}
+
+.button-area.mt30 {
+    margin-top: 30px;
+}
+
+
+
+
+
+.ewb-form-row label.error {
+    padding-left: 20px;
+    color: #df3f3f;
+    margin-left: 5px;
+    line-height: 42px;
+    background: url(../images/login/warn.png) left center no-repeat;
+}
+
+.msg-code {
+    width: 154px;
+}
+
+.code-img {
+    width: 154px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    border: 1px solid #d1d1d1;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.code-img:hover {
+    background-color: #ebebeb;
+}

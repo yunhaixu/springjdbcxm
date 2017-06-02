@@ -1,0 +1,9 @@
+(function(win,$){
+	new TabView({
+        hdDom: '.hd-item',
+        bdDom: '.bd-item',
+        activeClass: 'hd-cur',
+        event: 'click',
+        activeIndex: 0
+    });
+}(this,jQuery));

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../js/libs/datepicker/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="../../css/center-index.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>用户中心首页</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <!-- 当前位置 -->
+            <div class="now-position">
+                当前位置：<a href="">首页</a> &gt; <span class="now-loc">用户中心</span>
+            </div>
+            <div class="userCenter-main">
+                <div class="center-nav clearfix">
+                    <span class="name">会飞的小鱼</span>
+                    <ul class="nav clearfix">
+                        <li>
+                            <a class="active" href="">主页</a>
+                        </li>
+                        <li>
+                            <a href="">办件服务</a>
+                        </li>
+                        <li>
+                            <a href="">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="">我的证照</a>
+                        </li>
+                    </ul>
+                    <div class="msg-loginOut clearfix">
+                        <a href="javascript:;" class="msg">消息<i>18</i></a>
+                        <a href="javascript:;" class="loginOut">注销</a>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="left-div">
+                    <div class="my-banjian border">
+                        <div class="user-hd clearfix">
+                            <h5 class="title">我的办件</h5>
+                            <a href="" class="right-hd">政务大厅</a>
+                        </div>
+                        <div class="user-bd">
+                            <div class="four-state">
+                                <ul class="clearfix">
+                                    <li class="state1">
+                                        <p>2</p>
+                                        <p class="line2">待受理</p>
+                                    </li>
+                                    <li class="state2">
+                                        <p>2</p>
+                                        <p class="line2">审批中</p>
+                                    </li>
+                                    <li class="state3">
+                                        <p>3</p>
+                                        <p class="line2">审批不通过</p>
+                                    </li>
+                                    <li class="state4">
+                                        <p>12</p>
+                                        <p class="line2">已办结</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="stateInfo-list">
+                                <ul>
+                                    <li class="clearfix">
+                                        <a href="" class="title ellipsis"><span class="state">【待受理】</span>执业助理医师升级注册执业医师执业助理医师升级注册执业医师执业助理医师升级注册执业医师执业助理医师升级注册执业医师执业助理医师升级注册执业医师执业助理医师升级注册执业医师执业助理医师升级注册执业医师执业助理医师升级注册执业医师执业助理医师升级注册执业医师</a>
+                                        <span class="date">03-09</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="" class="title ellipsis"><span class="state">【待受理】</span>执业助理医师升级注册执业医师执业助理医师升</a>
+                                        <span class="date">03-09</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="" class="title ellipsis"><span class="state">【待受理】</span>执业助理医师升级注册执业医师执业助理医师升</a>
+                                        <span class="date">03-09</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="" class="title ellipsis"><span class="state">【待受理】</span>执业助理医师升级注册执业医师执业助理医师升</a>
+                                        <span class="date">03-09</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 我的预约 -->
+                    <div class="my-appoint border">
+                        <div class="user-hd clearfix">
+                            <h5 class="title">我的预约</h5>
+                            <a href="" class="right-hd" id="test">在线预约</a>
+                        </div>
+                        <div class="user-bd clearfix">
+                            <div class="left-date" id="time-date">
+                            </div>
+                            <div class="right-item">
+                                <ul id="dateItem-ul">
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-div">
+                    <!-- 用户消息 -->
+                    <div class="user-info border">
+                        <div class="user-hd clearfix">
+                            <h5 class="title">用户消息</h5>
+                            <a href="" class="right-hd">个人信息维护</a>
+                        </div>
+                        <div class="user-bd">
+                            <ul>
+                                <li class="clearfix">
+                                    <span class="label">姓名：</span><span class="text">王凯</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="label">身份证号：</span><span class="text">340291198922019289</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="label">手机号码：</span><span class="text">1806547852522</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="label">电子邮箱：</span><span class="text">cetianz@163.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 6大链接 -->
+                    <div class="six-link border">
+                        <div class="user-bd">
+                            <ul>
+                                <li>
+                                    <a class="link1" href="">大厅分布</a>
+                                </li>
+                                <li>
+                                    <a class="link2" href="">窗口电话</a>
+                                </li>
+                                <li>
+                                    <a class="link3" href="">预约规则</a>
+                                </li>
+                                <li>
+                                    <a class="link4" href="">公交地图</a>
+                                </li>
+                                <li>
+                                    <a class="link5" href="">服务百科</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wd50-div l">
+                    <!-- 我的收藏 -->
+                    <div class="my-collection border">
+                        <div class="user-hd clearfix">
+                            <h5 class="title">我的收藏</h5>
+                        </div>
+                        <div class="user-bd">
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="" class="text ellipsis" title="河北公共资源交易中心提供网上投标登记功和督查工作">河北公共资源交易中心提供网上投标登记功和督查工作</a>
+                                    <span class="date">09-24</span>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="" class="text ellipsis" title="河北公共资源交易中心提供网上投标登记功和督查工作">河北公共资源交易中心提供网上投标登记功和督查工作</a>
+                                    <span class="date">09-24</span>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="" class="text ellipsis" title="河北公共资源交易中心提供网上投标登记功和督查工作">河北公共资源交易中心提供网上投标登记功和督查工作</a>
+                                    <span class="date">09-24</span>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="" class="text ellipsis" title="河北公共资源交易中心提供网上投标登记功和督查工作">河北公共资源交易中心提供网上投标登记功和督查工作</a>
+                                    <span class="date">09-24</span>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="" class="text ellipsis" title="河北公共资源交易中心提供网上投标登记功和督查工作">河北公共资源交易中心提供网上投标登记功和督查工作</a>
+                                    <span class="date">09-24</span>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="" class="text ellipsis" title="河北公共资源交易中心提供网上投标登记功和督查工作">河北公共资源交易中心提供网上投标登记功和督查工作</a>
+                                    <span class="date">09-24</span>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="" class="text ellipsis" title="河北公共资源交易中心提供网上投标登记功和督查工作">河北公共资源交易中心提供网上投标登记功和督查工作</a>
+                                    <span class="date">09-24</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wd50-div r">
+                    <!-- 我的回复 -->
+                    <div class="my-reply border">
+                        <div class="user-hd clearfix">
+                            <h5 class="title">我的回复</h5>
+                        </div>
+                        <div class="user-bd">
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="question">
+                                        <a href="">此处为用户咨询或投诉标题</a>
+                                    </div>
+                                    <div class="answer">
+                                        此处为咨询投诉内容详情，此处为咨询投诉内容详情，此处为咨询投诉内容详情，此处为咨询投诉内容详情
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="question">
+                                        <a href="">此处为用户咨询或投诉标题</a>
+                                    </div>
+                                    <div class="answer">
+                                        此处为咨询投诉内容详情，此处为咨询投诉内容详情，此处为咨询投诉内容详情，此处为咨询投诉内容详情
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 已办理 -->
+    <script type="text/x-template" id="temp1">
+        <li class="clearfix">
+            <div class="item-list">
+                <p><span class="label">事项名称：</span>{{name}}</p>
+                <p><span class="label">预约时间：</span>{{appointTime}}</p>
+                <p><span class="label">取号时间：</span>{{getTime}}</p>
+            </div>
+            <div class="item-state">已办理</div>
+        </li>
+    </script>
+    <!-- 未取号 -->
+    <script type="text/x-template" id="temp2">
+        <li class="clearfix">
+            <div class="item-list">
+                <p><span class="label">事项名称：</span>{{name}}</p>
+                <p><span class="label">预约时间：</span>{{appointTime}}</p>
+            </div>
+            <div class="item-state state2">未取号</div>
+        </li>
+    </script>
+    <!-- 取号未办理 -->
+    <script type="text/x-template" id="temp3">
+        <li class="clearfix">
+            <div class="item-list">
+                <p><span class="label">事项名称：</span>{{name}}</p>
+                <p><span class="label">预约时间：</span>{{appointTime}}</p>
+            </div>
+            <div class="item-state state3">取号未办理</div>
+        </li>
+    </script>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/datepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script src="../../js/center-index.js"></script>
+</body>
+
+</html>

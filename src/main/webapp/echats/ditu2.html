@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<!--引入JS-->
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/epoint.js"></script>
+
+</head>
+<body>
+<div>首页</div>
+<div>
+
+ <div id="main" style="width: 600px;height:400px;"></div>
+
+</div>
+<script type="text/javascript">
+
+	 var myChart = echarts.init(document.getElementById('main'));
+	 
+
+	 var option = {
+			 geo: {
+			        map: '新点',
+			        label: {
+			        	normal:{
+			        		show:true,
+			        		textStyle:{
+			        			color:"#fff"
+			        		}
+			        	},
+			            emphasis: {
+			                show: false
+			            }
+			        },
+			        roam: true,
+			        itemStyle: {
+			            normal: {
+			                areaColor: '#323c48',
+			                borderColor: '#404a59'
+			            },
+			            emphasis: {
+			                areaColor: '#2a333d'
+			            }
+			        }
+			    }
+	 };
+
+  myChart.setOption(option);
+
+
+</script>
+
+</body>
+</html>

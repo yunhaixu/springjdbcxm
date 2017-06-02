@@ -1,0 +1,27 @@
+.index-content {
+	overflow-y: auto;
+}
+
+.tel-table {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.tel-table th {
+	height: 40px;
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	background-color: #f2f8fc;
+	border: 1px solid #666;
+}
+
+.tel-table td {
+	text-align: center;
+	height: 42px;
+	border: 1px solid #666;
+}
+
+.th1 {
+	width: 364px;
+}

@@ -1,0 +1,56 @@
+{
+    "ReturnInfo": {
+        "Code": "1",
+        "Description": ""
+    },
+    "BusinessInfo": {
+        "Code": "1",
+        "Description": ""
+    },
+    "UserArea": {
+        "total": 100,
+        "notice": [{
+            "type" : "1",
+            "officeNum" : "STD20265656532",
+            "applicationTime": "2017-3-13 09：00",
+            "state": "受理中",
+            "itemName": "道路客货运输经营（危险货物运输外）驾驶人员从业资格的许可",
+            "itemNum" : "123456",
+            "department": "交通局",
+            "telephone": "555212332"
+        }, {
+            "type" : "2",
+            "officeNum" : "STD20265656532",
+            "applicationTime": "2017-3-13 09：00",
+            "state": "审批中",
+            "itemName": "道路客货运输经营（危险货物运输外）驾驶人员从业资格的许可",
+            "itemNum" : "123456",
+            "department": "交通局",
+            "telephone": "555212332",
+            "countDown" : "5天"
+        }, {
+            "type" : "3",
+            "officeNum" : "STD20265656532",
+            "applicationTime": "2017-3-13 09：00",
+            "state": "退",
+            "itemName": "道路客货运输经营（危险货物运输外）驾驶人员从业资格的许可",
+            "itemNum" : "123456",
+            "department": "交通局",
+            "telephone": "555212332",
+            "countDown" : "5天",
+            "rejectState" : "材料补正",
+            "rejectWhy" : "此处为审批被驳回的原因......"
+        }, {
+            "type" : "4",
+            "officeNum" : "STD20265656532",
+            "applicationTime": "2017-3-13 09：00",
+            "state": "已办结",
+            "itemName": "道路客货运输经营（危险货物运输外）驾驶人员从业资格的许可",
+            "itemNum" : "123456",
+            "department": "交通局",
+            "telephone": "555212332"
+        }]
+    }
+
+}
+

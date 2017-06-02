@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/gov-hall.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>政务大厅</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <span class="now-loc">政务大厅</span>
+                </div>
+                <div class="index-content">
+                    <div class="con-title clearfix">
+                        <div class="title-l">
+                            <p>新房办证</p>
+                            <span>立等可取</span>
+                        </div>
+                        <div class="title-r">
+                            <p>自武汉市推行不动产统一登记制度以来，不动产登记全面实施，但原来各部门已法发放的证书是继续有效的。所以不管是持有老证书，还是新证书，办理房产过户并不受影响。</p>
+                        </div>
+                    </div>
+                    <ul class="con-hd-area" id="hd-ul">
+                        <li class="hd-item hd-cur">
+                            <p class="step-number">1</p>
+                            <p class="step-name">办理条件</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">2</p>
+                            <p class="step-name">我要办理</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">3</p>
+                            <p class="step-name">准备材料</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">4</p>
+                            <p class="step-name">办理流程</p>
+                        </li>
+                    </ul>
+                    <ul class="con-bd-area" id="con-ul">
+                        <li class="bd-item niceScroll">
+                            <p>1、办理之前，需要确认好开发商已办理好初始登记，并获取白色的《不动产权属证明书》或者绿色的《商品房权属证明书》或者绿色的《商品房初始登记证明》（其中一项即可）；</p>
+                            <p>2、2005年1月1日后签订购房合同并已备案的无抵押商品房办证，且不属于托管、插花地带及存在历史遗留问题的房屋；</p>
+                            <p>3、每日16:00前完成窗口收件流程的，可实现当日可取。</p>
+                        </li>
+                        <li class="bd-item clearfix niceScroll">
+                            <div class="todo-type">
+                                请您选择您现在持有以下哪一种证书：
+                            </div>
+                            <div class="todo-radio" id="todo-radio">
+                                <label>
+                                    <input name="word" type="radio" checked="checked" value="0" />白色的《不动产权证明书》</label>
+                                <label>
+                                    <input name="word" type="radio" value="1" />绿色的《商品房权属证明书》或《商品房初始登记证明》</label>
+                            </div>
+                            <button type="button" class="grey-btnStyle" id="markSure">确认</button>
+                        </li>
+                        <li class="bd-item niceScroll">
+                            <div class="case-metail">
+                                <p class="fs18">办理之前，请提前准备如下材料：</p>
+                                <p class="ti15"> 需开发商提供：</p>
+                                <p>1、不动产权属证明书（原件）</p>
+                                <p>2、宗地图、房产分户图（原件，复印件1份） </p>
+                                <p>3、购房合同、购房发票（原件） </p>
+                                <p>4、房屋交易申请书（原件、开发商盖章） </p>
+                                <p>5、不动产登记申请表（原件、开发商盖章）</p>
+                                <p class="ti15">需自己准备： </p>
+                                <p>6、家庭成员①的身份证明②、婚姻状况证明③和户籍证明（原件、复印件1份）</p>
+                                <p> ①家庭成员：包括购房人、购房人的配偶和未成年的子女 </p>
+                                <p> ②身份证明包括： </p>
+                                <p>境内自然人：居民身份证，未成年人的户口簿或居民身份证；</p>
+                                <p>现役军人：军官证、士兵证、文职干部证、学员证或居民身份证等；</p>
+                                <p>香港、澳门特别行政区自然人：居民身份证或香港、澳门特别行政区护照，港澳居民来往内地通行证、港澳同胞回乡证； </p>
+                                <p>台湾地区自然人：台湾居民来往大陆通行证或台胞证； </p>
+                                <p>域外华侨：中华人民共和国护照； </p>
+                                <p>外籍人士：中国政府主管机关签发的居留证件或其所在国护照。</p>
+                                <p>③婚姻状况证明：提供结婚证或离婚证、离婚协议书、生效的民事判决书、调解书等。 </p>
+                                <p class="ti15">如果房屋有贷款，办理交易与登记时，还需银行提供：</p>
+                                <p>7、不动产登记证明或期房抵押证明、不动产登记申请表、委托书（原件，银行盖章）</p>
+                            </div>
+                            <div class="case-metail hidden">
+                                <p class="fs18">办理之前，请提前准备如下材料：</p>
+                                <p class="ti15"> 需开发商提供：</p>
+                                <p>1、《商品房权属证明书》或《商品房初始登记证明》（原件、复印件1份）</p>
+                                <p>2、房产权证附图（复印件3份） </p>
+                                <p>3、购房合同（原件，复印件第2、3面） </p>
+                                <p>4、购房发票（原件） </p>
+                                <p>5、房屋交易申请书（原件、开发商盖章）</p>
+                                <p>6、不动产登记申请表（原件、开发商盖章）</p>
+                                <p class="ti15">需自己准备： </p>
+                                <p>7、家庭成员①的身份证明②、婚姻状况证明③和户籍证明（原件、复印件1份）</p>
+                                <p> ①家庭成员：包括购房人、购房人的配偶和未成年的子女 </p>
+                                <p> ②身份证明包括： </p>
+                                <p>境内自然人：居民身份证，未成年人的户口簿或居民身份证；</p>
+                                <p>现役军人：军官证、士兵证、文职干部证、学员证或居民身份证等；</p>
+                                <p>香港、澳门特别行政区自然人：居民身份证或香港、澳门特别行政区护照，港澳居民来往内地通行证、港澳同胞回乡证； </p>
+                                <p>台湾地区自然人：台湾居民来往大陆通行证或台胞证； </p>
+                                <p>域外华侨：中华人民共和国护照； </p>
+                                <p>外籍人士：中国政府主管机关签发的居留证件或其所在国护照。</p>
+                                <p>③婚姻状况证明：提供结婚证或离婚证、离婚协议书、生效的民事判决书、调解书等。 </p>
+                                <p class="ti15">如果房屋有贷款，办理交易与登记时，还需银行提供：</p>
+                                <p>8、不动产登记证明或期房抵押证明、不动产登记申请表、委托书（原件，银行盖章）</p>
+                            </div>
+                        </li>
+                        <li class="bd-item niceScroll">
+                            <div class="case-process">
+                                <p>（1）不动产交易：B区咨询台领取号，窗口办理“不动产交易”，领取《房屋交易协税信息单》。</p>
+                                <p>（2）缴税：至地税窗口缴费，领取缴费证明。【1、若未缴纳维修资金，请缴纳维修资金；2、地税窗口只接受银联卡缴费】 </p>
+                                <p>（3）领取《房屋交易告知书》：至原“不动产交易”窗口领取《房屋交易告知书》。 </p>
+                                <p>（4）不动产登记：1至7项资料齐全，当天无需重新取号，内部流转综合窗口办理“不动产登记”。【银行资料不齐全，携带齐全资料后，在A区咨询台取号办理不动产登记】 </p>
+                                <p>（5）缴费：至A01窗口缴费。【只接受现金缴费】</p>
+                                <p>（6）领取收件单：返回原办理窗口提交缴费证明并领取《不动产登记收件单》。</p>
+                                <p>（7）不动产领证：在规定时限收到短信提示后，凭《不动产登记收件单》B区咨询台取号，窗口领取《不动产权证书》。</p>
+                            </div>
+                            <div class="case-process hidden">
+                                <p>（1）权籍调查：A区咨询台取号，办理“权籍调查”，根据短信提示领取成果（需提供上述材料1、2、3、7）。【1、周六办理“权籍调查”，需等待至下周第一个工作日，方可领取成果；2、其他区转交给东湖高新的托管楼盘和部分地下室办理“权籍调查”，需要等待16个工作日后，方可领取成果】</p>
+                                <p>（2）不动产交易：B区咨询台领取号，窗口办理“不动产交易”，领取《房屋交易协税信息单》。 </p>
+                                <p>（3）缴税：至地税窗口缴费，领取缴费证明。【1、若未缴纳维修资金，请缴纳维修资金；2、地税窗口只接受银联卡缴费】 </p>
+                                <p>（4）领取《房屋交易告知书》：至原“不动产交易”窗口领取《房屋交易告知书》。 </p>
+                                <p>（5）不动产登记：1至8项资料齐全，当天无需重新取号，内部流转综合窗口办理“不动产登记”。【银行资料不齐全，携带齐全资料后，在A区咨询台取号办理不动产登记】</p>
+                                <p>（6）缴费：至A01窗口缴费。【只接受现金缴费】</p>
+                                <p>（7）领取收件单：返回原办理窗口提交缴费证明并领取《不动产登记收件单》。</p>
+                                <p>（8）不动产领证：在规定时限收到短信提示后，凭《不动产登记收件单》B区咨询台取号，窗口领取《不动产权证书》。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/myTab.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/gov-hall.js"></script>
+</body>
+
+</html>

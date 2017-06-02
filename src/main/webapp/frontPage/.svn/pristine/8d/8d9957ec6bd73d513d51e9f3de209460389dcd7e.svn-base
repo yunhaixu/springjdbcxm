@@ -1,0 +1,215 @@
+/**!
+ * [页面名称]:大厅分布
+ * author: [陈轩];
+ */
+
+body {
+    height: 1049px;
+}
+
+.content {
+    height: 800px;
+    font-size: 14px;
+    background: url(../images/index/ab-hallBg.jpg) center no-repeat #fff;
+}
+
+.left-a {
+    float: left;
+    width: 478px;
+    margin-left: 80px;
+    margin-top: 68px;
+}
+
+.right-b {
+    float: left;
+    width: 478px;
+    margin-left: 105px;
+    margin-top: 68px;
+}
+
+.bottom-area li,
+.top-area li {
+    float: left;
+    margin-right: 2.9px;
+    width: 31px;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.special-area {
+    float: left;
+    margin-top: 30px;
+    margin-left: 82px;
+}
+
+.special-area .special {
+    width: 16px;
+    padding: 4px 7px;
+    height: 135px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bottom-area li {
+    width: 34.8px;
+}
+
+.right-b .bottom-area li {
+    width: 32.6px;
+}
+
+.right-b .bottom-area li.mr6 {
+    margin-right: 6px;
+}
+
+.bottom-area li.mr8,
+.top-area li.mr8 {
+    margin-right: 8px;
+}
+
+.left-area {
+    float: left;
+    width: 39px;
+}
+
+.right-area {
+    margin-right: 2.9px;
+    float: right;
+    width: 39px;
+}
+
+.mt70 {
+    margin-top: 70px;
+}
+
+.mt67 {
+    margin-top: 67px;
+}
+
+.left-area li,
+.right-area li {
+    width: 39px;
+    height: 25px;
+    margin-bottom: 2px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.right-b .left-area li {
+    height: 23px;
+    line-height: 23px;
+    margin-bottom: 1.7px;
+}
+
+.right-b .right-area li {
+    margin-bottom: 2.4px;
+}
+
+.left-area li.mb8,
+.right-area li.mb8 {
+    margin-bottom: 8px;
+}
+
+.left-area li.mb5,
+.right-area li.mb5 {
+    /*margin-bottom: 1px;*/
+    margin-bottom: 5px;
+}
+
+.left-a li {
+    background-color: #3084c7;
+}
+
+.left-a li:hover {
+    background-color: #1761ac;
+}
+
+.right-b li {
+    background-color: #14aa7a;
+}
+
+.right-b li:hover {
+    background-color: #018b55;
+}
+
+
+/*hall-tip*/
+.content li:hover .hall-tip {
+	display: block;
+}
+.hall-tip {
+	position: absolute;
+	display: none;
+    width: 140px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    text-align: left;
+    background-color: #909090;
+}
+.hall-tip .sanjiao {
+	position: absolute;
+	margin-top: -25px;
+	margin-left: -6px;
+	display: block;
+	width: 38px;
+	height: 25px;
+	background-image: url(../images/index/hall-tipTop.png);
+}
+
+.left-area .hall-tip {
+	margin-left: 46px;
+	margin-top: 9px;
+}
+.special-area .hall-tip {
+	margin-left: 40px;
+	margin-top: -80px;
+}
+.right-area .hall-tip {
+	margin-left: -170px;
+	margin-top: 8px;
+}
+.right-area .hall-tip .sanjiao {
+	margin-left: 112px;
+	background-image: url(../images/index/hall-tipRight.png);
+}
+.bottom-area .hall-tip {
+	margin-left: -142px;
+	margin-top: -236px;
+}
+.bottom-area .hall-tip .sanjiao {
+	margin-top: 0;
+	margin-left: 112px;
+	background-image: url(../images/index/hall-tipBottom.png);
+}
+.hall-tip h5 {
+	line-height: 30px;
+    font-size: 14px;
+}
+.hall-tip h6 {
+	line-height: 22px;
+}
+.hall-tip ol {
+	list-style-type: decimal;
+}
+
+.hall-tip li {
+	margin-left: 10px;
+	width: auto;
+	text-align: left;
+	height: inherit;
+	line-height: 25px;
+    float: inherit;
+    background-color: transparent;
+}
+
+.hall-tip li:hover {
+    background-color: transparent;
+}

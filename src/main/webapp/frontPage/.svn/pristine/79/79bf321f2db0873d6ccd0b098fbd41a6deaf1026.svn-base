@@ -1,0 +1,109 @@
+.login-content {
+    width: 501px;
+    height: 276px;
+    padding-top: 30px;
+    background-color: #fff;
+}
+
+.login-input {
+    float: left;
+    width: 306px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    font-family: "Microsoft Yahei";
+    border: 1px solid #d2d2d2;
+    padding: 0 10px;
+}
+
+.login-content>label {
+    font-size: 15px;
+    text-align: center;
+}
+
+.log-item {
+    width: 428px;
+    margin: 0 auto 10px auto;
+}
+
+.log-item>label {
+    float: left;
+    width: 72px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.code-input {
+    float: left;
+    width: 110px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #d2d2d2;
+}
+
+.code-img {
+    float: left;
+    width: 89px;
+    height: 42px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pwd-label {
+    padding-left: 72px;
+    cursor: pointer;
+}
+
+.rem-remember {
+    margin-right: 6px;
+}
+
+.rem-pwd {
+    float: left;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin: 14.5px 0 0 72px;
+}
+
+.grey-btnStyle {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    width: 150px;
+    margin: 0 auto;
+}
+.forget-pwd {
+    float: right;
+    line-height: 42px;
+    font-size: 13px;
+    color: #009241;
+    margin-right: 38px;
+}
+
+.tip {
+    float: left;
+    line-height: 44px;
+    font-size: 12px;
+    color: #df3f3f;
+}
+
+.err-textarea {
+    float: left;
+    width: 326px;
+    height: 125px;
+    font-size: 16px;
+    resize: none;
+}
+
+.textarea-container {
+    position: relative;
+}
+
+.txt-num {
+    position: absolute;
+    font-size: 12px;
+    color: #999;
+    bottom: -20px;
+    right: 28px;
+}

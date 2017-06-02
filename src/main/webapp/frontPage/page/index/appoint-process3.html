@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/appoint-service2.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>预约流程3</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header"></div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <a href="">预约服务</a> &gt; <span class="now-loc">预约</span>
+                </div>
+                <div class="right-con">
+                    <div class="step-flow">
+                        <ul class="step-items clearfix">
+                            <li class="step-item first cur">
+                                <span class="num">1</span>
+                                <span class="note">区域引导</span>
+                            </li>
+                            <li class="step-item cur">
+                                <span class="num">2</span>
+                                <span class="note">事项选择</span>
+                            </li>
+                            <li class="step-item cur">
+                                <span class="num">3</span>
+                                <span class="note">选择时间</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="num">4</span>
+                                <span class="note">填写信息</span>
+                            </li>
+                            <li class="step-item last">
+                                <span class="num">5</span>
+                                <span class="note">预约完成</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-bd">
+                        <div class="tabview-hd">
+                            <h5 class="item-class">您当前预约事项名称为：
+                            <em>新建、改建、扩建房屋、装饰装修非住宅屋白蚁预防</em></h5>
+                        </div>
+                        <p class="choose-time">请选择您要预约的时间段：</p>
+                        <table class="time-table" id="time-table">
+                            <tr>
+                                <td class="time"></td>
+                                <td class="time">03月02日 今日</td>
+                                <td class="time">03月03日 明日</td>
+                                <td class="time">03月04日 周一</td>
+                                <td class="time">03月05日 周二</td>
+                                <td class="time">03月06日 周三</td>
+                            </tr>
+                            <tr>
+                                <td class="time time-span">09:00~10:00</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-false">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                            </tr>
+                            <tr>
+                                <td class="time time-span">10:00~11:00</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-false">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                            </tr>
+                            <tr>
+                                <td class="time time-span">11:00~12:00</td>
+                                <td class="item item-false">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                            </tr>
+                            <tr>
+                                <td class="time time-span">13:00~14:00</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                            </tr>
+                            <tr>
+                                <td class="time time-span">14:00~15:00</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                                <td class="item item-true">预约（2/10）</td>
+                            </tr>
+                        </table>
+                        <div class="button-area">
+                            <button class="grey-btnStyle" type="button">提交</button>
+                            <button class="cancel-btnStyle r" type="button">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer"></div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</body>
+
+</html>

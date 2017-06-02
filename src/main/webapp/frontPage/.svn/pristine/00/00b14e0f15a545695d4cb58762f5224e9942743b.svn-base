@@ -1,0 +1,74 @@
+/**!
+ * [页面名称]:消息
+ * author: [高婧];
+ */
+
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+/* 我的办件 */
+.inner-content {
+	margin: 0 auto;
+	width: 1000px;
+	height: 728px;
+}
+.content-top {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d4d4d4;
+}
+.small-btn {
+	margin-right: 3px;
+}
+.small-btn.all-btn {
+	color: #5ab085;
+    border-color: #5ab085;
+    background-color: #ebf6f1;
+}
+.operate {
+	height: 28px;
+	line-height: 28px;
+}
+.operate span {
+	cursor: pointer;
+}
+.operate span:hover {
+	color: #5ab085;
+}
+.operate .read {
+	margin-right: 28px;
+}
+.item-box {
+	margin-top: 10px;
+}
+.item-list li {
+	padding: 15px 0 15px 18px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.item-text .item-title {
+	font-size: 15px;
+	margin-bottom: 6px;
+}
+.item-text .item-content {
+	width: 422px;
+	color: #999;
+	font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+.item-list .date {
+	color: #999;
+	font-size: 15px;
+	line-height: 38px;
+}
+.pagelist-mricode {
+	margin-top: 70px;
+	margin-left: 142px;
+}

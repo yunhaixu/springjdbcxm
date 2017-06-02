@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>欢迎登陆</title>
+</head>
+
+<body>
+    <div class="login-content">
+        <div class="log-item clearfix">
+            <label>手机号</label>
+            <input type="text" name="username" placeholder="请输入手机号" class="login-input" />
+            <br/>
+        </div>
+        <div class="log-item clearfix">
+            <label>密码</label>
+            <input type="password" name="password" placeholder="请输入密码" class="login-input" />
+            <br/>
+        </div>
+        <div class="log-item clearfix">
+            <label>验证码</label>
+            <input type="text" name="code" placeholder="请输入验证码" class="code-input" class="code-input" /><img src="../../images/login/word.png" class="code-img" />
+        </div>
+        <div class="log-item clearfix">
+            <label class="pwd-label">
+                <input type="checkbox" name="remember" class="rem-remember" />记住密码</label>
+            <a href="#" class="forget-pwd">忘记密码?</a>
+        </div>
+        <div class="log-item">
+            <button type="button" class="grey-btnStyle" id="login-btn">登 录</button>
+        </div>
+    </div>
+    <div class="register">
+        <a href="javascript:;" class="register-link" id="register">立即注册</a>
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../js/login.js"></script>
+</body>
+
+</html>

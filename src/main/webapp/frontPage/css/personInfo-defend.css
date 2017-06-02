@@ -1,0 +1,174 @@
+/**!
+ * [页面名称]:个人信息维护
+ * author: [陈轩];
+ */
+
+
+/*个人中心页面覆盖样式*/
+
+.content .container {
+    height: 900px;
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+
+/*内部内容*/
+
+.inner-content {
+    padding-top: 20px;
+}
+
+.nav-l {
+    float: left;
+    width: 150px;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+}
+
+.nav-item {
+    height: 60px;
+    margin: 0 9px;
+    border-bottom: 1px solid #d6d6d6;
+    line-height: 60px;
+}
+
+.nav-item.bb0 {
+    border-bottom: 0;
+}
+
+.nav-item>a {
+    display: block;
+    line-height: 60px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.nav-item.cur-nav>a,
+.nav-item>a:hover {
+    color: #5ab085;
+    font-weight: bold;
+}
+
+.con-r {
+    float: left;
+    width: 968px;
+    margin-left: 40px;
+}
+
+
+/*.con-hd*/
+
+.con-hd {
+    padding: 6px 0;
+    line-height: 16px;
+}
+
+.con-hd>h5 {
+    float: left;
+    padding-left: 11px;
+    color: #009241;
+    font-weight: bold;
+    font-size: 15px;
+    border-left: 4px solid #009241;
+}
+
+.con-hd>.tel {
+    float: right;
+    font-size: 13px;
+}
+
+/*tabview-hd*/
+.tabview {
+    font-size: 15px;
+}
+.tabview-hd li {
+    float: left;
+    margin-right: 24px;
+}
+.first-ul {
+    margin: 40px 0;
+}
+.first-ul li>label {
+    width: 77px;
+    padding-left: 24px;
+    background: url(../images/userCenter/radio.png) left center no-repeat;
+    cursor: pointer;
+}
+.first-ul li.current>label {
+    background-image: url(../images/userCenter/radio-chk.png);
+}
+.first-ul>.label {
+    width: 295px;
+    text-align: right;
+    margin-right: 54px;
+    cursor: default;
+}
+.input-row {
+    margin-bottom: 10px;
+}
+.input-row>label {
+    float: left;
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+.input-row>input {
+    float: left;
+    margin-left:12px;
+    padding-left: 12px;
+     border: 1px solid #d5d5d5;
+    height: 38px;
+    line-height: 38px;
+    width: 315px;
+}
+
+.grey-btnStyle {
+    margin: 30px 0 0 380px;
+}
+
+/*tabview-hd1*/
+.tabview-hd1 {
+    margin-left: 420px;
+    margin-top: -30px;
+}
+
+.tabview-hd1 li {
+    float: left;
+    font-size: 13px;
+    padding: 6px 12px;
+    margin-right: 22px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.tabview-hd1 li.current {
+    color: #fff;
+    background-color: #5ab085;
+}
+
+.tab-panel1 {
+    margin-top: 10px;
+}
+
+/*label-span*/
+.mt30 {
+    margin-top: 30px;
+}
+.label-span {
+    float: left;
+    line-height: 40px;
+    margin-left: 15px;
+}
+.input-row>label.wd2 {
+    width: 298px;
+}
+
+.grey-btnStyle.mt300 {
+    margin-top: 300px;
+}

@@ -1,0 +1,30 @@
+bus-map 公交地图   重构完成 数据模拟完成 地图API完成
+
+index 首页 重构交互完成
+
+service-encyclopedia 服务百科 重构 交互 数据模拟完成
+
+window-tel 窗口电话 重构交互完成 数据模拟完成
+
+hall-distribution.html  重构完成，大厅分布放的jpg
+
+consulte-complaint.html 咨询投诉 重构交互完成
+
+//新增子页 预约页面
+appoint-service 预约服务
+
+cancel-appoint 取消预约--弹窗
+
+appoint-success1 预约成功1--弹窗
+
+appoint-success2 预约成功2--弹窗
+
+appoint-process1 区域引导
+appoint-process2 事项选择1
+appoint-process2-2 事项选择2
+
+appoint-process3 选择时间
+
+appoint-process4 填写信息
+
+appoint-process5 预约完成

@@ -1,0 +1,76 @@
+/**!
+ * [页面名称]:准备材料预知
+ * author: [陈轩];
+ */
+
+.material-prepared {
+    width: 1000px;
+    height: 635px;
+    background-color: #fff;
+}
+
+.material-prepared .header {
+    height: 39px;
+    line-height: 39px;
+    background-color: #f4f4f4;
+}
+
+.header .title {
+    margin-left: 22px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header .close {
+    margin-top: 10px;
+    margin-right: 12px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url("../images/gov-hall/close-btn.png") no-repeat;
+    cursor: pointer;
+}
+
+.table-body {
+    width: 1000px;
+}
+
+.table-body h5 {
+    padding: 25px 0 20px 36px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.table-body table {
+    width: 900px;
+    margin-left: 48px;
+    font-size: 15px;
+}
+
+.table-body table th {
+    height: 30px;
+    text-align: center;
+    background-color: #ebf6f0;
+    border: 1px solid #e4e4e4;
+}
+
+.table-body table .th1 {
+    width: 78px;
+}
+
+.table-body table .th2 {
+    width: 460px;
+}
+
+.table-body table td {
+    height: 30px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+}
+
+.remark {
+    margin-top: 20px;
+    margin-left: 36px;
+    font-size: 13px;
+}

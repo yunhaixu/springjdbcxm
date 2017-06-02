@@ -1,0 +1,472 @@
+[INFO][2017-06-02 14:13:55] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 14:13:55] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:13:55 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:13:56] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 14:13:57] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 14:13:57] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 14:14:00] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[WARN][2017-06-02 14:14:00] org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRestController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.dao.CommonDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[INFO][2017-06-02 14:14:00] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1444) {dataSource-1} closed 
+[ERROR][2017-06-02 14:14:00] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:500) Context initialization failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRestController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.dao.CommonDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:778)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:666)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:632)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:680)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:492)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.dao.CommonDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 29 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.dao.CommonDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 31 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.dao.CommonDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 42 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.dao.CommonDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1126)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 44 more
+[INFO][2017-06-02 14:17:23] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 14:17:23] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:17:23 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:17:23] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 14:17:24] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 14:17:24] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 14:17:26] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[INFO][2017-06-02 14:17:27] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+[INFO][2017-06-02 14:17:28] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/userlist]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.userlist() 
+[INFO][2017-06-02 14:17:28] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.login(com.modle.User) 
+[INFO][2017-06-02 14:17:28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:17:23 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:17:28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:17:23 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:17:29] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:506) FrameworkServlet 'spring': initialization completed in 5998 ms 
+[INFO][2017-06-02 14:17:56] com.dao.implement.CommonImpl.search(CommonImpl.java:126) sql : select * from  values:[] 
+[INFO][2017-06-02 14:18:04] com.dao.implement.CommonImpl.search(CommonImpl.java:126) sql : select * from  values:[] 
+[INFO][2017-06-02 14:18:47] com.dao.implement.CommonImpl.search(CommonImpl.java:126) sql : select * from  values:[] 
+[INFO][2017-06-02 14:21:05] com.dao.implement.CommonImpl.search(CommonImpl.java:126) sql : select * from  values:[] 
+[INFO][2017-06-02 14:21:39] com.dao.implement.CommonImpl.search(CommonImpl.java:126) sql : select * from  values:[] 
+[INFO][2017-06-02 14:24:57] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 14:29:53] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 14:29:53] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:29:53 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:29:54] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 14:29:55] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 14:29:55] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 14:29:57] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[WARN][2017-06-02 14:29:57] org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRestController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: No default constructor found; nested exception is java.lang.NoSuchMethodException: com.dao.implement.CommonImpl.<init>() 
+[INFO][2017-06-02 14:29:57] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1444) {dataSource-1} closed 
+[ERROR][2017-06-02 14:29:57] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:500) Context initialization failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRestController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: No default constructor found; nested exception is java.lang.NoSuchMethodException: com.dao.implement.CommonImpl.<init>()
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:778)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:666)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:632)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:680)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:492)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: No default constructor found; nested exception is java.lang.NoSuchMethodException: com.dao.implement.CommonImpl.<init>()
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 29 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: No default constructor found; nested exception is java.lang.NoSuchMethodException: com.dao.implement.CommonImpl.<init>()
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 31 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: No default constructor found; nested exception is java.lang.NoSuchMethodException: com.dao.implement.CommonImpl.<init>()
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 42 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: No default constructor found; nested exception is java.lang.NoSuchMethodException: com.dao.implement.CommonImpl.<init>()
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 44 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: No default constructor found; nested exception is java.lang.NoSuchMethodException: com.dao.implement.CommonImpl.<init>()
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:85)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1102)
+	... 55 more
+Caused by: java.lang.NoSuchMethodException: com.dao.implement.CommonImpl.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082)
+	at java.lang.Class.getDeclaredConstructor(Class.java:2178)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:80)
+	... 56 more
+[INFO][2017-06-02 14:32:40] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 14:32:41] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:32:41 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:32:41] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 14:32:42] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 14:32:42] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 14:32:43] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[INFO][2017-06-02 14:32:44] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+[INFO][2017-06-02 14:32:45] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.login(com.modle.User) 
+[INFO][2017-06-02 14:32:45] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/userlist]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.userlist() 
+[INFO][2017-06-02 14:32:45] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:32:41 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:32:45] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:32:41 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:32:46] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:506) FrameworkServlet 'spring': initialization completed in 5018 ms 
+[INFO][2017-06-02 14:32:50] com.dao.implement.CommonImpl.search(CommonImpl.java:126) sql : select * from  values:[] 
+[INFO][2017-06-02 14:32:53] com.dao.implement.CommonImpl.search(CommonImpl.java:126) sql : select * from  values:[] 
+[INFO][2017-06-02 14:32:55] com.dao.implement.CommonImpl.search(CommonImpl.java:126) sql : select * from  values:[] 
+[INFO][2017-06-02 14:33:56] com.dao.implement.CommonImpl.search(CommonImpl.java:172) sql : select * from  values:[] 
+[INFO][2017-06-02 14:35:08] com.dao.implement.CommonImpl.search(CommonImpl.java:171) sql : select * from  values:[] 
+[INFO][2017-06-02 14:37:58] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 14:37:58] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:37:58 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:37:59] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 14:38:00] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 14:38:00] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 14:38:03] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[WARN][2017-06-02 14:38:21] org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRestController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null 
+[INFO][2017-06-02 14:38:21] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1444) {dataSource-1} closed 
+[ERROR][2017-06-02 14:38:21] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:500) Context initialization failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRestController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:778)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:666)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:632)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:680)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:492)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 29 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 31 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 42 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 44 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1102)
+	... 55 more
+Caused by: java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:115)
+	at org.springframework.core.annotation.AnnotationUtils.findAnnotation(AnnotationUtils.java:675)
+	at org.springframework.core.annotation.AnnotationUtils.findAnnotation(AnnotationUtils.java:660)
+	at com.dao.implement.CommonImpl.<init>(CommonImpl.java:111)
+	at sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 57 more
+[INFO][2017-06-02 14:44:32] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 14:44:32] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:44:32 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:44:32] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 14:44:33] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 14:44:33] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 14:44:35] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[WARN][2017-06-02 14:45:02] org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRestController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null 
+[INFO][2017-06-02 14:45:02] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1444) {dataSource-1} closed 
+[ERROR][2017-06-02 14:45:02] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:500) Context initialization failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRestController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:778)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:666)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:632)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:680)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:492)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.service.UserService com.controller.UserRestController.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 29 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImp': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 31 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.dao.CommonDao com.service.implement.UserServiceImp.commondao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 42 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonImpl' defined in file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\com\dao\implement\CommonImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 44 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.dao.implement.CommonImpl]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1102)
+	... 55 more
+Caused by: java.lang.IllegalArgumentException: Class must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:115)
+	at org.springframework.core.annotation.AnnotationUtils.findAnnotation(AnnotationUtils.java:675)
+	at org.springframework.core.annotation.AnnotationUtils.findAnnotation(AnnotationUtils.java:660)
+	at com.dao.implement.CommonImpl.<init>(CommonImpl.java:111)
+	at sun.reflect.GeneratedConstructorAccessor37.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 57 more
+[INFO][2017-06-02 14:47:14] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 14:47:14] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:47:14 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:47:14] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 14:47:15] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 14:47:15] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 14:47:17] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[INFO][2017-06-02 14:47:18] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+[INFO][2017-06-02 14:47:18] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/userlist]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.userlist() 
+[INFO][2017-06-02 14:47:18] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.login(com.modle.User) 
+[INFO][2017-06-02 14:47:19] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:47:14 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:47:19] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:47:14 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:47:19] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:506) FrameworkServlet 'spring': initialization completed in 5455 ms 
+[INFO][2017-06-02 14:47:51] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 14:47:54] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 14:58:59] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 14:58:59] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:58:59 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:58:59] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 14:59:00] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 14:59:00] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 14:59:02] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[INFO][2017-06-02 14:59:03] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+[INFO][2017-06-02 14:59:03] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.login(com.modle.User) 
+[INFO][2017-06-02 14:59:03] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/userlist]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.userlist() 
+[INFO][2017-06-02 14:59:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:58:59 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:59:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 14:58:59 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 14:59:04] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:506) FrameworkServlet 'spring': initialization completed in 5561 ms 
+[INFO][2017-06-02 15:02:03] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 15:33:44] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 15:33:44] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:33:44 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:33:45] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 15:33:46] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 15:33:46] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 15:33:47] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[INFO][2017-06-02 15:33:48] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+[INFO][2017-06-02 15:33:49] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/userlist]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.userlist() 
+[INFO][2017-06-02 15:33:49] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.login(com.modle.User) 
+[INFO][2017-06-02 15:33:49] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:33:44 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:33:49] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:33:44 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:33:50] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:506) FrameworkServlet 'spring': initialization completed in 5676 ms 
+[INFO][2017-06-02 15:34:02] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 15:34:07] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 15:37:05] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 15:37:05] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:37:05 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:37:06] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 15:37:07] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 15:37:08] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 15:37:09] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[INFO][2017-06-02 15:37:10] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+[INFO][2017-06-02 15:37:10] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.login(com.modle.User) 
+[INFO][2017-06-02 15:37:10] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/userlist]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.userlist() 
+[INFO][2017-06-02 15:37:11] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:37:05 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:37:11] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:37:05 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:37:11] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:506) FrameworkServlet 'spring': initialization completed in 6134 ms 
+[INFO][2017-06-02 15:38:28] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 15:38:28] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:38:28 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:38:29] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 15:38:30] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 15:38:30] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 15:38:32] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[INFO][2017-06-02 15:38:32] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+[INFO][2017-06-02 15:38:33] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.login(com.modle.User) 
+[INFO][2017-06-02 15:38:33] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/userlist]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.userlist() 
+[INFO][2017-06-02 15:38:33] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:38:28 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:38:33] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:38:28 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:38:34] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:506) FrameworkServlet 'spring': initialization completed in 5419 ms 
+[INFO][2017-06-02 15:39:08] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 15:39:14] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 15:42:52] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 15:42:55] com.dao.implement.CommonImpl.search(CommonImpl.java:127) sql : select * from  values:[] 
+[INFO][2017-06-02 15:43:31] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 15:43:31] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:43:31 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:43:31] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 15:43:32] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 15:43:32] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 15:43:34] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[INFO][2017-06-02 15:43:35] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+[INFO][2017-06-02 15:43:35] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.login(com.modle.User) 
+[INFO][2017-06-02 15:43:35] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/userlist]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.userlist() 
+[INFO][2017-06-02 15:43:35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:43:31 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:43:35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:43:31 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:43:36] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:506) FrameworkServlet 'spring': initialization completed in 4850 ms 
+[INFO][2017-06-02 15:49:53] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:487) FrameworkServlet 'spring': initialization started 
+[INFO][2017-06-02 15:49:53] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:581) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:49:53 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:49:53] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [F:\学习笔记\Springmvc学习\源代码\springjdbcxm\target\classes\applicationContext.xml] 
+[INFO][2017-06-02 15:49:55] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties] 
+[INFO][2017-06-02 15:49:55] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[INFO][2017-06-02 15:49:56] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) {dataSource-1} inited 
+[INFO][2017-06-02 15:49:58] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' 
+[INFO][2017-06-02 15:49:58] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/login]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.login(com.modle.User) 
+[INFO][2017-06-02 15:49:58] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540) Mapped "{[/rest/user/userlist]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserRestController.userlist() 
+[INFO][2017-06-02 15:49:58] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:49:53 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:49:58] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:539) Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jun 02 15:49:53 CST 2017]; root of context hierarchy 
+[INFO][2017-06-02 15:49:59] org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:506) FrameworkServlet 'spring': initialization completed in 5784 ms 
+[INFO][2017-06-02 15:50:06] com.dao.implement.CommonImpl.search(CommonImpl.java:174) sql : select * from user values:[] 

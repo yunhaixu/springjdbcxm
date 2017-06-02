@@ -1,0 +1,287 @@
+/**!
+ * [页面名称]:数据分析
+ * author: [陈轩];
+ */
+
+.data-analysis {
+    width: 1030px;
+    height: 525px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.analysis-head {
+    height: 50px;
+    background-color: #0068b7;
+}
+
+.analysis-head>h5 {
+    float: left;
+    margin-left: 25px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.head-tab {
+    float: left;
+    margin-top: 8px;
+    margin-left: 90px;
+}
+
+.head-tab li {
+    float: left;
+}
+
+.head-tab a {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.head-tab a:hover,
+.head-tab a.active {
+    background-color: #0095d5;
+    /*font-weight: bold;*/
+}
+
+
+/**/
+
+.analysis-body {
+    height: 462px;
+    margin: 13px 10px;
+    background-color: #f1f8fd;
+}
+
+
+/*xlb代码*/
+
+
+/*左侧*/
+
+.analysis-body .left {
+    width: 440px;
+}
+
+.count-total {
+    margin: 0 25px;
+    overflow: hidden;
+}
+
+.bar {
+    margin: 7px 0;
+    background-color: #f5f5f5;
+    height: 25px;
+    line-height: 25px;
+}
+
+.total {
+    display: block;
+    color: #333;
+    padding-left: 16px;
+}
+
+.num {
+    color: #333;
+    display: block;
+    min-width: 70px;
+}
+
+.num>span {
+    color: #0095d5;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+
+/*饼图*/
+
+.pie {
+    height: 135px;
+    width: 100%;
+}
+
+.pie-data {
+    float: right;
+    margin-top: -103px;
+    margin-right: 26px;
+}
+
+.data-style {
+    display: block;
+    line-height: 24px;
+    color: #0068b7;
+    font-weight: bold;
+}
+
+
+/* 柱状图1 */
+
+.bar01 {
+    height: 212px;
+    width: 100%;
+    margin-top: -39px;
+}
+
+.order-time-analyst {
+    margin-top: 10px;
+}
+
+.basket {
+    background-color: #fff;
+    border-top: 2px solid #0068b7;
+    border-radius: 4px;
+}
+
+.basket-title {
+    padding: 10px 15px;
+    color: #0068b7;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.area {
+    width: 65%;
+    height: 170px;
+}
+
+.order-bac {
+    width: 30%;
+    height: 75px;
+    border: 1px solid #e1e8f1;
+    position: relative;
+    padding: 1px;
+    top: 55px;
+}
+
+.order-bac>img {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    z-index: 0;
+}
+
+.order-bac>span {
+    width: 98%;
+    text-align: center;
+    position: absolute;
+}
+
+.handle-txt-top {
+    color: #fff;
+    margin-top: 6px;
+}
+
+.handle-txt-bottom {
+    color: #fff;
+    margin-top: 55px;
+}
+
+
+/*中间*/
+
+.analysis-body .wd100 {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.bar02 {
+    width: 100%;
+    height: 183px;
+}
+
+.month-compress {
+    margin-top: 10px;
+}
+
+.bar03 {
+    width: 100%;
+    height: 183px;
+}
+
+.month-analyst {
+    margin-top: 10px;
+}
+
+.bar04 {
+    width: 100%;
+    height: 170px;
+}
+
+
+/*右侧*/
+
+.analysis-body .right {
+    width: 550px;
+}
+
+.bar05 {
+    margin-bottom: 10px;
+    height: 177px;
+}
+
+.radar {
+    height: 185px;
+}
+
+.quarter-year,
+.radar-box,
+.must-analyst {
+    float: left;
+    width: 335px;
+    margin-right: 1%;
+    margin-top: 9;
+}
+.radar-box {
+    width: 350px;
+}
+.must-analyst {
+    float: right;
+    width: 300px;
+    margin-right: 0;
+    height: 223px;
+    position: relative;
+}
+
+.must-analyst>h2 {
+    position: absolute;
+    z-index: 1;
+}
+
+.analyst-bac {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.must-analyst-content {
+    position: absolute;
+    top: 35px;
+}
+
+.left-title {
+    color: #000;
+    height: 35px;
+    min-width: 135px;
+    text-align: right;
+}
+
+.title-content {
+    color: #0068b7;
+    font-weight: bold;
+    text-align: left;
+    line-height: 30px;
+    height: 30px;
+}

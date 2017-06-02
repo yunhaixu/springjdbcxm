@@ -1,0 +1,23 @@
+center-index 用户中心首页 重构交互完成  
+my-collection  我的收藏 重构交互完成
+my-consultation 我的咨询 重构交互完成
+my-item 我的办件 重构交互完成
+  -------难点 日历部分的功能我已经实现，整合不清楚咨询我。
+
+my-evaluation1.html  我的评价 重构交互完成
+item-detail.html  办件详情 重构交互万成
+manage-applicant  管理申请人 重构交互完成
+manage-reset    个人信息修改 重构交互完成
+create-applicant  新增申请人 重构交互完成
+<<<<<<< .mine
+my-appointment 我的预约 重构交互完成
+pwd-reset 1 2 3重置密码  重构交互完成
+personInfo-defend 个人信息维护 重构交互完成||||||| .r1170
+my-appointment 我的预约 重构交互完成=======
+my-appointment 我的预约 重构交互完成
+my-evaluation.html 我的评价 重构交互完成
+my-complaint.html 我的投诉 重构交互完成
+message.html 消息 重构交互完成
+
+my-licence.html 我的证照 重构交互完成
+recycle-bin.html 回收站 重构交互完成>>>>>>> .r1180

@@ -1,0 +1,35 @@
+/**!
+ * [页面名称]:大厅分布
+ * author: [陈轩];
+ */
+ .tabview {
+    margin: 0 auto;
+    width: 1000px;
+}
+.tabview-hd {
+	width: 415px;
+	margin: 0 auto;
+}
+.tab-item {
+	float: left;
+	width: 180px;
+	height: 35px;
+	line-height: 35px;
+	font-style: 18px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	background-color: #f2f2f2;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.tab-item.active {
+	background-color: #70c49a;
+	color: #fff;
+}
+
+.tab-panel img {
+	width: 1000px;
+	height: 560px;
+}

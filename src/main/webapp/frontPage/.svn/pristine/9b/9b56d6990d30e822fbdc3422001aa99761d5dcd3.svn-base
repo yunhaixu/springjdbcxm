@@ -1,0 +1,403 @@
+/**!
+ * [页面名称]:用户中心首页
+ * author: [陈轩];
+ */
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+
+
+/**/
+
+.user-hd {
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.border {
+    margin-top: 17px;
+    border: 1px solid #e2e2e2;
+}
+
+.user-hd .title {
+    float: left;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.user-hd .right-hd {
+    float: right;
+    font-size: 13px;
+    margin-right: 12px;
+    color: #1d7348;
+}
+
+
+/*my-banjian*/
+
+.left-div {
+    float: left;
+    width: 874px;
+}
+
+.right-div {
+    float: right;
+    width: 258px;
+}
+
+.my-appoint .user-bd,
+.my-banjian .user-bd {
+    height: 250px;
+}
+
+.user-info .user-bd {
+    height: 184px;
+    margin: 0 16px;
+    font-size: 13px;
+}
+
+.user-info ul {
+    margin-top: 33px;
+}
+
+.user-info li {
+    margin-bottom: 22px;
+}
+
+.user-info li>.label {
+    float: left;
+    width: 65px;
+    text-align: right;
+}
+
+.user-info li>.text {
+    float: left;
+    margin-left: 12px;
+}
+
+.user-bd {
+    font-size: 15px;
+    margin: 0 20px;
+}
+
+.four-state {
+    width: 655px;
+    margin: 20px auto 6px auto;
+}
+
+.four-state li {
+    float: left;
+    width: 148px;
+    height: 78px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.four-state li:hover {
+    background-color: #f8f8f8;
+}
+
+.four-state li>p {
+    margin-top: 13px;
+}
+
+.four-state .state2 {
+    color: #ef8d19;
+    margin-left: 16px;
+}
+
+.four-state .state3 {
+    color: #d62626;
+    margin-left: 16px;
+}
+
+.four-state .state4 {
+    color: #d62626;
+    margin-left: 16px;
+}
+
+.four-state li>.line2 {
+    color: #444;
+    font-weight: normal;
+}
+
+.four-state li:hover .line2 {
+    font-weight: bold;
+}
+
+.four-state .state2:hover .line2 {
+    color: #ef8d19;
+    font-weight: bold;
+}
+
+.four-state .state3:hover .line2 {
+    color: #d62626;
+    font-weight: bold;
+}
+
+.four-state .state4:hover .line2 {
+    color: #288557;
+    font-weight: bold;
+}
+
+
+/*stateInfo-list*/
+
+.stateInfo-list li {
+    padding: 9px 0;
+    border-bottom: 1px dashed #e2e2e2;
+}
+
+.stateInfo-list .title {
+    float: left;
+    width: 760px;
+}
+
+.stateInfo-list .state {
+    display: inline-block;
+    width: 110px;
+}
+
+.stateInfo-list .date {
+    float: right;
+    color: #999;
+}
+
+
+/*我的预约*/
+
+.my-appoint .user-bd {
+    margin-top: 18px;
+    height: 260px;
+}
+
+.my-appoint .left-date {
+    float: left;
+    width: 301px;
+    height: 245px;
+}
+
+.my-appoint .right-item {
+    float: left;
+    width: 490px;
+    height: 245px;
+    font-size: 13px;
+    margin-left: 40px;
+}
+
+.my-appoint .right-item li {
+    height: 78px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.my-appoint .right-item .label {
+    display: inline-block;
+    width: 78px;
+}
+
+.my-appoint .item-list {
+    float: left;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.my-appoint .item-state {
+    float: right;
+    padding: 0 12px;
+    height: 28px;
+    margin-top: 10px;
+    border: 1px solid #288557;
+    color: #288557;
+    text-align: center;
+    cursor: pointer;
+    line-height: 28px;
+}
+
+.my-appoint .item-state:hover {
+    color: #fff;
+    border-color: #5ab085;
+    background-color: #5ab085;
+}
+
+.my-appoint .item-state.state2:hover {
+    border-color: #cd5555;
+    background-color: #cd5555;
+}
+
+.my-appoint .item-state.state3 {
+    color: #df8d0c;
+    border-color: #df8d0c;
+}
+
+.my-appoint .item-state.state3:hover {
+    border-color: #ec9815;
+    color: #fff;
+    background-color: #ec9815;
+}
+
+
+/*.datetimepicker*/
+
+.datetimepicker {
+    width: 100%;
+    height: 245px;
+    font-family: "Microsoft Yahei";
+}
+
+.datetimepicker thead {
+    background-color: #5ab085;
+}
+
+.datetimepicker thead tr:first-child th.prev,
+.datetimepicker thead tr:first-child th.next {
+    background-color: #5ab085;
+}
+
+.datetimepicker thead tr:first-child th.prev {
+    border-top-left-radius: 5px;
+}
+
+.datetimepicker thead tr:first-child th.next {
+    border-top-right-radius: 5px;
+}
+
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.active:hover.active,
+.datetimepicker table tr td.active.disabled.active,
+.datetimepicker table tr td.active.disabled:hover.active {
+    background-color: #5ab085;
+}
+
+.datetimepicker td,
+.datetimepicker th {
+    width: 43px;
+    height: 29px;
+}
+
+
+.datetimepicker table tr td.day.item {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 0;
+    width: 41px;
+    height: 27px;
+    line-height: 27px;
+    border:1px solid  #5ab085;
+}
+
+
+/*six-link*/
+
+.six-link {
+    background-color: #f8f8f8;
+}
+
+.six-link .user-bd {
+    height: 345px;
+    margin: 0;
+    margin-top: 22px;
+}
+
+.six-link li {
+    margin-bottom: 8px;
+}
+
+.six-link a {
+    display: block;
+    width: 224px;
+    height: 57px;
+    border-radius: 4px;
+    margin: 0 auto;
+    border: 1px solid #e2e2e2;
+    line-height: 58px;
+    text-indent: 103px;
+    color: #333;
+    background: url(../images/userCenter/six-link1.png) 30px center no-repeat #fff;
+}
+
+.six-link a.link2 {
+    background-image: url(../images/userCenter/six-link2.png);
+}
+
+.six-link a.link3 {
+    background-image: url(../images/userCenter/six-link3.png);
+}
+
+.six-link a.link4 {
+    background-image: url(../images/userCenter/six-link4.png);
+}
+
+.six-link a.link5 {
+    background-image: url(../images/userCenter/six-link5.png);
+}
+
+.six-link a.link6 {
+    background-image: url(../images/userCenter/six-link6.png);
+}
+
+.six-link a:hover {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+
+/*我的收藏 我的回复*/
+
+.wd50-div {
+    width: 565px;
+}
+
+.my-reply .user-bd,
+.my-collection .user-bd {
+    margin-top: 10px;
+    height: 200px;
+}
+
+.my-collection li {
+    margin-bottom: 8px;
+}
+
+.my-collection .text {
+    float: left;
+    padding-left: 14px;
+    width: 450px;
+    background: url(../images/common/dotted-block.png) left center no-repeat;
+}
+
+.my-collection .date {
+    float: right;
+    color: #999;
+}
+
+.my-reply li>div {
+    padding-left: 36px;
+    line-height: 23px;
+    background: url(../images/userCenter/answer-bg.png) left 3px no-repeat;
+}
+
+.my-reply .question>a {
+    font-weight: bold;
+    color: #333;
+}
+
+.my-reply .question {
+    margin: 8px 0;
+    background-image: url(../images/userCenter/question-bg.png);
+}

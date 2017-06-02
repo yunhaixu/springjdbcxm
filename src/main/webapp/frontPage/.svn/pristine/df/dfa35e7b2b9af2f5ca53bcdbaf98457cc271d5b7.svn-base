@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/cancel-appoint.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>预约成功</title>
+</head>
+
+<body>
+    <div class="cancel-content">
+        <p class="confirm-name mt50">王凯先生，您已成功预约了</p>
+        <p class="confirm-name"><span class="item">2017年03月03日上午09：00-10：00  民办职业培训学校的设立审批</span>  事项。请勿重复预约！</p>
+        <div class="appoint">
+            <button class="grey-btnStyle mid" type="button">确定</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/reset-pwd.css">
+    <link rel="stylesheet" href="../../css/create-applicant.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>管理申请人</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <!-- 当前位置 -->
+            <div class="now-position">
+                当前位置：<a href="">首页</a> &gt; <a href="">用户中心</a> &gt; <a href="">用户管理</a> &gt; <span class="now-loc">管理申请人</span>
+            </div>
+            <div class="userCenter-main">
+                <div class="center-nav clearfix">
+                    <span class="name">会飞的小鱼</span>
+                    <ul class="nav clearfix">
+                        <li>
+                            <a href="">主页</a>
+                        </li>
+                        <li>
+                            <a class="active" href="">办件服务</a>
+                        </li>
+                        <li>
+                            <a href="">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="">我的证据</a>
+                        </li>
+                    </ul>
+                    <div class="msg-loginOut clearfix">
+                        <a href="javascript:;" class="msg">消息<i>18</i></a>
+                        <a href="javascript:;" class="loginOut">注销</a>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="inner-content clearfix">
+                    <ul class="nav-l">
+                        <li class="nav-item"><a href="#">个人信息维护</a></li>
+                        <li class="nav-item"><a href="#">修改密码</a></li>
+                        <li class="nav-item bb0  cur-nav"><a href="#">管理申请人</a></li>
+                    </ul>
+                    <!-- 各个页面内容 -->
+                    <div class="con-r">
+                        <div class="tab-hd clearfix" data-role="head">
+                            <span class="tab-target" data-role="tab" data-target="tab-a">个人</span>
+                            <span class="tab-target cur" data-role="tab" data-target="tab-b">企业</span>
+                        </div>
+                        <div class="tab-bd" data-role="body">
+                            <div class="applicant-editor" data-role="tab-content" data-id="tab-a">
+                                <div class="editor-item">
+                                    <label class="editor-label" for="name">姓名：</label>
+                                    <input type="text" class="editor-input" id="name" />
+                                    <label class="editor-label" for="card">身份证号：</label>
+                                    <input type="text" class="editor-input" id="card" />
+                                </div>
+                                <div class="editor-item">
+                                    <label class="editor-label" for="phone">手机号码：</label>
+                                    <input type="text" class="editor-input" id="phone" />
+                                    <label class="editor-label" for="email">电子邮件：</label>
+                                    <input type="text" class="editor-input" id="email" />
+                                </div>
+                                <div class="editor-item">
+                                    <label class="editor-label" for="address">联系地址：</label>
+                                    <input type="text" class="editor-input" id="address" />
+                                    <label class="editor-label" for="code">邮编：</label>
+                                    <input type="text" class="editor-input" id="code" />
+                                </div>
+                                <button type="button" class="btn-save">保存</button>
+                            </div>
+                            <div class="applicant-list" data-role="tab-content" data-id="tab-b">
+                                <div class="editor-item">
+                                    <label class="company-label" for="companyName">企业名称：</label>
+                                    <input type="text" class="company-input" id="companyName" />
+                                </div>
+                                <div class="editor-item">
+                                    <label class="company-label" for="companyPhone">企业负责人联系电话：</label>
+                                    <input type="text" class="company-input" id="companyPhone" />
+                                </div>
+                                <div class="editor-item">
+                                    <label class="company-label" for="principal">企业负责人：</label>
+                                    <input type="text" class="company-input" id="principal" />
+                                </div>
+                                <div class="editor-item">
+                                    <label class="company-label" for="companyCard">企业负责人证件号码：</label>
+                                    <input type="text" class="company-input" id="companyCard" />
+                                </div>
+                                <div class="editor-item">
+                                    <label class="company-label" for="companyCode"> 企业工商注册号/统一社会信用代码：</label>
+                                    <input type="text" class="company-input" id="companyCode" />
+                                </div>
+                                <div class="editor-item">
+                                    <label class="company-label" for="companyAddress">企业地址：</label>
+                                    <input type="text" class="company-input" id="companyAddress" />
+                                </div>
+                                <button type="button" class="btn-company">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/tabview.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/create-applicant.js"></script>
+</body>
+
+</html>

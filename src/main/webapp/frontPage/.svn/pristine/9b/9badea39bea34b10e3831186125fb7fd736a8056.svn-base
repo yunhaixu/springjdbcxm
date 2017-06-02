@@ -1,0 +1,15 @@
+<!-- head-notice -->
+<div class="head-notice">
+    <ul id="head-notice">
+    </ul>
+    <i class="notice-btn" id="notice-btn"></i>
+</div>
+<!--公告模板-->
+<script type="text/x-template" id="notice-tmpl">
+    {{#notice}}
+    <li class="clearfix">
+        <a href="" class="text ellipsis" title="{{title}}">{{title}}</a>
+        <span class="date">{{date}}</span>
+    </li>
+    {{/notice}}
+</script>

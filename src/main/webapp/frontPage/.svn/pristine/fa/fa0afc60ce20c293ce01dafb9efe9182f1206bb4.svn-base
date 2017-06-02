@@ -1,0 +1,273 @@
+/**/
+
+.kc-item img {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 1px 4px;
+    border: 1px solid #bebebe;
+}
+
+.kc-wrap > div:nth-child(2) {
+    display: none !important;
+}
+
+.index-tab {
+    width: 862px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.index-tab .four-link {
+    margin: 0 11px;
+    height: 82px;
+}
+
+.index-tab .four-link ul {
+    margin-left: -13px;
+}
+
+.index-tab .four-link li {
+    float: left;
+    margin-right: 13px;
+}
+
+.index-tab .four-link a {
+    display: block;
+    width: 93px;
+    height: 82px;
+    line-height: 82px;
+    font-size: 17px;
+    padding-left: 107px;
+    background: url(../images/index/four-link1.png) left center no-repeat;
+}
+
+.index-tab .four-link a:hover {
+    background-image: url(../images/index/four-link1-h.png);
+}
+
+.index-tab .four-link a.two {
+    background-image: url(../images/index/four-link2.png);
+}
+
+.index-tab .four-link a.two:hover {
+    background-image: url(../images/index/four-link2-h.png);
+}
+
+.index-tab .four-link a.three {
+    background-image: url(../images/index/four-link3.png);
+}
+
+.index-tab .four-link a.three:hover {
+    background-image: url(../images/index/four-link3-h.png);
+}
+
+.index-tab .four-link a.four {
+    background-image: url(../images/index/four-link4.png);
+}
+
+.index-tab .four-link a.four:hover {
+    background-image: url(../images/index/four-link4-h.png);
+}
+
+
+/*tab */
+
+.tabview {
+    margin-top: 45px;
+}
+
+.tabview-hd ul {
+    margin-right: -4px;
+}
+
+.tab-items {
+    float: left;
+    width: 284px;
+    height: 58px;
+    text-align: center;
+    line-height: 58px;
+    margin-right: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.tab-items>i {
+    position: absolute;
+    margin-top: -7px;
+    margin-left: 125px;
+    width: 28px;
+    display: none;
+    height: 20px;
+    background-image: url(../images/index/index-tab-sanjiao.png);
+}
+
+.tab-items.active>i {
+    display: block;
+}
+
+.tab-items.active {
+    background-color: #70c49a;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/*seven-link*/
+
+.seven-link li {
+    position: absolute;
+    width: 95px;
+    height: 120px;
+    margin-left: 69px;
+    margin-top: 34px;
+}
+
+.seven-link li.two {
+    margin-left: 159px;
+    margin-top: 174px;
+}
+
+.seven-link li.three {
+    margin-left: 270px;
+}
+
+.seven-link li.four {
+    margin-left: 360px;
+    margin-top: 174px;
+}
+
+.seven-link li.five {
+    margin-left: 470px;
+}
+
+.seven-link li.six {
+    margin-left: 582px;
+    margin-top: 174px;
+}
+
+.seven-link li.seven {
+    margin-left: 682px;
+}
+
+.seven-link a {
+    display: block;
+    width: 95px;
+    height: 120px;
+    line-height: 220px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.tabOne a {
+    background: url(../images/index/tabone-link1.png) center top no-repeat;
+}
+
+.tabOne a:hover {
+    background: url(../images/index/tabone-link1-h.png) center top no-repeat;
+}
+
+.tabTwo a {
+    background: url(../images/index/tabtwo-link1.png) center top no-repeat;
+}
+
+.tabTwo a:hover {
+    background: url(../images/index/tabtwo-link1-h.png) center top no-repeat;
+}
+
+.tabOne .two>a {
+    background-image: url(../images/index/tabone-link5.png);
+}
+
+.tabOne .three>a {
+    background-image: url(../images/index/tabone-link2.png);
+}
+
+.tabOne .four>a {
+    background-image: url(../images/index/tabone-link6.png);
+}
+
+.tabOne .five>a {
+    background-image: url(../images/index/tabone-link3.png);
+}
+
+.tabOne .six>a {
+    background-image: url(../images/index/tabone-link7.png);
+}
+
+.tabOne .seven>a {
+    background-image: url(../images/index/tabone-link4.png);
+}
+
+.tabOne .two>a:hover {
+    background-image: url(../images/index/tabone-link5-h.png);
+}
+
+.tabOne .three>a:hover {
+    background-image: url(../images/index/tabone-link2-h.png);
+}
+
+.tabOne .four>a:hover {
+    background-image: url(../images/index/tabone-link6-h.png);
+}
+
+.tabOne .five>a:hover {
+    background-image: url(../images/index/tabone-link3-h.png);
+}
+
+.tabOne .six>a:hover {
+    background-image: url(../images/index/tabone-link7-h.png);
+}
+
+.tabOne .seven>a:hover {
+    background-image: url(../images/index/tabone-link4-h.png);
+}
+
+.tabTwo .two>a {
+    background-image: url(../images/index/tabtwo-link5.png);
+}
+
+.tabTwo .three>a {
+    background-image: url(../images/index/tabtwo-link2.png);
+}
+
+.tabTwo .four>a {
+    background-image: url(../images/index/tabtwo-link6.png);
+}
+
+.tabTwo .five>a {
+    background-image: url(../images/index/tabtwo-link3.png);
+}
+
+.tabTwo .six>a {
+    background-image: url(../images/index/tabtwo-link7.png);
+}
+
+.tabTwo .seven>a {
+    background-image: url(../images/index/tabtwo-link4.png);
+}
+
+.tabTwo .two>a:hover {
+    background-image: url(../images/index/tabtwo-link5-h.png);
+}
+
+.tabTwo .three>a:hover {
+    background-image: url(../images/index/tabtwo-link2-h.png);
+}
+
+.tabTwo .four>a:hover {
+    background-image: url(../images/index/tabtwo-link6-h.png);
+}
+
+.tabTwo .five>a:hover {
+    background-image: url(../images/index/tabtwo-link3-h.png);
+}
+
+.tabTwo .six>a:hover {
+    background-image: url(../images/index/tabtwo-link7-h.png);
+}
+
+.tabTwo .seven>a:hover {
+    background-image: url(../images/index/tabtwo-link4-h.png);
+}

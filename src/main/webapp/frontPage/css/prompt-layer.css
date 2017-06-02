@@ -1,0 +1,11 @@
+.prompt-content {
+	padding: 28px 65px 40px 42px;
+	width: 611px;
+	height: 384px;
+	font-size: 13px;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.prompt-content>p {
+	line-height: 30px;
+}

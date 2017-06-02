@@ -1,0 +1,94 @@
+/**!
+ * [页面名称]:我的评价
+ * author: [高婧];
+ */
+
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+/* 我的办件 */
+.con-r {
+	width: 968px;
+	height: 804px;
+}
+.consultation-hd {
+    height: 38px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.small-btn {
+	margin-right: 3px;
+}
+.consultation-count {
+    margin-top: 8px;
+}
+.consultation-num {
+    color: #e01c1c;
+}
+
+
+
+/* 办件列表 */
+.item-list {
+	margin-bottom: 50px;
+}
+.dothing-item {
+	border: 1px solid #d4d4d4;
+	margin-top: 10px;
+}
+.dothing-title {
+	padding: 0 17px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #d4d4d4;
+	background-color: #f4f4f4;
+}
+.application-time {
+	margin-right: 16px;
+}
+.dothing-con {
+	padding: 18px 20px 12px 16px;
+}
+.dothing-con>p {
+	margin-bottom: 13px;
+}
+.evaluation {
+	color: #0000ff;
+	cursor: pointer;
+}
+.item-list .distance {
+	margin-right: 196px;
+}
+.satisfaction {
+	border-top: 1px solid #d4d4d4;
+}
+.satisfaction>p {
+	padding-top: 13px;
+}
+.distance-left {
+	margin-left: 13px;
+}
+
+.appointment-null {
+	display: none;
+	text-align: center;
+}
+.appointment-null p {
+	color: #666;
+	font-size: 17px;
+}
+.appointment-null img {
+	width: 258px;
+	height: 250px;
+	margin-top: 95px;
+}
+
+
+
+

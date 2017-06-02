@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/confirm-appointment.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>确认预约</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">政务大厅</a> &gt; <a href="">个人办事</a> &gt; <a href="">文体教育</a> &gt; <span class="now-loc">在线预约</span>
+                </div>
+
+                <div class="index-content clearfix">
+                    <!-- 左侧预约进度条 -->
+                    <ul class="progress-bar l">
+                        <li><span class="line-edge"></span></li>
+                        <li class="completed">
+                            <span class="step">1</span>
+                            <p>预约时间</p>
+                        </li>
+                        <li><span class="line-middle"></span></li>
+                        <li class="completed">
+                            <span class="step">2</span>
+                            <p>确认预约</p>
+                        </li>
+                        <li><span class="line-middle"></span></li>
+                        <li>
+                            <span class="step">3</span>
+                            <p>完成</p>
+                        </li>
+                        <li><span class="line-edge"></span></li>
+                    </ul>
+                    <!-- 右侧确认预约 -->
+                    <div class="booking-info l">
+                        <div class="info-box">
+                            <p class="check">请核实一下您的预约信息：</p>
+                            <!-- 表格 -->
+                            <table class="info">
+                                <tr>
+                                    <td class="matters-name">预约姓名</td>
+                                    <td class="matters-info">王凯</td>
+                                    <td class="matters-name">联系方式</td>
+                                    <td class="matters-info">1831564556</td>
+                                </tr>
+                                <tr>
+                                    <td class="matters-name">身份证号</td>
+                                    <td class="matters-info">322928910919127728</td>
+                                    <td class="matters-name"></td>
+                                    <td class="matters-info"></td>
+                                </tr>
+                                <tr>
+                                    <td class="matters-name">预约事项</td>
+                                    <td class="matters-info">民办职业培训学校的设立审批民办职业培训学校的设立审批</td>
+                                    <td class="matters-name">事项编码</td>
+                                    <td class="matters-info">62232323245785744688</td>
+                                </tr>
+                                <tr>
+                                    <td class="matters-name">预约时间</td>
+                                    <td class="matters-info">2017年03月03日 09：00 - 10：00</td>
+                                    <td class="matters-name"></td>
+                                    <td class="matters-info"></td>
+                                </tr>
+                            </table>
+                            <!-- 按钮 -->
+                            <div class="buttons">
+                                <button class="grey-btnStyle l">确认预约</button>
+                                <button class="cancel-btnStyle r" id="cancel">取消预约</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/myTab.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/confirm-appointment.js"></script>
+</body>
+
+</html>

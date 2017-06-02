@@ -1,0 +1,58 @@
+.evaluation-layer1 {
+    width: 612px;
+    height: 342px;
+}
+
+.layer-box {
+    padding: 38px 0 0 66px;
+}
+
+.evaluation-item {
+    margin-bottom: 18px;
+}
+
+.evaluation-label {
+    display: inline-block;
+    width: 66px;
+}
+input[type='radio'] {
+	display: none;
+}
+.radio-label {
+	padding-left: 20px;
+	margin-right: 16px;
+	margin-left: -4px;
+    background: url(../images/userCenter/radio.png) no-repeat left center;
+    cursor: pointer;
+}
+.radio-chk {
+	background: url(../images/userCenter/radio-chk.png) no-repeat left center;
+}
+.other {
+    vertical-align: top;
+}
+
+.textarea {
+    width: 398px;
+    height: 114px;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    resize: none;
+    margin-left: -4px;
+}
+
+.btn-submit {
+    width: 126px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    background-color: #70c49a;
+    margin: 0 0 0 66px;
+    border: 0;
+    cursor: pointer;
+}
+.btn-submit:hover {
+	background-color: #5ab085;
+}

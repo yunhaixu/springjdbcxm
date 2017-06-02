@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../js/libs/chosen/chosen.css">
+    <link rel="stylesheet" href="../../css/item-detail.css">
+    <link rel="stylesheet" href="../../css/mricode.pagination.css">
+    <link rel="stylesheet" href="../../css/my-appointment.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>我的预约</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <!-- 当前位置 -->
+            <div class="now-position">
+                当前位置：<a href="">首页</a> &gt; <a href="">用户中心</a> &gt; <a href="">办事服务</a> &gt; <span class="now-loc">我的预约</span>
+            </div>
+            <div class="userCenter-main">
+                <div class="center-nav clearfix">
+                    <span class="name">会飞的小鱼</span>
+                    <ul class="nav clearfix">
+                        <li>
+                            <a href="">主页</a>
+                        </li>
+                        <li>
+                            <a class="active" href="">办件服务</a>
+                        </li>
+                        <li>
+                            <a href="">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="">我的证据</a>
+                        </li>
+                    </ul>
+                    <div class="msg-loginOut clearfix">
+                        <a href="javascript:;" class="msg">消息<i>18</i></a>
+                        <a href="javascript:;" class="loginOut">注销</a>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="inner-content clearfix">
+                    <ul class="nav-l">
+                        <li class="nav-item"><a href="#">我的办件</a></li>
+                        <li class="nav-item cur-nav"><a href="#">我的预约</a></li>
+                        <li class="nav-item"><a href="#">我的咨询</a></li>
+                        <li class="nav-item"><a href="#">我的投诉</a></li>
+                        <li class="nav-item"><a href="#">我的收藏</a></li>
+                        <li class="nav-item"><a href="#">我的评价</a></li>
+                    </ul>
+                    <!-- 各个页面内容 -->
+                    <div class="con-r">
+                        <!-- 没有任何预约事项时显示 -->
+                        <div class="appointment-null">
+                            <img src="../../images/userCenter/no-item.png" class="img" />
+                            <p>抱歉，您还没有任何预约事项。</p>
+                        </div>
+                        <div class="appointment-con">
+                            <div class="appointment-hd clearfix" id="btnCon">
+                                <button class="small-btn all-btn">全部</button>
+                                <button class="small-btn all-btn">预约代办</button>
+                                <button class="small-btn back-btn">历史预约</button>
+                                <p class="appointment-count r">(共<span class="appointment-num">13</span>个办件事项)</p>
+                            </div>
+                            <div class="content-main">
+                                <!-- 部门选择、办件编号 -->
+                                <ul class="choose-box clearfix">
+                                    <li class="operate-item clearfix">
+                                        <span class="operate-name l">办理部门：</span>
+                                        <select data-placeholder="- 请选择 -" id="departmentSelect" class="department l">
+                                            <option value=""></option>
+                                            <option value="1">交通局</option>
+                                            <option value="2">交通局</option>
+                                            <option value="3">交通局</option>
+                                        </select>
+                                    </li>
+                                    <li class="operate-item clearfix">
+                                        <span class="operate-name l">事项编号：</span>
+                                        <div class="search-con l clearfix">
+                                            <input type="text" class="int-search l" />
+                                            <span class="btn-search r"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- 预约列表 -->
+                                <div class="item-box">
+                                    <ul class="appointment-list">
+                                        <li class="appointment-item">
+                                            <div class="appointment-info clearfix">
+                                                <span class="appointment-text">事项名称：道路客货运输经营（危险货物运输除外）驾驶人员从业资格的许可</span>
+                                                <span class="appointment-cancel r">取消预约</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">事项编号：123456</span>
+                                                <span class="info-item r">办理部门：534342</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">预约时间：2016-1-12 9:00~12：00</span>
+                                                <span class="info-item r">窗口电话：534342</span>
+                                            </div>
+                                        </li>
+                                        <li class="appointment-item">
+                                            <div class="appointment-info clearfix">
+                                                <span class="appointment-text">事项名称：道路客货运输经营（危险货物运输除外）驾驶人员从业资格的许可</span>
+                                                <span class="appointment-unfinished r">预约未办理</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">事项编号：123456</span>
+                                                <span class="info-item r">办理部门：534342</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">预约时间：2016-1-12 9:00~12：00</span>
+                                                <span class="info-item r">窗口电话：534342</span>
+                                            </div>
+                                        </li>
+                                        <li class="appointment-item">
+                                            <div class="appointment-info clearfix">
+                                                <span class="appointment-text">事项名称：道路客货运输经营（危险货物运输除外）驾驶人员从业资格的许可</span>
+                                                <span class="appointment-finished r">已办理</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">事项编号：123456</span>
+                                                <span class="info-item r">办理部门：534342</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">预约时间：2016-1-12 9:00~12：00</span>
+                                                <span class="info-item r">窗口电话：534342</span>
+                                            </div>
+                                        </li>
+                                        <li class="appointment-item">
+                                            <div class="appointment-info clearfix">
+                                                <span class="appointment-text">事项名称：道路客货运输经营（危险货物运输除外）驾驶人员从业资格的许可</span>
+                                                <span class="appointment-cancel r">取消预约</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">事项编号：123456</span>
+                                                <span class="info-item r">办理部门：534342</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">预约时间：2016-1-12 9:00~12：00</span>
+                                                <span class="info-item r">窗口电话：534342</span>
+                                            </div>
+                                        </li>
+                                        <li class="appointment-item">
+                                            <div class="appointment-info clearfix">
+                                                <span class="appointment-text">事项名称：道路客货运输经营（危险货物运输除外）驾驶人员从业资格的许可</span>
+                                                <span class="appointment-unfinished r">预约未办理</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">事项编号：123456</span>
+                                                <span class="info-item r">办理部门：534342</span>
+                                            </div>
+                                            <div class="appointment-info clearfix">
+                                                <span class="info-item l">预约时间：2016-1-12 9:00~12：00</span>
+                                                <span class="info-item r">窗口电话：534342</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 分页 -->
+                                    <div class="pagelist-mricode clearfix" id="pager">分页</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/chosen/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/mricode.pagination.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/my-appointment.js"></script>
+</body>
+
+</html>

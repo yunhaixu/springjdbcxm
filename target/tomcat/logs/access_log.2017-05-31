@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [31/May/2017:11:36:33 +0800] "GET /springjdbcxm HTTP/1.1" 302 - http-bio-8218-exec-1 0
+0:0:0:0:0:0:0:1 - - [31/May/2017:11:36:33 +0800] "GET /springjdbcxm/css/webuploader.css HTTP/1.1" 200 515 http-bio-8218-exec-2 24
+0:0:0:0:0:0:0:1 - - [31/May/2017:11:36:33 +0800] "GET /springjdbcxm/ HTTP/1.1" 200 3491 http-bio-8218-exec-3 47
+0:0:0:0:0:0:0:1 - - [31/May/2017:11:36:34 +0800] "GET /springjdbcxm/frontPage/js/libs/jquery-1.11.0.min.js HTTP/1.1" 200 96383 http-bio-8218-exec-6 12
+0:0:0:0:0:0:0:1 - - [31/May/2017:11:36:34 +0800] "GET /springjdbcxm/js/webuploader.js HTTP/1.1" 200 280424 http-bio-8218-exec-4 19
+0:0:0:0:0:0:0:1 - - [31/May/2017:11:36:34 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8218-exec-8 0

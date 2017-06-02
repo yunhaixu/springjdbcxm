@@ -1,0 +1,290 @@
+/**!
+ * [页面名称]:在线预约
+ * author: [陈轩];
+ */
+
+
+/* 左侧预约进度条 */
+
+.progress-bar {
+    padding-top: 40px;
+    width: 130px;
+    text-align: center;
+}
+
+.progress-bar li {
+    line-height: 25px;
+}
+
+.line-edge {
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    border-left: 1px solid #dbdbdb;
+}
+
+.line-middle {
+    display: inline-block;
+    width: 1px;
+    height: 85px;
+    border-left: 1px solid #dbdbdb;
+}
+
+.step {
+    padding-left: 1px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    background: url("../images/gov-hall/step-bg.png") no-repeat center;
+}
+
+.completed {
+    color: #39ab6c;
+}
+
+.completed .step {
+    color: #fff;
+    background: url("../images/gov-hall/completed-step-bg.png") no-repeat center;
+}
+
+
+/* 右侧预约成功提醒 */
+
+.booking-success {
+    padding-top: 33px;
+    margin-left: 20px;
+    width: 840px;
+    height: 467px;
+    overflow: auto;
+}
+
+.booking-success.pt40 {
+    padding-top: 32px;
+}
+
+.booking-success .success {
+    margin-top: 75px;
+    margin-left: 100px;
+    width: 660px;
+}
+
+.success-text {
+    width: 100%;
+    color: #e77918;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.success-content {
+    color: #333;
+    text-indent: 28px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px
+}
+
+.success-content .matters,
+.success-content .mine {
+    color: #e77918;
+}
+
+.notice-items {
+    margin-top: 70px;
+    margin-left: 120px;
+    width: 648px;
+}
+
+.notice-title {
+    color: #e77918;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.notice-items li {
+    line-height: 30px;
+}
+
+
+/*step2 表格快*/
+
+.step-head {
+    height: 28px;
+    margin-top: 25px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.step-head>h5 {
+    float: left;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 2px;
+    margin-top: -1px;
+    border-bottom: 2px solid #70c49a;
+}
+
+.step-body table {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.step-body th {
+    height: 32px;
+    background-color: #ebf6f0;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+}
+
+.step-body td {
+    height: 32px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+}
+
+.three-btn {
+    width: 550px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.return-btnStyle,
+.grey-btnStyle {
+    margin-right: 20px;
+}
+
+.three-btn>button {
+    float: left;
+}
+
+.fill-btn,
+.download-btn,
+.upload-btn {
+    color: #009241;
+    cursor: pointer;
+}
+
+/*step1*/
+
+.appoint-type {
+    background: url("../images/gov-hall/goval-hdBg2.png") no-repeat scroll left center;
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+.appoint-type .bold {
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 4px;
+	font-weight: bold;
+}
+.step-head a {
+	float: right;
+	font-size: 15px;
+	line-height: 28px;
+	margin-left: 30px;
+	text-decoration: underline;
+}
+
+/*表单*/
+.input-row {
+    margin-bottom: 9px;
+    margin-left: 80px;
+}
+.input-row.mt20 {
+	margin-top: 20px;
+}
+.input-row>label {
+    float: left;
+    width: 68px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+
+.input-row>input {
+    float: left;
+    margin-left: 16px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 20px;
+    width: 305px;
+    font-size: 13px;
+    border: 1px solid #d2d2d2;
+}
+
+.tip {
+	color: #666;
+	margin-left: 165px;
+	margin-bottom: 15px;
+	font-size: 12px;
+}
+
+.input-row>.chosensel {
+    float: left;
+    margin-right: 15px;
+    height: 34px;
+    line-height: 34px;
+    width: 95px;
+    font-size: 13px;
+    border: 1px solid #d3d3d3;
+}
+.input-row>.line-text {
+	float: left;
+	line-height: 40px;
+	margin-right: 13px;
+	margin-left: 7px;
+	font-size: 13px;
+}
+.input-row>.no-null {
+	float: left;
+	margin-left: 16px;
+	line-height: 40px;
+	color: #d63333;
+}
+.mr16 {
+	margin-right: 16px;
+}
+.chosen-container-single .chosen-single {
+	height: 38px;
+	line-height: 38px;
+}
+
+.two-btn {
+	margin-left: 180px;
+	padding-top: 20px;
+	width:365px;
+}
+
+.height376 {
+	padding-top: 20px;
+	height: 330px;
+	overflow: hidden;
+}
+
+.material-hd {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.mr30 {
+    margin-right: 30px;
+}
+.table-slide {
+    float: right;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background: url(../images/gov-hall/table-solidbg1.png) center no-repeat;
+}
+.table-slide.down {
+    background-image: url(../images/gov-hall/table-solidbg2.png);
+}
+
+.input-row>.chosen-container {
+    float: left;
+}

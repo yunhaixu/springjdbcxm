@@ -1,0 +1,73 @@
+/**!
+ * [页面名称]:中心动态
+ * author: [高婧];
+ */
+.content .right-content {
+	height: 549px;
+}
+.index-content {
+	width: 994px;
+	box-sizing: border-box;
+}
+.dynamic-content {
+	padding: 0 57px 10px;
+	border-bottom: 1px solid #d4d4d4;
+}
+.dynamic-title {
+	text-align: center;
+}
+.dynamic-title h2 {
+	margin-top: 15px;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+}
+.dynamic-title .info {
+	margin: 26px 0 54px;
+	color: #666;
+}
+.info .distance {
+	margin-right: 52px;
+}
+.dynamic-detail p {
+	margin-bottom: 25px;
+	line-height: 26px;
+	font-size: 15px;
+	text-indent: 34px;
+}
+
+/* 分享 */
+.operate {
+	margin-top: 20px;
+	padding: 0 57px;
+}
+.share {
+	height: 21px;
+	line-height: 21px;
+}
+.share .icon {
+	margin-left: 10px;
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+}
+.wechat {
+	background: url("../images/gov-hall/weixin.png") no-repeat;
+}
+.microblog {
+	background: url("../images/gov-hall/weibo.png") no-repeat;
+}
+.person {
+	background: url("../images/gov-hall/renren.png") no-repeat;
+}
+.add {
+	border: 0;
+	background: url("../images/gov-hall/add.png") no-repeat;
+	cursor: pointer;
+}
+.deal {
+	width: 74px; 
+}
+.deal span {
+	cursor: pointer;
+}

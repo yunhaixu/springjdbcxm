@@ -1,0 +1,85 @@
+/**!
+ * [页面名称]:服务百科
+ * author: [陈轩];
+ */
+/**/
+.index-content .search-block {
+    float: none;
+    margin: 0 auto;
+    height: 32px;
+    width: 370px;
+    border: 1px solid #dcdcdc;
+    border-radius: 32px;
+    background: none;
+}
+.index-content .search-block>input {
+    width: 300px;
+    height: 32px;
+    line-height: 32px;
+}
+.index-content .search-block>button {
+    width: 48px;
+    height: 32px;
+    background: url(../images/index/searchbtn-bg.png) center no-repeat;
+}
+/*problem-answer*/
+.problem-answer {
+	height: 455px;
+	overflow: hidden;
+	margin: 0 20px 0 30px;
+}
+
+.problem-type {
+    margin-top: 8px;
+    margin-bottom: 4px;
+	font-size: 17px;
+	font-weight: bold;
+}
+/**/
+.datalist-item {
+    padding-top: 6px;
+    padding-bottom: 11px;
+    border-bottom: 1px dashed #e0e0e0;
+    line-height: 35px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.datalist-item a {
+	color: #333;
+}
+.datalist-item p.answer,
+.datalist-item p.question {
+    padding-left: 30px;
+    background: url(../images/index/questionbg.png) left 10px no-repeat;
+}
+
+.datalist-item p.answer {
+    background-image: url(../images/index/answer-bg.png);
+    -ms-background-position-y: 3px;
+    background-position-y: 3px;
+}
+
+.datalist-item p.answer {
+    position: relative;
+    overflow: hidden;
+     color: #999;
+     line-height: 25px;
+}
+
+/*detail-slide*/
+.detail-slide {
+   /* position: absolute;*/
+   display: inline-block;
+    cursor: pointer;
+    width: 32px;
+    height: 24px;
+    vertical-align: middle;
+    background: url(../images/index/detail-up.png) center #fff;
+}
+
+.detail-slide.up {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/index/detail-dowm.png)
+}

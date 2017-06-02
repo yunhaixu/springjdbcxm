@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/booking-success.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>预约成功</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">政务大厅</a> &gt; <a href="">个人办事</a> &gt; <a href="">文体教育</a> &gt; <span class="now-loc">在线预约</span>
+                </div>
+
+                <div class="index-content clearfix">
+                    <!-- 左侧预约进度条 -->
+                    <ul class="progress-bar l">
+                        <li><span class="line-edge"></span></li>
+                        <li class="completed">
+                            <span class="step">1</span>
+                            <p>预约时间</p>
+                        </li>
+                        <li><span class="line-middle"></span></li>
+                        <li class="completed">
+                            <span class="step">2</span>
+                            <p>确认预约</p>
+                        </li>
+                        <li><span class="line-middle"></span></li>
+                        <li class="completed">
+                            <span class="step">3</span>
+                            <p>完成</p>
+                        </li>
+                        <li><span class="line-edge"></span></li>
+                    </ul>
+                    <!-- 右侧预约成功提醒 -->
+                    <div class="booking-success l">
+                        <div class="success">
+                            <h1 class="success-text">预约成功</h1>
+                            <div class="success-content">王凯先生，恭喜您预约了 <a class="matters" href="">2017年03月03日09：00-10：00 民办职业培训学校的设立审批</a> 事项。您可以在用户中心 <a class="mine" href="">我的预约</a> 中，查看预约信息。</div>
+                        </div>
+                        <ul class="notice-items">
+                            <li class="notice-title">注意：<li>
+                            <li>1. 请您在预约时间内去预约时间段内前往东湖新技术开发区政务服务大厅现场自助终端上刷证（二代身份证）打印号单，即可优先办理业务。</li>
+                            <li>2. 在预约时段内未能在大厅现场打印号单的，视为主动放弃预约申请。</li>
+                            <li>3. 申请人每天最多可预约2类事项，单一事项每天最多可预约2次。</li>
+                            <li>4. 若多次在线预约成功后没有办理，我们将限制您的在线预约功能的使用。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/myTab.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/item-guide.js"></script>
+</body>
+
+</html>

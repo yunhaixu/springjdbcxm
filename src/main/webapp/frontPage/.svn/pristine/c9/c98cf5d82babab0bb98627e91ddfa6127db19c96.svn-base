@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/service-encyclopedia.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>服务百科</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header"></div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <span class="now-loc">服务百科</span>
+                </div>
+                <div class="index-content">
+                    <div class="search-block clearfix">
+                        <input type="text" placeholder="请输入关键字">
+                        <button></button>
+                    </div>
+                    <div class="problem-answer niceScroll" id="problem-answer">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer"></div>
+    <!-- 模板 -->
+    <script id="template" type="x-tmpl-mustache">
+        {{#Info}}
+         <h5 class="problem-type">{{service-title}}</h5>
+         <ul class="datalist">
+         {{#Item}}
+          <li class="datalist-item">
+           <p class="question"><a href="#">{{question}}</a></p>
+           <p class="answer">{{answer}}</p>
+          </li>
+         {{/Item}}
+         </ul>
+        {{/Info}}
+    </script>
+
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+     <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+      <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/service-encyclopedia.js"></script>
+</body>
+
+</html>

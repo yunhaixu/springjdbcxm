@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/mricode.pagination.css">
+    <link rel="stylesheet" href="../../css/dynamic-content.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>中心动态</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <span class="now-loc">中心动态</span>
+                </div>
+                <div class="index-content">
+                    <!-- 动态内容 -->
+                    <div class="dynamic-content">
+                        <div class="dynamic-title">
+                            <h2 class="title">区市场监管局圆满完成去党代会食品安全保障工作</h2>
+                            <p class="info">
+                                <span class="distance">发布部门：市场监管局</span>
+                                <span class="distance">发布时间：2016-11-17</span>
+                                <span>阅读次数：30</span>
+                            </p>
+                        </div>
+                        <div class="dynamic-detail">
+                           <p>2016年中国共产党湖北省武汉市第十次代表大会于11月7-9日在市委党校召开。为切实保障会议代表及工作人员会议期间的用餐安全，武汉东湖高新区市场监督管理局严格遵守“安全第一”的原则，对供餐点进行前期食品安全评估和菜单审核，严格落实各项食品安全隐患排查工作，确保食品加工场所及所供应菜肴符合食品安全要求。</p>
+                           <p>会议期间，区局领导前往供餐点查看指导工作并关心勉励工作人员。保障人员严守食品安全底线，对食品原料验收、食品加工过程、食品留样等餐饮服务各环节开展全程监管，力保供餐活动按规定流程进行。</p>
+                           <p>本次党代会期间共出动执法人员10人次,完成食品原料瘦肉精、重金属、氰化物、农药残留以及食品中心温度、即食食品环节表面ATP测定等快速检测180项次，各项检测结果均合格，切实保障了2281人次与会人员的用餐食品安全。</p>
+                        </div>
+                    </div>
+                    <!-- 分享 -->
+                    <div class="operate clearfix">
+                        <p class="share l clearfix">
+                            <span class="l">分享：</span>
+                            <a class="wechat icon l" href="##"></a>
+                            <a class="microblog icon l" href="##"></a>
+                            <a class="person icon l" href="##"></a>
+                            <button class="add icon l" type="button"></button>
+                        </p>
+                        <p class="deal r clearfix">
+                            <span class="l">打印</span>
+                            <span class="r">关闭</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/tabview.js"></script>
+    <script type="text/javascript" src="../../js/libs/mricode.pagination.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/center-dynamic.js"></script>
+</body>
+
+</html>

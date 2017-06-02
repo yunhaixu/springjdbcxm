@@ -1,0 +1,45 @@
+.cancel-content {
+	width: 501px;
+	height: 236px;
+	padding-top: 14px;
+}
+
+.confirm-word {
+	text-align: center;
+	font-size: 15px;
+	line-height: 156px;
+}
+
+.grey-btnStyle {
+	margin-left: 75px;
+}
+.cancel-content .item {
+	color: #df3f3f;
+}
+
+.confirm-name {
+	margin: 0 40px;
+	line-height: 24px;
+	font-size: 16px;
+}
+.confirm-name.mt50 {
+	margin-top: 50px;
+}
+.appoint {
+	margin-top: 40px;
+}
+
+.appoint>button {
+	width: 125px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+}
+
+.appoint>.grey-btnStyle {
+	margin-left: 130px;
+	margin-right: 10px;
+}
+.appoint>.grey-btnStyle.mid {
+	margin-left: 195px;
+}

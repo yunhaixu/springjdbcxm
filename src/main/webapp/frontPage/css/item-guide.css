@@ -1,0 +1,217 @@
+/**!
+ * [页面名称]:办事指南
+ * author: [程姣姣];
+ */
+.index-content {
+	height: 480px;
+}
+/*con-top样式*/
+.con-top {
+	box-sizing: border-box;
+	width: 910px;
+	height: 86px;
+	border: 1px solid #ddd;
+	background-color: #f9f9f9;
+	margin: 14px 0 10px 42px;
+}
+.left-top {
+	float: left;
+	padding-left: 72px;
+	padding-top: 20px;
+	background: url(../images/gov-hall/goval-topBg.png) 20px 22px no-repeat;
+}
+.title {
+	font-size: 15px;
+	font-weight: bold;
+}
+.code {
+	font-size: 12px;
+	color: #999;
+	margin-top: 8px;
+}
+.right-top {
+	margin: 22px 19px 0 0;
+}
+.fun-item {
+	float: left;
+	font-size: 13px;
+	color: #818182;
+	cursor: pointer;
+}
+.consult {
+	padding-left: 30px;
+	background: url(../images/gov-hall/zixun.png) 0 no-repeat;
+}
+.apply {
+	padding-left: 21px;
+	background: url(../images/gov-hall/shenqing.png) 0 no-repeat;
+}
+.appointment {
+	padding-left: 23px;
+	background: url(../images/gov-hall/yuyue.png) 0 no-repeat;
+}
+.handle {
+	padding-left: 24px;
+	background: url(../images/gov-hall/banli.png) 0 no-repeat;
+}
+.line {
+	display: inline-block;
+	height: 14px;
+	border-left: 1px solid #818182;
+	vertical-align: middle;
+	margin: -2px 6px 0;
+}
+.operation {
+	text-align: right;
+	font-size: 13px;
+	color: #e77918;
+	margin-top: 16px;
+}
+.print,
+.collection {
+	cursor: pointer;
+}
+.collection {
+	margin-right: 16px;
+}
+
+/*tab样式*/
+.hd-items {
+	min-height: 368px;
+	width: 98px;
+	text-align: center;
+	margin-left: 42px;
+	margin-right: 10px;
+	border: 1px solid #dedede;
+	background-color: #f9f9f9;
+}
+.hd-item {
+	height: 55px;
+	line-height: 55px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.hd-item:hover,
+.hd-cur {
+	color: #fff;
+	background-color: #39ab6c;
+}
+.bd-item {
+	min-height: 368px
+}
+/*基本信息表格*/
+.base-table,
+.material-table {
+	width: 800px;
+	min-height: 370px;
+	border: 1px solid #dedede;
+}
+.base-tr,
+.material-hd-tr,
+.material-bd-tr {
+	line-height: 32px;
+	border-top: 1px solid #dbdbdb;
+}
+.field-td {
+	width: 100px;
+	background-color: #ebf6f0;
+	text-align: right;
+	padding-right: 20px;
+}
+.info-td {
+	padding-left: 24px;
+}
+.hall-distribution,
+.bus-map {
+	padding: 3px 7px;
+	border-radius: 2px;
+	background-color: #e5e5e5;
+	cursor: pointer;
+
+}
+.hall-distribution {
+	margin: 0 12px 0 44px;
+}
+.hall-distribution:hover,
+.bus-map:hover {
+	color: #339a61;
+	background-color: #ebf6f0;
+}
+.material-table {
+	min-height: auto;
+	text-align: center;
+	margin-top: 10px;
+}
+.material-hd-tr {
+	background-color: #ebf6f0;
+}
+.material-table td {
+	border-left: 1px solid #dbdbdb;
+}
+.material-name {
+	text-align: left;
+	padding-left: 24px;
+}
+.material-bd-tr img {
+	margin-top: 6px;
+	cursor: pointer;
+}
+.process {
+	width: 800px;
+}
+.process {
+	text-align: center;
+}
+/*下拉*/
+.situation-field {
+	vertical-align: middle;
+}
+.chosen-container-single .chosen-single {
+    width: 320px;
+}
+
+.chosen-container-single .chosen-drop {
+    width: 335px;
+}
+.page {
+	margin-top: 10px;
+}
+/*常见问题*/
+.problem-list {
+	width: 800px;
+}
+.problem-item {
+	display: inline-block;
+	width: 798px;
+	border: 1px solid #dedede;
+	margin-bottom: 10px;
+}
+.problem-hd {
+	height: 31px;
+	line-height: 31px;
+	padding: 0 20px 0 18px;
+	background-color: #e8f7ee;
+	border-bottom: 1px solid #dedede;
+}
+.ask,
+.answer {
+	color: #009241;
+	font-weight: bold;
+	margin-right: 20px;
+}
+.problem-text {
+	font-weight: bold;
+}
+.collect {
+	cursor: pointer;
+}
+.problem-bd {
+	padding: 12px 20px 15px 18px;
+}
+.answer {
+	line-height: 24px;
+}
+.answer-text {
+	width: 720px;
+	line-height: 24px;
+}

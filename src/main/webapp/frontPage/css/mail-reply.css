@@ -1,0 +1,79 @@
+.con-hd {
+	height: 25px;
+	margin: 43px 0 29px 55px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #009241;
+	padding-left: 35px;
+	background: url(../images/gov-hall/goval-hdBg.png) 0 center no-repeat;
+}
+
+.reply-detail {
+	width: 915px;
+}
+
+.question-title {
+	position: relative;
+	border-bottom: 1px solid #e3e3e3;
+	padding-top: 16px;
+	padding-bottom: 60px;
+	margin-left: 58px;
+	background: url(../images/gov-hall/Q.png) 0 21px no-repeat;
+}
+
+.question-title>p,
+.a-detail {
+	padding-left: 76px;
+}
+
+.q-name {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.q-detail,
+.a-detail {
+	font-size: 13px;
+	line-height: 26px;
+}
+
+.q-time,
+.a-time {
+	position: absolute;
+	font-size: 13px;
+	right: 13px;
+	bottom: 20px;
+}
+
+.replay-info {
+	width: 857px;
+	min-height: 168px;
+	margin-left: 58px;
+}
+
+.no-reply {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 168px;
+	text-align: center;
+}
+
+.no-reply>span {
+	color: #e77918;
+}
+
+.is-reply>.no-reply {
+	display: none;
+}
+
+.isnot-reply>.reply-detail {
+	display: none;
+}
+
+.reply-content {
+	position: relative;
+	background: url(../images/gov-hall/A.png) 0 47px no-repeat;
+	padding-bottom: 60px;
+	padding-top: 43px;
+}

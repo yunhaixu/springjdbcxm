@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/gov-hall.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>政务大厅</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <span class="now-loc">政务大厅</span>
+                </div>
+                <div class="index-content">
+                    <div class="con-title clearfix">
+                        <div class="title-l">
+                            <p>新房办证</p>
+                            <span>立等可取</span>
+                        </div>
+                        <div class="title-r">
+                            <p>自武汉市推行不动产统一登记制度以来，不动产登记全面实施，但原来各部门已法发放的证书是继续有效的。所以不管是持有老证书，还是新证书，办理房产过户并不受影响。</p>
+                        </div>
+                    </div>
+                    <ul class="con-hd-area" id="hd-ul">
+                        <li class="hd-item hd-cur">
+                            <p class="step-number">1</p>
+                            <p class="step-name">办理条件</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">2</p>
+                            <p class="step-name">我要办理</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">3</p>
+                            <p class="step-name">准备材料</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">4</p>
+                            <p class="step-name">办理流程</p>
+                        </li>
+                        <li class="hd-item">
+                            <p class="step-number">5</p>
+                            <p class="step-name">领取证件</p>
+                        </li>
+                    </ul>
+                    <ul class="con-bd-area" id="con-ul">
+                        <li class="bd-item niceScroll">
+                            <p>1、办理之前，需要确认好开发商已办理好初始登记，并获取白色的《不动产权属证明书》或者绿色的《商品房权属证明书》或者绿色的《商品房初始登记证明》（其中一项即可）；</p>
+                            <p>2、2005年1月1日后签订购房合同并已备案的无抵押商品房办证，且不属于托管、插花地带及存在历史遗留问题的房屋；</p>
+                            <p>3、每日16:00前完成窗口收件流程的，可实现当日可取。</p>
+                        </li>
+                        <li class="bd-item clearfix niceScroll">
+                            <div class="todo-type">
+                                请您选择您现在持有以下哪一种证书：
+                            </div>
+                            <div class="todo-radio" id="todo-radio">
+                                <label>
+                                    <input name="word" type="radio" checked="checked" value="0" />白色的《不动产权证明书》</label>
+                                <label>
+                                    <input name="word" type="radio" value="1" />绿色的《商品房权属证明书》或《商品房初始登记证明》</label>
+                            </div>
+                            <button type="button" class="grey-btnStyle" id="markSure">确认</button>
+                        </li>
+                        <!-- 准备材料 -->
+                        <li class="bd-item niceScroll">
+                            <div class="ready-info">
+                                <h2>
+                                    <span class="l">卖方准备</span>
+                                    <p class="r slide-arrow"></p>
+                                </h2>
+                                <div class="detail-txt">
+                                    <p>1.《不动产权证书》（原件) <br/>• 2. 家庭成员的身份证明、婚姻状况证明、户籍证明（原件、复印件各1份） <br/>• 3..宗地图、房产分户图（复印件2份） <br/>备注: <br/>①家庭成员：包括购房人、购房人的配偶和未成年的子女。 <br/>②身份证明：境内自然人：居民身份证，未成年人的户口簿或居民身份证； <br/>现役军人：军官证、士兵证、文职干部证、学员证或居民身份证等； <br/>香港、澳门特别行政区自然人：居民身份证或香港、澳门特别行政区护照，港澳居民来往内地通行证、港澳同胞回乡证； <br/>台湾地区自然人：台湾居民来往大陆通行证或台胞证；
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ready-info">
+                                <h2>
+                                    <span class="l">咨询台领取</span>
+                                    <p class="r slide-arrow"></p>
+                                </h2>
+                                <div class="detail-txt">
+                                    <p>咨询台领取内容</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 办理流程 -->
+                        <li class="bd-item niceScroll">
+                            <ul class="process-info">
+                                <li class="process-item">
+                                    <h2 class="process-hd clearfix">
+                                        <label>1</label>
+                                        <span>不动产交易</span>
+                                        <p class="r slide-arrow2"></p>
+                                    </h2>
+                                    <p class="process-txt">B区咨询台领取“当日可取”业务号，B08窗口办理“不动产交易”，领取《房屋交易协税信息单》。</p>
+                                </li>
+                                <li class="process-item">
+                                    <h2 class="process-hd clearfix">
+                                        <label>2</label>
+                                        <span>缴税</span>
+                                        <p class="r slide-arrow2"></p>
+                                    </h2>
+                                    <p class="process-txt">至地税缴税窗口缴费，领取缴费证明。</p>
+                                </li>
+                                <li class="process-item">
+                                    <h2 class="process-hd clearfix">
+                                        <label>3</label>
+                                        <span>领取《房屋交易告知书》</span>
+                                        <p class="r slide-arrow2"></p>
+                                    </h2>
+                                    <p class="process-txt">返回至B08窗口领取《房屋交易告知书》。</p>
+                                </li>
+                                <li class="process-item">
+                                    <h2 class="process-hd clearfix">
+                                        <label>4</label>
+                                        <span>不动产登记</span>
+                                        <p class="r slide-arrow2"></p>
+                                    </h2>
+                                    <p class="process-txt">内容</p>
+                                </li>
+                                <li class="process-item">
+                                    <h2 class="process-hd clearfix">
+                                        <label>5</label>
+                                        <span>缴费</span>
+                                        <p class="r slide-arrow2"></p>
+                                    </h2>
+                                    <p class="process-txt">内容</p>
+                                </li>
+                                <li class="process-item">
+                                    <h2 class="process-hd clearfix">
+                                        <label>6</label>
+                                        <span>信息录入</span>
+                                        <p class="r slide-arrow2"></p>
+                                    </h2>
+                                    <p class="process-txt">内容</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="bd-item niceScroll">
+                            5
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/myTab.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/gov-hall.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+.content .right-content {
+	height: 549px;
+}
+
+/* 左侧预约进度条 */
+.progress-bar {
+	padding-top: 40px;
+	width: 67px;
+	text-align: center;
+}
+.progress-bar li {
+	line-height: 25px;
+}
+.line-edge {
+	display: inline-block;
+	width: 1px;
+	height: 18px;
+	border-left: 1px solid #dbdbdb;
+}
+.line-middle {
+	display: inline-block;
+	width: 1px;
+	height: 76px;
+	border-left: 1px solid #dbdbdb;
+}
+.step {
+	padding-left: 1px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	background: url("../images/gov-hall/step-bg.png") no-repeat center;
+}
+.completed {
+	color: #39ab6c;
+}
+.completed .step {
+	color: #fff;
+	background: url("../images/gov-hall/completed-step-bg.png") no-repeat center;
+}
+
+/* 右侧预约时间 */
+.appointment-time {
+	margin-top: 11px;
+	width: 935px;
+	height: 467px;
+	overflow: auto;
+}
+.appointment-time {
+	margin-left: 7px;
+	width: 914px;
+}
+.appointment-time .item {
+	margin-top: 21px;
+}
+.item .item-logo {
+	margin-right: 18px;
+}
+.item-text .item-name {
+	margin-bottom: 6px;
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+}
+.item-text .item-num {
+	color: #999;
+	font-size: 12px;
+}
+.prompt {
+	margin-right: 67px;
+	width: 88px;
+	height: 34px;
+	line-height: 37px;
+	color: #fff;
+	border: 0;
+	background-color: #e77918;
+	cursor: pointer;
+}
+.prompt:hover {
+	background-color: #df7211;
+}
+.choose-time {
+	margin: 28px 0;
+}
+.time-table {
+	text-align: center;
+}
+
+.time-table td {
+	height: 32px;
+	width: 140px;
+	border: 1px solid #dedede;
+}
+.time-table .time {
+	background-color: #ebf6f0;
+}
+.time-table .item:hover {
+	position: absolute;
+	margin-top: -1px;
+	margin-left: -1px;
+	line-height: 32px;
+	z-index:101;
+	border: 1px solid #e9ae30;
+}
+.time-table .item-false {
+	color: #999;
+}
+.submit {
+	margin: 30px 0 0 369px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/data-analysis.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>数据分析</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <div class="data-analysis">
+            <div class="analysis-head clearfix">
+                <h5>取号大数据分析</h5>
+                <ul class="head-tab clearfix">
+                    <li>
+                        <!-- <a href="" class="active"></a> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="analysis-body niceScroll clearfix">
+                <div class="left l">
+                    <div class="order-analyst basket">
+                        <h2 class="basket-title">预约叫号分析</h2>
+                        <div class="count-total">
+                            <div class="bar clearfix">
+                                <span class="total l">2017年总预约取号量</span>
+                                <span class="num r"><span>2000</span>条</span>
+                            </div>
+                            <div class="bar">
+                                <span class="total l">同比上一年增长</span>
+                                <span class="num r"><span>20%</span></span>
+                            </div>
+                        </div>
+                        <div class="pie-box">
+                            <div class="pie" id="pie">
+                            </div>
+                            <div class="pie-data">
+                                <span class="data-style" id="wechart"></span>
+                                <span class="data-style" id="app"></span>
+                                <span class="data-style" id="website"></span>
+                            </div>
+                        </div>
+                        <div class="bar-call">
+                            <h2 class="basket-title">预约叫号增加值</h2>
+                            <div class="bar01" id="bar01"></div>
+                        </div>
+                    </div>
+                    <div class="order-time-analyst basket clearfix">
+                        <h2 class="basket-title">预约取号时段分析</h2>
+                        <div class="area l" id="area">
+                        </div>
+                        <div class="order-bac l">
+                            <img src="images/analyst/handle.png">
+                            <span class="handle-txt-top">上午预约<br/>下午取号办事</span>
+                            <span class="handle-txt-bottom">一切尽在掌握中</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right r">
+                    <div class="week-compress basket">
+                        <h2 class="basket-title">每周取号量汇总对比</h2>
+                        <div class="bar02" id="bar02">
+                        </div>
+                    </div>
+                    <div class="month-compress basket">
+                        <h2 class="basket-title">每月取号量汇总对比</h2>
+                        <div class="bar03" id="bar03">
+                        </div>
+                    </div>
+                    <div class="month-analyst basket">
+                        <h2 class="basket-title">本月取号时段分析</h2>
+                        <div class="bar04" id="bar04">
+                        </div>
+                    </div>
+                </div>
+                <div class="wd100 clearfix l">
+                    <div class="quarter-year basket">
+                        <h2 class="basket-title">季度取号量汇总分析</h2>
+                        <div class="bar05" id="bar05">
+                        </div>
+                    </div>
+                    <div class="radar-box basket">
+                        <h2 class="basket-title">来的早不如来的巧</h2>
+                        <div class="radar" id="radar">
+                        </div>
+                    </div>
+                    <div class="must-analyst basket">
+                        <h2 class="basket-title">“最”分析</h2>
+                        <img src="images/analyst/analyst.png" class="analyst-bac">
+                        <table class="must-analyst-content">
+                            <tr>
+                                <td class="left-title">最人气的季度：</td>
+                                <td class="title-content">三季度</td>
+                            </tr>
+                            <tr>
+                                <td class="left-title">最热闹的月份：</td>
+                                <td class="title-content">8月份</td>
+                            </tr>
+                            <tr>
+                                <td class="left-title">最繁忙的工作日：</td>
+                                <td class="title-content">周三</td>
+                            </tr>
+                            <tr>
+                                <td class="left-title">最拥挤的时段：</td>
+                                <td class="title-content">9:00-10:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer"></div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/echarts.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/data-analysis.js"></script>
+</body>
+
+</html>

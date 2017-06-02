@@ -1,0 +1,112 @@
+/**!
+ * [页面名称]:管理申请人
+ * author: [程姣姣];
+ */
+
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+/* 新增申请人 */
+.applicant-con {
+	padding: 18px 20px 14px 16px;
+}
+.applicant-item {
+	border: 1px solid #d4d4d4;
+	margin-bottom: 10px;
+}
+.applicant-hd {
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #d4d4d4;
+	background-color: #f4f4f4;
+}
+.applicant-name {
+	margin-left: 16px;
+}
+.name {
+	font-weight: bold;
+}
+.applicant-modify {
+	padding-left: 25px;
+	background: url(../images/userCenter/modify.png) no-repeat 0;
+	cursor: pointer;
+}
+.applicant-delete {
+	padding-left: 25px;
+	margin: 0 20px;
+	background: url(../images/userCenter/trash.png) no-repeat 0;
+	cursor: pointer;
+}
+.applicant-modify:hover {
+	color: #71ad8e;
+	background: url(../images/userCenter/modify-hov.png) no-repeat 0;
+}
+.applicant-delete:hover {
+	color: #71ad8e;
+	background: url(../images/userCenter/trash-hov.png) no-repeat 0;
+}
+.info-item {
+	margin-bottom: 12px;
+}
+.info-item span {
+	display: inline-block;
+	width: 380px;
+
+}
+.default,
+.set-default {
+	line-height: 56px;
+	color: #e77918;
+	font-size: 17px;
+	margin-right: 20px;
+}
+.tab-hd {
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 3px;
+	margin: 30px 0 20px 0;
+}
+.tab-target {
+	font-size: 15px;
+	padding: 0 16px 13px;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+}
+.cur {
+	font-weight: bold;
+	border-bottom-color: #70c49a;
+}
+.tab-bd {
+	min-height: 578px;
+}
+.btn-create {
+	padding: 6px 15px;
+	border: 0;
+	border: 1px solid #d4d4d4;
+	padding-left: 32px;
+	background: #f4f4f4 url(../images/userCenter/create.png) no-repeat 12px center;
+	outline: none;
+	cursor: pointer;
+}
+.btn-create:hover {
+	color: #fff;
+	border: 1px solid #5ab085;
+	background: #5ab085 url(../images/userCenter/create-hov.png) no-repeat 12px center;
+}
+.set-default {
+	line-height: 84px;
+	color: #333;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/window-tel.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>窗口电话</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <span class="now-loc">窗口电话</span>
+                </div>
+                <div class="index-content niceScroll">
+                    <table class="tel-table" id="table">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/x-template" id="tel-temp">
+        <tr>
+            <th class="th1">类型</th>
+            <th class="th2">咨询电话</th>
+            <th class="th3">监督电话</th>
+        </tr>
+        {{#telInfo}}
+        <tr>
+            <td>{{window}}</td>
+            <td>{{tel1}}</td>
+            <td>{{tel2}}</td>
+        </tr>
+        {{/telInfo}}
+    </script>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/window-tel.js"></script>
+</body>
+
+</html>

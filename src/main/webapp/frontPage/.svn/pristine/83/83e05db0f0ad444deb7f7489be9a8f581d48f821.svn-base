@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/hall-distribution.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>大厅分布</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <span class="now-loc">大厅分布</span>
+                </div>
+                <div class="index-content niceScroll">
+                    <!-- 请注意结构中的data-role属性，与样式无关，样式可自定义-->
+                    <div id="doc-tabs" class="tabview">
+                        <div class="tabview-hd" data-role="head">
+                            <ul class="clearfix">
+                                <li class="tab-item" data-role="tab" data-target="html">F1</li>
+                                <li class="tab-item ml15" data-role="tab" data-target="css">F2</li>
+                            </ul>
+                        </div>
+                        <div data-role="body">
+                            <div data-role="tab-content" data-id="html" class="tab-panel">
+                                <img src="../../images/index/A-B区.jpg" height="937" width="1524">
+                            </div>
+                            <div data-role="tab-content" data-id="css" class="tab-panel"> <img src="../../images/index/C-D区.jpg" height="937" width="1524"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/tabview.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/hall-distribution.js"></script>
+</body>
+
+</html>

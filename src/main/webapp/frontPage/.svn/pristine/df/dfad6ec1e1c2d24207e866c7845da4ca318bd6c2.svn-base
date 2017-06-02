@@ -1,0 +1,42 @@
+.prompt-layer {
+	width: 1000px;
+	height: 535px;
+	background-color: #fff;
+}
+.prompt-layer .header {
+	height: 39px;
+	line-height: 39px;
+	background-color: #f4f4f4;
+}
+.header .title {
+	margin-left: 22px;
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+}
+.header .close {
+	margin-top: 10px;
+	margin-right: 12px; 
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background: url("../images/gov-hall/close-btn.png") no-repeat;
+	cursor: pointer;
+}
+.prompt-layer .content {
+	padding: 30px 0 0 38px;
+}
+.prompt-layer .content > .title {
+	margin-bottom: 46px;
+	color: #333;
+	font-size: 17px;
+	font-weight: bold;
+}
+.content > .list {
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 48px;
+}
+.content > .list .list-item {
+	margin-bottom: 26px;
+}

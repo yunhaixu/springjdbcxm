@@ -1,0 +1,306 @@
+/**!
+ * [页面名称]:用户中心首页
+ * author: [陈轩];
+ */
+
+
+/*个人中心页面覆盖样式*/
+
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+
+/*内部内容*/
+
+.inner-content {
+    padding-top: 20px;
+}
+
+.nav-l {
+    float: left;
+    width: 150px;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+}
+
+.nav-item {
+    height: 60px;
+    margin: 0 9px;
+    border-bottom: 1px solid #d6d6d6;
+    line-height: 60px;
+}
+
+.nav-item.bb0 {
+    border-bottom: 0;
+}
+
+.nav-item>a {
+    display: block;
+    line-height: 60px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.nav-item.cur-nav>a,
+.nav-item>a:hover {
+    color: #5ab085;
+    font-weight: bold;
+}
+
+.con-r {
+    float: left;
+    width: 968px;
+    margin-left: 40px;
+}
+
+
+/*.con-hd*/
+
+.con-hd {
+    padding: 6px 0;
+    line-height: 16px;
+}
+
+.con-hd>h5 {
+    float: left;
+    padding-left: 11px;
+    color: #009241;
+    font-weight: bold;
+    font-size: 15px;
+    border-left: 4px solid #009241;
+}
+
+.con-hd>.tel {
+    float: right;
+    font-size: 13px;
+}
+
+
+/* 流程 */
+
+.step-flow {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+
+.step-item {
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border-top: 1px solid #d7d7d7;
+    text-align: center;
+    font-size: 16px;
+}
+
+.step-item .num {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: -22px auto 0;
+    background-color: #d7d7d7;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.step-item .note {
+    display: block;
+    padding-top: 15px;
+    line-height: 26px;
+    color: #999;
+}
+
+.step-item.first:before,
+.step-item.last:before {
+    content: "";
+    top: -7px;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.step-item.first:before {
+    background-color: #5ab085;
+}
+
+.step-item.last:before {
+    background-color: #b6e3cc;
+}
+
+.step-item.last.cur:before {
+    background-color: #5ab085;
+}
+
+.step-item.first:before {
+    left: 0;
+}
+
+.step-item.last:before {
+    right: 0;
+}
+
+.step-item.cur {
+    border-top-color: #5ab085;
+}
+
+.step-item.cur .num {
+    background-color: #5ab085;
+    border: 6px solid #b6e3cc;
+    margin-top: -28px;
+}
+
+.step-item.cur .note {
+    font-weight: bold;
+    color: #5ab085;
+    padding-top: 9px;
+}
+
+.step-item.cur:before,
+.step-item.cur:before {
+    background-color: #5ab085;
+}
+
+
+/*authen-row*/
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.authen-row {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.authen-row>.label {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 110px;
+    text-align: right;
+}
+
+.authen-row>input {
+    padding-left: 10px;
+    border: 1px solid #d5d5d5;
+}
+
+.authen-row>.text,
+.authen-row>.input1 {
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 6px;
+    width: 130px;
+}
+
+.authen-row>.input1 {
+    width: 120px;
+}
+
+.authen-row>.send-msg {
+    float: left;
+    height: 38px;
+    width: 110px;
+    line-height: 38px;
+    margin-left: 20px;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.authen-row>.send-msg:hover {
+    background-color: #b6e3cc;
+}
+
+.authen-btn-row {
+    margin: 280px 0 150px 0;
+}
+
+.grey-btnStyle {
+    display: block;
+    margin-left: 380px;
+}
+
+.authen-btn-row.mt180 {
+    margin-top: 180px;
+}
+.authen-btn-row.mt360 {
+    margin-top: 360px;
+}
+/*input-row*/
+
+.input-row {
+    margin-left: 190px;
+    font-size: 13px;
+}
+
+.input-row.ml270 {
+    margin-left: 270px;
+}
+
+.input-row>.label {
+    float: left;
+    width: 70px;
+    text-align: right;
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.input-row>.input2 {
+    padding-left: 10px;
+    border: 1px solid #d5d5d5;
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 10px;
+    width: 315px;
+}
+
+.strength-intro {
+    color: #666;
+}
+.strength {
+    margin: 10px 0;
+}
+.strength li {
+    float: left;
+    width: 58px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+}
+
+.strength li.weak {
+    background-color: #cf0b0b;
+}
+
+.strength li.mid {
+    background-color: #ff8523;
+}
+
+.strength li.strong {
+    background-color: #1da216;
+}
+
+.authen-form .success {
+    font-size: 17px;
+    padding-top: 15px;
+    text-align: center;
+}

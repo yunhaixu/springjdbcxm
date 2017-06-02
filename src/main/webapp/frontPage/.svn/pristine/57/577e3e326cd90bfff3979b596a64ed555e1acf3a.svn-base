@@ -1,0 +1,97 @@
+.con-top {
+	height: 25px;
+	color: #009241;
+	font-size: 17px;
+	font-weight: bold;
+	padding-left: 36px;
+	margin: 25px 0 28px 52px;
+	background: url('../images/gov-hall/goval-hdBg.png') no-repeat 0;
+}
+.con-body {
+	margin-left: 52px;
+}
+.operate-item {
+	float: left;
+	margin-right: 36px;
+}
+.operate-name {
+    line-height: 30px;
+	margin-right: 10px;
+}
+.department
+{
+    clear: both;
+    width: 100px;
+}
+
+/*日历插件样式*/
+.txt-date
+{
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    width: 122px;
+    background: url("../images/gov-hall/calendar.png") no-repeat scroll 96px center;
+}
+.datetimepicker thead tr:first-child th {
+    background-color: #0b9448;
+}
+.datetimepicker thead tr:first-child th.prev, 
+.datetimepicker thead tr:first-child th.next {
+    background: url("../images/gov-hall/calendar-arrow.png") center 0 no-repeat #0b9448;
+}
+.datetimepicker thead tr:first-child th.next {
+    background-position: center -50px;
+}
+.datetimepicker table tr td.active.active, .datetimepicker table tr td.active:hover.active {
+    background-color: #0b9448;
+}
+/*搜索*/
+.search-con {
+    width: 220px;
+    height: 28px;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.int-search {
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 6px;
+    border: 0;
+    outline: none;
+}
+.btn-search {
+    display: inline-block;
+    width: 44px;
+    height: 28px;
+    background: #71c49a url('../images/gov-hall/search-icon.png') no-repeat center;
+    cursor: pointer;
+}
+.btn-search:hover {
+    background-color: #65ba8f;
+}
+.table-con {
+    width: 950px;
+    height: 308px;
+    margin-top: 24px;
+}
+.show-table {
+    width: 915px;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+}
+.show-hd th {
+    text-align: center;
+    height: 59px;
+    background-color: #e8f7ee;
+    border-left: 1px solid #d9d9d9;
+}
+.show-bd td {
+    height: 40px;
+    border-left: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+}

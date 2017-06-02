@@ -1,0 +1,123 @@
+/**!
+ * [页面名称]:我的预约
+ * author: [程姣姣];
+ */
+
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+/* 我的预约 */
+.con-r {
+	min-height: 665px;
+}
+.appointment-null {
+	display: none;
+	text-align: center;
+	color: #666;
+	font-size: 17px;
+}
+.img {
+	width: 258px;
+	height: 250px;
+	margin-top: 95px;
+}
+.appointment-hd {
+    height: 38px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.small-btn {
+	margin-right: 3px;
+}
+.appointment-count {
+    margin-top: 8px;
+}
+.appointment-num {
+    color: #e01c1c;
+}
+/*全部，预约代办按钮*/
+.active.all-btn,
+.active.done-btn {
+    color: #5ab085;
+    border-color: #5ab085;
+    background-color: #ebf6f1;
+}
+/*历史预约*/
+.active.back-btn {
+    color: #df3737;
+    border-color: #e3aaaa;
+    background-color: #f6ebeb;
+}
+.choose-box {
+	margin: 20px 0;
+}
+/* 部门下拉框 */
+.operate-item {
+	float: left;
+	margin-right: 36px;
+}
+.operate-name {
+    line-height: 30px;
+	margin-right: 10px;
+}
+.department
+{
+    clear: both;
+    width: 100px;
+}
+/* 搜索框 */
+.search-con {
+    width: 220px;
+    height: 28px;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.int-search {
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 8px;
+    border: 0;
+    outline: none;
+}
+.btn-search {
+    display: inline-block;
+    width: 44px;
+    height: 28px;
+    background: #71c49a url('../images/userCenter/search-icon.png') no-repeat center;
+    cursor: pointer;
+}
+.btn-search:hover {
+    background-color: #65ba8f;
+}
+/*咨询列表*/
+.appointment-list {
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.appointment-item {
+	margin-top: 10px;
+	padding: 10px 20px 5px 16px;
+	border: 1px solid #d4d4d4;
+	background-color: #f4f4f4;
+}
+.appointment-info {
+	margin-bottom: 10px;
+}
+.appointment-text {
+	font-weight: bold;
+}
+.appointment-cancel {
+	color: #0000ff;
+	margin-left: 94px;
+}
+.appointment-unfinished,
+.appointment-finished {
+	color: #999;
+}

@@ -1,0 +1,45 @@
+/*!
+ * 大厅分布
+ * author: chenxuan
+ */
+
+(function(win, $) {
+    var url = '../../json/hall1.json',
+        M = Mustache,
+        jsonData;
+    $content = $("#content"),
+        temp1 = $('#temp1').html(),
+        temp2 = $('#temp2').html(),
+        html = [];
+
+    var addList = function() {
+        $content.on('mouseover', 'li', function(e) {
+            var dataNum = this.getAttribute('data-num'),
+                $this = $(this),
+                $div = $this.closest("div"),
+                nowData = jsonData[dataNum];
+            if ($div.hasClass('bottom-area')) {
+                html.push(M.render(temp2, nowData));
+                $this.empty().append(dataNum + html);
+                var nowTipH = -($this.children('.hall-tip').height() + 70);
+                $this.children('.hall-tip').css('marginTop',nowTipH);
+                html = [];
+            } else {
+                html.push(M.render(temp1, nowData));
+                $this.empty().append(dataNum + html);
+                html = [];
+            }
+
+        })
+    };
+
+    Util.ajax({
+        url: url,
+        success: function(data) {
+            jsonData = data;
+            addList();
+        }
+    });
+
+
+}(this, jQuery));

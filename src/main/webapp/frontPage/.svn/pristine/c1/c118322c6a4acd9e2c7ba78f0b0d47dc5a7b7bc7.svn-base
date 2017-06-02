@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/register-agreement.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>注册协议</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header"></div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <h5>注册协议</h5>
+                <div class="agreement-detail niceScroll">
+                    尊敬的申请人：
+                    <br/>
+                    <br/>欢迎您注册成"武汉东湖新技术开发区网上服务大厅"用户，请仔细阅读下面条款：
+                    <br/>
+                    <br/> 一、使用规则
+                    <br/>
+                    <br/>1．服务条款的确认和接纳本网站用户服务的所有权和运作权归武汉东湖新技术开发区网上服务大厅拥有。用户注册是请仔细阅读注册条款，确认后即表示用户与本网站达成协议并接受所有的服务条款。
+                    <br/>
+                    <br/> 2．本网站通过互联网为用户提供在线提交审批申报请求和反馈审批结果的功能。
+                    <br/>
+                    <br/> 3．服务条款的修改本网站根据需要会不定时地修改服务条款，服务条款一旦发生变动，将会在相关页面上提示修改内容。如果您同意改动，则再一次点击"我同意"按钮。 如果您不接受，则及时取消您的用户使用服务资格。 尊敬的申请人：
+                    <br/>
+                    <br/>欢迎您注册成"武汉东湖新技术开发区网上服务大厅"用户，请仔细阅读下面条款：
+                    <br/>
+                    <br/> 一、使用规则
+                    <br/>
+                    <br/>1．服务条款的确认和接纳本网站用户服务的所有权和运作权归武汉东湖新技术开发区网上服务大厅拥有。用户注册是请仔细阅读注册条款，确认后即表示用户与本网站达成协议并接受所有的服务条款。
+                    <br/>
+                    <br/> 2．本网站通过互联网为用户提供在线提交审批申报请求和反馈审批结果的功能。
+                    <br/>
+                    <br/> 3．服务条款的修改本网站根据需要会不定时地修改服务条款，服务条款一旦发生变动，将会在相关页面上提示修改内容。如果您同意改动，则再一次点击"我同意"按钮。 如果您不接受，则及时取消您的用户使用服务资格。
+                </div>
+                <button class="grey-btnStyle" id="agree">同意协议</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer"></div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/register-agreement.js"></script>
+</body>
+
+</html>

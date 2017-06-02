@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/smartMenu.css">
+    <link rel="stylesheet" href="../../css/my-licence.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>我的证照</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <!-- 当前位置 -->
+            <div class="now-position">
+                当前位置：<a href="">首页</a> &gt; <a href="">用户中心</a> &gt; <span class="now-loc">我的证照</span>
+            </div>
+            <div class="userCenter-main">
+                <div class="center-nav clearfix">
+                    <span class="name">会飞的小鱼</span>
+                    <ul class="nav clearfix">
+                        <li>
+                            <a href="">主页</a>
+                        </li>
+                        <li>
+                            <a href="">办件服务</a>
+                        </li>
+                        <li>
+                            <a href="">用户管理</a>
+                        </li>
+                        <li>
+                            <a class="active" href="">我的证照</a>
+                        </li>
+                    </ul>
+                    <div class="msg-loginOut clearfix">
+                        <a href="javascript:;" class="msg">消息<i>18</i></a>
+                        <a href="javascript:;" class="loginOut">注销</a>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="inner-content clearfix">
+                    <ul class="nav-l">
+                        <li class="nav-item cur-nav"><a href="#">文件名字</a></li>
+                        <li class="nav-item"><a href="#">文件名字</a></li>
+                        <li class="nav-item"><a href="#">文件名字</a></li>
+                        <li class="nav-item"><a href="#">文件名字</a></li>
+                        <li class="nav-item"><a href="#">文件名字</a></li>
+                        <li class="nav-item recycle-bin"><a href="#">回收站</a></li>
+                    </ul>
+                    <!-- 各个页面内容 -->
+                    <div class="con-r">
+                        <div class="btn-area clearfix">
+                            <div class="upload-btn">
+                                上传
+                                <div class="upload-menu">
+                                    <a href="#">上传文件</a>
+                                    <a href="#">上传文件夹</a>
+                                </div>
+                            </div>
+                            <button type="button" class="create-folder-btn">新建文件夹</button>
+                            <button type="button" class="trans-folder">移动到</button>
+                            <button type="button" class="delete-btn">删除</button>
+                            <button type="button" class="download-btn">下载</button>
+                            <div class="search-area clearfix">
+                                <input class="search-input" type="text" name="" />
+                                <input class="search-btn" type="button" name="" />
+                            </div>
+                        </div>
+                        <h2 class="top-info clearfix">
+                            <p class="top-info-l">全部图片</p>
+                            <p class="top-info-r">(已全部加载，共<span>13</span>个)</p>
+                        </h2>
+                        <div class="imgs-area">
+                            <label class="check-all">全选</label>
+                            <ul class="imgs clearfix">
+                                <li class="img-item">
+                                    <img src="../../images/userCenter/img-item.png" />
+                                    <p>20170314201920</p>
+                                    <i class="checked-mask"></i>
+                                </li>
+                                <li class="img-item">
+                                    <img src="../../images/userCenter/img-item.png" />
+                                    <p>20170314201920</p>
+                                    <i class="checked-mask"></i>
+                                </li>
+                                <li class="img-item">
+                                    <img src="../../images/userCenter/img-item.png" />
+                                    <p>20170314201920</p>
+                                    <i class="checked-mask"></i>
+                                </li>
+                                <li class="img-item">
+                                    <img src="../../images/userCenter/img-item.png" />
+                                    <p>20170314201920</p>
+                                    <i class="checked-mask"></i>
+                                </li>
+                                <li class="img-item">
+                                    <img src="../../images/userCenter/img-item.png" />
+                                    <p>20170314201920</p>
+                                    <i class="checked-mask"></i>
+                                </li>
+                                <li class="img-item">
+                                    <img src="../../images/userCenter/img-item.png" />
+                                    <p>20170314201920</p>
+                                    <i class="checked-mask"></i>
+                                </li>
+                                <li class="img-item">
+                                    <img src="../../images/userCenter/img-item.png" />
+                                    <p>20170314201920</p>
+                                    <i class="checked-mask"></i>
+                                </li>
+                            </ul>
+                            <div class="no-item">
+                                <img src="../../images/userCenter/no-img.png" class="no-item-img" />
+                                <p>您还没有上传过任何证照图片哦~ 点击 <span>上传</span> 按钮</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery-smartMenu.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/my-licence.js"></script>
+</body>
+
+</html>

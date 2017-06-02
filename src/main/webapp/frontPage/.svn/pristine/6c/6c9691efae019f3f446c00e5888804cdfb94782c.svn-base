@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/appoint-service.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>预约流程1</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header"></div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <a href="">预约服务</a> &gt; <span class="now-loc">预约</span>
+                </div>
+                <div class="right-con">
+                    <div class="step-flow">
+                        <ul class="step-items clearfix">
+                            <li class="step-item first cur">
+                                <span class="num">1</span>
+                                <span class="note">区域引导</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="num">2</span>
+                                <span class="note">事项选择</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="num">3</span>
+                                <span class="note">选择时间</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="num">4</span>
+                                <span class="note">填写信息</span>
+                            </li>
+                            <li class="step-item last">
+                                <span class="num">5</span>
+                                <span class="note">预约完成</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-bd four-area">
+                        <a class="clearfix" href="">
+                            <ul class="brief">
+                                <li>公安（交管/户政/治安/出入境）</li>
+                                <li>婚姻登记/老年证办理</li>
+                                <li>新型农村合作医疗/行政事业性收费处</li>
+                            </ul>
+                            <p class="area">A区</p>
+                            <p class="hover">进入A区</p>
+                        </a>
+                       <a class="clearfix" href="">
+                            <ul class="brief">
+                                <li>人社分局</li>
+                                <li>不动产登记中心</li>
+                            </ul>
+                            <p class="area">B区</p>
+                            <p class="hover">进入B区</p>
+                        </a>
+                        <a class="clearfix" href="">
+                            <ul class="brief">
+                                <li>税务</li>
+                            </ul>
+                            <p class="area">C区</p>
+                            <p class="hover">进入C区</p>
+                        </a>
+                        <a class="clearfix" href="">
+                            <ul class="brief">
+                                <li>工商登记“一口式”</li>
+                                <li>质量技术监管/食品药品监督/机动车环保标志</li>
+                                <li>人事/科创/城管/卫生/教育文化体育</li>
+                                <li>发改/环保/国土规划/建设/消防/中介机构</li>
+                            </ul>
+                            <p class="area">D区</p>
+                            <p class="hover">进入D区</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer"></div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</body>
+
+</html>

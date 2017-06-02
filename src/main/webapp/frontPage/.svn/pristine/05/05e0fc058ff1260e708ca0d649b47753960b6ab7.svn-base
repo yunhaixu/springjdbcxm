@@ -1,0 +1,883 @@
+/**!
+ * [页面名称]:大屏
+ * author: [zhaoyang];
+ */
+
+
+/* yui3 reset.css */
+
+html {
+    color: #000;
+    background: #FFF
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+iframe {
+    display: block;
+}
+
+
+/* yui3 fonts */
+
+body {
+    font: 13px/1.231 "Microsoft Yahei", arial, helvetica, clean, sans-serif;
+    color: #333;
+}
+
+.body {
+    min-height: 795px;
+    background: url(../images/common/common-bodyBg.jpg) center top no-repeat #dbf1ff;
+}
+
+select,
+input,
+button,
+textarea {
+    font: 99% arial, helvetica, clean, sans-serif
+}
+
+select,
+input,
+button,
+textarea {
+    outline: none;
+}
+
+table {
+    font-size: inherit;
+    font: 100%
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.inline-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* utilities */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.l {
+    float: left !important;
+}
+
+.r {
+    float: right !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+
+/** 
+ * 以下可追加项目中的公共样式，
+ * 比如body上进行全局的文字设置（字体，大小，行高），全局a链接的基本状态定义，
+ * 适合页面的栅格系统
+ * 页面公共头尾部分等
+ */
+
+
+/*placeholder*/
+
+::-webkit-input-placeholder
+/* WebKit browsers */
+
+{
+    color: #999;
+}
+
+:-moz-placeholder
+/* Mozilla Firefox 4 to 18 */
+
+{
+    color: #999;
+}
+
+::-moz-placeholder
+/* Mozilla Firefox 19+ */
+
+{
+    color: #999;
+}
+
+:-ms-input-placeholder
+/* Internet Explorer 10+ */
+
+{
+    color: #999;
+}
+
+.placeholder
+/* Internet Explorer 9- */
+
+{
+    color: #999;
+}
+
+
+/*.right-content {
+    width: 890px;
+    height: 465px;
+    overflow: hidden;
+}*/
+
+
+/*header*/
+
+.header {
+    height: 160px;
+}
+
+.head-title {
+    float: left;
+    margin: 8px 82px 0 20px;
+}
+
+.search-block {
+    float: left;
+    margin-top: 65px;
+    height: 39px;
+    width: 301px;
+    border: 0;
+    background: url(../images/common/search-blockBg.png);
+}
+
+.search-block>input {
+    float: left;
+    padding-left: 20px;
+    width: 232px;
+    height: 39px;
+    line-height: 39px;
+    background-color: transparent;
+    font-family: 'Microsoft Yahei';
+    border: 0;
+}
+
+.search-block>button {
+    float: left;
+    width: 45px;
+    height: 39px;
+    border: 0;
+    cursor: pointer;
+    background: url(../images/common/searchBtn-bg.png) center no-repeat;
+}
+
+.head-notice {
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 968px;
+    width: 232px;
+    height: 102px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.head-notice>ul {
+    padding: 15px 20px 15px 8px;
+    background-color: #104875;
+}
+
+.head-notice li {
+    margin-bottom: 6px;
+}
+
+.head-notice .text {
+    float: left;
+    width: 140px;
+    color: #fff;
+    padding-left: 12px;
+    background: url(../images/common/doted.png) left center no-repeat;
+}
+
+.head-notice .date {
+    float: right;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice-btn {
+    position: absolute;
+    margin-left: 212px;
+    display: block;
+    height: 47px;
+    width: 20px;
+    cursor: pointer;
+    background-image: url(../images/common/notice-btn.png);
+}
+
+.notice-btn.down {
+    background-image: url(../images/common/notice-btn2.png);
+}
+
+
+/*content*/
+
+.content .left-nav {
+    float: left;
+    width: 146px;
+    height: 544px;
+}
+
+.left-nav .register {
+    display: none;
+}
+
+
+/*登录人框*/
+
+.left-nav .left-person {
+    line-height: 0;
+    padding: 5px;
+    margin-top: 19px;
+    cursor: pointer;
+}
+
+.register .loginName {
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    color: #f7a45b;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.register .register-btn {
+    margin-top: 13px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 85px;
+    padding-left: 20px;
+    cursor: pointer;
+    background: url(../images/common/register-btn.png) left center no-repeat;
+}
+
+.loginName>img {
+    margin: 0 5px 0 8px;
+    /*position: absolute;*/
+}
+
+
+/*登录状态*/
+
+.content .right-content {
+    float: right;
+    width: 1050px;
+    height: 544px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.left-nav li {
+    margin-bottom: 1px;
+}
+
+.left-nav a {
+    display: block;
+    width: 146px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    color: #fff;
+    font-size: 15px;
+    background: url(../images/common/nav-bg1.png);
+}
+
+.left-nav a.login,
+.left-nav a.register {
+    cursor: default;
+}
+
+.left-nav .nav-li:hover,
+.left-nav a.active {
+    background-image: url(../images/common/nav-bg2.png);
+}
+
+
+/*footer*/
+
+.footer .container {
+    position: relative;
+}
+
+.footer {
+    height: 76px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: #6d787f;
+}
+
+.footer .link {
+    padding: 13px 0;
+}
+
+.footer .link>a {
+    color: #fff;
+}
+
+.footer .link>span {
+    display: inline-block;
+    text-indent: 0px;
+    margin: 0 8px;
+}
+
+.gover-icon {
+    position: absolute;
+    top: 8px;
+    right: 40px;
+}
+
+
+/*右侧悬浮层*/
+
+.right-microIcon {
+    position: fixed;
+    z-index: 90;
+    top: 160px;
+    right: 8px;
+}
+
+.four-micro li {
+    margin-bottom: 3px;
+}
+
+.slide-btn,
+.four-micro a {
+    display: block;
+    height: 58px;
+    width: 58px;
+    color: #333;
+    font-size: 13px;
+    background-color: #fff;
+    line-height: 90px;
+    border-radius: 5px;
+    border: 1px solid #cac8c8;
+    text-align: center;
+    background: url(../images/common/moblie-bg1.png) center 6px no-repeat;
+    background-color: #fff;
+}
+
+.four-micro a:hover {
+    background-color: #0066c3;
+    border-color: #0066c3;
+    color: #fff;
+    background-image: url(../images/common/moblie-bg2.png);
+}
+
+.four-micro a.wechat {
+    background-image: url(../images/common/wechat-bg1.png);
+    -ms-background-position-y: 5px;
+    background-position-y: 5px;
+}
+
+.four-micro a.wechat:hover {
+    background-image: url(../images/common/wechat-bg2.png);
+}
+
+.four-micro a.error {
+    background-image: url(../images/common/eroor-bg1.png);
+    -ms-background-position-y: 7px;
+    background-position-y: 7px;
+}
+
+.four-micro a.error:hover {
+    background-image: url(../images/common/eroor-bg2.png);
+}
+
+.four-micro a.complaint-call {
+    background-image: url(../images/common/call-bg1.png);
+    -ms-background-position-y: 5px;
+    background-position-y: 5px;
+}
+
+.four-micro a.complaint-call:hover {
+    background-image: url(../images/common/call-bg2.png);
+}
+
+.slide-btn {
+    cursor: pointer;
+    background-image: url(../images/common/slideup-bg.png);
+    -ms-background-position-y: 9px;
+    background-position-y: 9px;
+}
+
+.slide-btn:hover {
+    background-color: #0066c3;
+    border-color: #0066c3;
+    color: #fff;
+    background-image: url(../images/common/slideup-bg2.png);
+}
+
+.slide-btn.down {
+    background-image: url(../images/common/slidedown-bg.png);
+}
+
+.slide-btn.down:hover {
+    background-image: url(../images/common/slidedown-bg2.png);
+}
+
+
+/*four micro tip*/
+
+.four-micro a:hover +.tip-div {
+    display: block;
+}
+
+.tip-div {
+    display: none;
+    position: absolute;
+    width: 168px;
+    height: 168px;
+    background: url(../images/common/tip-bg.png);
+}
+
+.tip-div.moblie {
+    margin-left: -186px;
+    margin-top: -100px;
+}
+
+.tip-div.call {
+    width: 230px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+    margin-left: -248px;
+    margin-top: -61px;
+    border-radius: 6px;
+}
+
+.tip-div>img {
+    width: 148px;
+    height: 148px;
+    margin: 10px;
+}
+
+.tip-div.moblie .sanjiao {
+    margin-left: 168px;
+    margin-top: -94px;
+}
+
+.tip-div.call .sanjiao {
+    margin-left: 230px;
+    margin-top: -36px;
+}
+
+.sanjiao {
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/common/sanjiao.png);
+}
+
+
+/*当前位置栏*/
+
+.now-position {
+    height: 20px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    line-height: 20px;
+    margin-left: 18px;
+    padding-left: 20px;
+    color: #666;
+    background: url(../images/common/house-loc.png) left center no-repeat;
+}
+
+.now-position a {
+    color: #666;
+}
+
+.now-loc {
+    color: #ff9900;
+}
+
+
+/*首页右侧栏目的小块内容*/
+
+.index-content {
+    width: 1030px;
+    height: 495px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.index-content .search-block {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+/*通用的列表样式*/
+
+.list-head {
+    height: 26px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.list-head .tab-item {
+    float: left;
+    font-size: 15px;
+    color: #666;
+    margin-right: 22px;
+    padding: 0 3px 6px 0;
+    cursor: pointer;
+}
+
+.list-head .tab-item.cur {
+    color: #333;
+    font-weight: bold;
+    padding: 1px 3px 7px 0;
+    margin-top: -1px;
+    border-bottom: 2px solid #438fcb;
+}
+
+.list-body {
+    padding-top: 10px;
+}
+
+.list-body li {
+    margin-bottom: 11px;
+}
+
+.list-body .text {
+    float: left;
+    padding-left: 14px;
+    width: 270px;
+    background: url(../images/common/dotted-block.png) left center no-repeat;
+}
+
+.list-body .date {
+    float: right;
+    margin-right: 5px;
+    color: #999;
+}
+
+
+/*页面通用大按钮样式*/
+
+.grey-btnStyle,
+.cancel-btnStyle,
+.return-btnStyle {
+    width: 170px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    border: none;
+    background-color: #70c49a;
+}
+
+.grey-btnStyle:hover {
+    background-color: #5ab085;
+}
+
+.cancel-btnStyle {
+    color: #666;
+    background-color: #eaeaea;
+}
+
+.cancel-btnStyle:hover {
+    background-color: #e3e3e3;
+}
+
+.return-btnStyle {
+    color: #84a795;
+    background-color: #ebf6f0;
+}
+
+.return-btnStyle:hover {
+    background-color: #def0e6;
+}
+
+
+/*用户中心页面 nav css*/
+
+.userCenter-main {
+    margin: 0 20px;
+}
+
+.center-nav {
+    height: 54px;
+    font-size: 15px;
+    background-color: #5ab085;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.center-nav .name {
+    float: left;
+    padding: 8px 0;
+    padding-left: 35px;
+    padding-right: 20px;
+    margin-top: 11px;
+    font-weight: bold;
+    color: #fff;
+    background: url(../images/userCenter/person-bg.png) 18px center no-repeat;
+    border-right: 1px solid #fff;
+}
+
+.center-nav>.nav li {
+    float: left;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.center-nav>.nav {
+    float: left;
+    margin-left: 25px;
+}
+
+.center-nav>.nav a {
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+}
+
+.center-nav>.nav a.active {
+    font-weight: bold;
+    border-bottom: 3px solid #fff;
+}
+
+.msg-loginOut {
+    float: right;
+    width: 130px;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-right: 22px;
+    font-style: 13px;
+}
+
+.msg-loginOut .msg {
+    position: relative;
+    float: left;
+    color: #fff;
+    padding-left: 26px;
+    background: url(../images/userCenter/msg-bg.png) left center no-repeat;
+}
+
+.msg-loginOut .msg>i {
+    position: absolute;
+    top: -9px;
+    right: -14px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #e01c1c;
+}
+
+.msg-loginOut .loginOut {
+    float: right;
+    color: #fff;
+    padding-left: 20px;
+    background: url(../images/userCenter/login-out.png) left center no-repeat;
+}
+
+/*个人中心小按钮样式*/
+.small-btn {
+    height: 28px;
+    padding: 0 16px;
+    line-height: 26px;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    font-family: 'Microsoft Yahei';
+    font-size: 13px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/*全部，已办结按钮*/
+.small-btn.all-btn:hover,
+.small-btn.done-btn:hover {
+    color: #5ab085;
+    border-color: #5ab085;
+    background-color: #ebf6f1;
+}
+/*受理、办理按钮*/
+.small-btn.accept-btn:hover,
+.small-btn.handle-btn:hover {
+    color: #d1942d;
+    border-color: #d1942d;
+    background-color: #fdf7ed;
+}
+/*退回按钮*/
+.small-btn.back-btn:hover {
+    color: #df3737;
+    border-color: #e3aaaa;
+    background-color: #f6ebeb;
+}
+
+/*草稿按钮*/
+.small-btn.draft-btn:hover {
+    color: #df3737;
+    border-color: #e3aaaa;
+    background-color: #f6ebeb;
+}

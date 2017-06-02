@@ -1,0 +1,267 @@
+/**!
+ * [页面名称]:办件详情
+ * author: [赵阳];
+ */
+
+
+/*个人中心页面覆盖样式*/
+
+.content .container {
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+
+/*内部内容*/
+
+.inner-content {
+    padding-top: 20px;
+}
+
+.nav-l {
+    float: left;
+    width: 150px;
+    height: 365px;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+}
+
+.nav-item {
+    height: 60px;
+    margin: 0 9px;
+    border-bottom: 1px solid #d6d6d6;
+    line-height: 60px;
+}
+
+.nav-item>a {
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.nav-item.cur-nav>a,
+.nav-item>a:hover {
+    color: #5ab085;
+    font-weight: bold;
+}
+
+.con-r {
+    float: left;
+    width: 968px;
+    margin-left: 40px;
+}
+
+.con-hd {
+    height: 60px;
+    padding-top: 11px;
+    padding-left: 50px;
+    border-bottom: 1px solid #d6d6d6;
+    background: url(../images/userCenter/hd-bg.png) 0 12px no-repeat;
+}
+
+.con-hd>h2 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.con-hd>p {
+    font-size: 12px;
+    color: #999999;
+    line-height: 21px;
+}
+
+.left-title {
+    margin-top: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #009241;
+    border-left: 5px solid #009241;
+}
+
+.state-word {
+    font-size: 13px;
+    color: #da1e1e;
+    margin-top: 19px;
+    padding-left: 15px;
+}
+
+
+/*流程样式*/
+.state-area {
+    height: 87px;
+    background: url(../images/userCenter/state-bg.png) center no-repeat;
+}
+
+.step-item {
+    position: relative;
+    float: left;
+    border-top: 1px dashed #e4e4e4;
+    margin-top: 44px;
+}
+
+.step-item>span {
+    float: right;
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    background: url(../images/userCenter/state-item-inactive.png) center no-repeat;
+}
+
+.step-item.finished,
+.step-item.running {
+    border-top: 1px solid #e4e4e4;
+}
+
+.step-item.finished>span {
+    color: #fff;
+    background: url(../images/userCenter/state-item.png) center no-repeat;
+}
+
+.step-item.running>span {
+    color: #009241;
+    background: url(../images/userCenter/state-item-cur.png) center no-repeat;
+}
+
+.step-time {
+    position: absolute;
+    width: 85px;
+    top: 26px;
+    left: 87px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    display: none;
+}
+
+.step1>.step-time {
+    left: 33px;
+}
+
+.step6>.step-time {
+    left: 87px;
+}
+
+.step-item.running>.step-time {
+    display: block;
+}
+
+.step6>span {
+    margin-right: 55px;
+}
+
+.step1 {
+    width: 97px;
+    margin-left: 32px;
+}
+
+.step2,
+.step3,
+.step4,
+.step5 {
+    width: 150px;
+}
+
+.step6 {
+    width: 207px;
+}
+
+
+/*表格样式*/
+.inner-container {
+    margin: 0 15px;
+}
+
+.item-info-table,
+.apply-chart-table {
+    border: 1px solid #e4e4e4;
+    margin-top: 19px;
+}
+
+.item-info-table td {
+    height: 30px;
+    border: 1px solid #e4e4e4;
+}
+
+.item-info-table .col1,
+.item-info-table .col3 {
+    width: 109px;
+    text-align: center;
+    background-color: #ebf6f0;
+}
+
+.item-info-table .col2,
+.item-info-table .col4 {
+    width: 326px;
+    text-align: left;
+    text-indent: 13px;
+}
+
+.item-info-table .col4 {
+    width: 389px;
+}
+
+.applier-info-table {
+    margin-top: 19px;
+    background-color: #f8f8f8;
+}
+
+.applier-info-table td {
+    height: 30px;
+}
+
+.applier-info-table .col1,
+.applier-info-table .col3 {
+    width: 109px;
+    text-align: right;
+}
+
+.applier-info-table .col2,
+.applier-info-table .col4 {
+    width: 326px;
+    text-align: left;
+    text-indent: 13px;
+}
+
+.applier-info-table .col4 {
+    width: 391px;
+}
+
+.apply-chart-table th,
+.apply-chart-table td,
+.apply-material-table th,
+.apply-material-table td {
+    height: 30px;
+    border: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.apply-chart-table th,
+.apply-material-table th {
+    background-color: #ebf6f0;
+}
+
+.apply-chart-table .th1,
+.apply-material-table .th1 {
+    width: 109px;
+}
+
+.apply-chart-table .th2,
+.apply-material-table .th2 {
+    width: 569px;
+}
+
+.apply-chart-table .th3,
+.apply-material-table .th3 {
+    width: 254px;
+}

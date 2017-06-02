@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/freeTrade-zone.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>自贸区</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <div class="content-left">
+                    <!-- 滚动图片新闻 -->
+                    <div class="wb-slider" id="slider">
+                        <div class="wb-slider-conbox">
+                        </div>
+                        <div class="wb-slider-switcher">
+                            <div class="wb-slider-stag">1</div>
+                            <div class="wb-slider-stag">2</div>
+                            <div class="wb-slider-stag">3</div>
+                            <div class="wb-slider-stag">4</div>
+                            <div class="wb-slider-stag">5</div>
+                        </div>
+                    </div>
+                    <!-- 政策法规 -->
+                    <div class="policies-regulations mt20">
+                        <div class="list-head">
+                            <h5 class="tab-item cur">政策法规</h5>
+                        </div>
+                        <div class="list-body">
+                            <ul id="policies-ul">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="location-name">
+                        <p>中国（湖北）自由贸易试验区武汉片区</p>
+                        <p>CHINA (HUBEI) PILOT FREE TRADE ZONE WUHAN AREA</p>
+                    </div>
+                    <!-- tab区域 -->
+                    <div id="doc-tabs" class="tabview">
+                        <div class="tabview-hd list-head" data-role="head">
+                            <ul class="clearfix">
+                                <li class="tab-item" data-role="tab" data-target="tab-one">总体概况</li>
+                                <li class="tab-item" data-role="tab" data-target="tab-two">组织架构</li>
+                                <li class="tab-item" data-role="tab" data-target="tab-three">功能定位</li>
+                                <li class="tab-item" data-role="tab" data-target="tab-four">自贸区大事件</li>
+                            </ul>
+                        </div>
+                        <div data-role="body">
+                            <div data-role="tab-content" data-id="tab-one" class="tab-panel">
+                                &nbsp; &nbsp; &nbsp;9月21日，商务部、国土部、住建部、海洋局等四部委召开会议，确定新设立的第三批自贸区划片原则：新设自贸区应依托现有经国务院批准的新区、园区，面积不超过120平方公里，不超过3个片区，每个片区不得拆分、是完整区块、拥有闭合边界，同时还应符合所在城市的土地利用总体规划和城市总体规划。
+                                <br/> &nbsp; &nbsp; &nbsp;10月10日，商务部等四部委召开会议，增补提出新设立的第三批自贸区划片原则：新设自贸区应依托现有国务院批准的新区、园区（获批时间不迟于2016年9月20日），区域面积（包括建设用地和非建设用地）控制在120平方公里以内。各自贸区不超过3个片区，各片区不得拆分，计算面积时山体...<a href="" class="detail-info">【详情】</a>
+                            </div>
+                            <div data-role="tab-content" data-id="tab-two" class="tab-panel hidden">2</div>
+                            <div data-role="tab-content" data-id="tab-three" class="tab-panel hidden">3</div>
+                            <div data-role="tab-content" data-id="tab-four" class="tab-panel hidden">4</div>
+                        </div>
+                    </div>
+                    <!-- table -->
+                    <table class="freeTrade-window mt20">
+                        <thead>
+                            <tr>
+                                <th>自贸区专窗</th>
+                                <th>事项类别</th>
+                                <th>链接</th>
+                                <th>自贸区专窗</th>
+                                <th>事项类别</th>
+                                <th>链接</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-window">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer"></div>
+    <!--轮播图模板-->
+    <script type="text/x-template" id="img-tmpl">
+        {{#imgList}}
+        <div class="wb-slider-ctag">
+            <img src="{{imageUrl}}">
+            <div class="wb-slider-mask">
+                <a class="ellipsis" href="#">{{title}}</a>
+            </div>
+        </div>
+        {{/imgList}}
+    </script>
+    <!--政策法规模板-->
+    <script type="text/x-template" id="regulations-tmpl">
+        {{#regulations}}
+        <li class="clearfix">
+            <a href="" class="text ellipsis" title="{{title}}">{{title}}</a>
+            <span class="date">{{date}}</span>
+        </li>
+        {{/regulations}}
+    </script>
+    <!--自贸区专窗模板-->
+    <script type="text/x-template" id="tradeWindow-tmpl">
+        {{#tradeWindow}}
+        <tr>
+            <td>{{num1}}</td>
+            <td>{{title1}}</td>
+            <td class="link-td"><a href="{{link1}}"></a></td>
+            <td>{{num2}}</td>
+            <td>{{title2}}</td>
+            <td class="link-td"><a href="{{link2}}"></a></td>
+        </tr>
+        {{/tradeWindow}}
+    </script>
+    <script type="text/javascript" src="../../js/libs/tabview.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/imgscroll.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/freeTrade-zone.js"></script>
+</body>
+
+</html>

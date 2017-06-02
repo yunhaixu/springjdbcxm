@@ -1,0 +1,15 @@
+.cancel-content {
+	width: 501px;
+	height: 236px;
+	padding-top: 14px;
+}
+
+.confirm-word {
+	text-align: center;
+	font-size: 15px;
+	line-height: 156px;
+}
+
+.grey-btnStyle {
+	margin-left: 75px;
+}

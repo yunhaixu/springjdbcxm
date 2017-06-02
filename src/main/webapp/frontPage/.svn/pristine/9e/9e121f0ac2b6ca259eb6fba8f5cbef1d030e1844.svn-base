@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/reset-pwd.css">
+    <link rel="stylesheet" href="../../css/manage-applicant.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>管理申请人</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <!-- 当前位置 -->
+            <div class="now-position">
+                当前位置：<a href="">首页</a> &gt; <a href="">用户中心</a> &gt; <a href="">用户管理</a> &gt; <span class="now-loc">管理申请人</span>
+            </div>
+            <div class="userCenter-main">
+                <div class="center-nav clearfix">
+                    <span class="name">会飞的小鱼</span>
+                    <ul class="nav clearfix">
+                        <li>
+                            <a href="">主页</a>
+                        </li>
+                        <li>
+                            <a class="active" href="">办件服务</a>
+                        </li>
+                        <li>
+                            <a href="">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="">我的证据</a>
+                        </li>
+                    </ul>
+                    <div class="msg-loginOut clearfix">
+                        <a href="javascript:;" class="msg">消息<i>18</i></a>
+                        <a href="javascript:;" class="loginOut">注销</a>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="inner-content clearfix">
+                    <ul class="nav-l">
+                        <li class="nav-item"><a href="#">个人信息维护</a></li>
+                        <li class="nav-item"><a href="#">修改密码</a></li>
+                        <li class="nav-item bb0  cur-nav"><a href="#">管理申请人</a></li>
+                    </ul>
+                    <!-- 各个页面内容 -->
+                    <div class="con-r">
+                        <ul class="applicant-list">
+                            <li class="applicant-item clearfix">
+                                <div class="applicant-hd clearfix">
+                                    <p class="applicant-name l">姓名：<span class="name">张力</span></p>
+                                    <span class="applicant-delete r">删除</span>
+                                    <a href="#" class="applicant-modify r">修改</a>
+                                </div>
+                                <div class="applicant-con clearfix">
+                                    <div class="applicant-info l">
+                                        <p class="info-item">身份证号：320582198010112890</p>
+                                        <p class="info-item">
+                                            <span>地址：江帆花苑44栋702</span>
+                                            <span>邮编：215600</span>
+                                        </p>
+                                    </div>
+                                    <div class="default r">默认申请人</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="applicant-tab">
+                            <div class="tab-hd clearfix" data-role="head">
+                                <span class="tab-target" data-role="tab" data-target="tab-a">个人</span>
+                                <span class="tab-target cur" data-role="tab" data-target="tab-b">企业</span>
+                                <button class="btn-create r">新增</button>
+                            </div>
+                            <div class="tab-bd" data-role="body">
+                                <ul class="applicant-list" data-role="tab-content" data-id="tab-a">
+                                    <li class="applicant-item clearfix">
+                                        <div class="applicant-hd clearfix">
+                                            <p class="applicant-name l">企业名称：<span class="name">武汉黑黑鸭股份有限公司</span></p>
+                                            <span class="applicant-delete r">删除</span>
+                                            <a href="#" class="applicant-modify r">修改</a>
+                                        </div>
+                                        <div class="applicant-con clearfix">
+                                            <div class="applicant-info l">
+                                                <p class="info-item">法人代表：周三黑</p>
+                                                <p class="info-item">
+                                                    <span>组织机构代码：232356565557789324</span>
+                                                    <span>企业性质：国有企业</span>
+                                                </p>
+                                                <p class="info-item">地址：江帆花苑44栋702</p>
+                                            </div>
+                                            <div class="set-default r">设为默认</div>
+                                        </div>
+                                    </li>
+                                    <li class="applicant-item clearfix">
+                                        <div class="applicant-hd clearfix">
+                                            <p class="applicant-name l">企业名称：<span class="name">武汉黑黑鸭股份有限公司</span></p>
+                                            <span class="applicant-delete r">删除</span>
+                                            <a href="#" class="applicant-modify r">修改</a>
+                                        </div>
+                                        <div class="applicant-con clearfix">
+                                            <div class="applicant-info l">
+                                                <p class="info-item">法人代表：周三黑</p>
+                                                <p class="info-item">
+                                                    <span>组织机构代码：232356565557789324</span>
+                                                    <span>企业性质：国有企业</span>
+                                                </p>
+                                                <p class="info-item">地址：江帆花苑44栋702</p>
+                                            </div>
+                                            <div class="set-default r">设为默认</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="applicant-list" data-role="tab-content" data-id="tab-b">
+                                    <li class="applicant-item clearfix">
+                                        <div class="applicant-hd clearfix">
+                                            <p class="applicant-name l">企业名称：<span class="name">武汉黑黑鸭股份有限公司</span></p>
+                                            <span class="applicant-delete r">删除</span>
+                                            <a href="#" class="applicant-modify r">修改</a>
+                                        </div>
+                                        <div class="applicant-con clearfix">
+                                            <div class="applicant-info l">
+                                                <p class="info-item">法人代表：周三黑</p>
+                                                <p class="info-item">
+                                                    <span>组织机构代码：232356565557789324</span>
+                                                    <span>企业性质：国有企业</span>
+                                                </p>
+                                                <p class="info-item">地址：江帆花苑44栋702</p>
+                                            </div>
+                                            <div class="set-default r">设为默认</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/tabview.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/manage-applicant.js"></script>
+</body>
+
+</html>

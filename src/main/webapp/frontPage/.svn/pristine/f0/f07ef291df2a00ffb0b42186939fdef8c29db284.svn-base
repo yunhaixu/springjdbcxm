@@ -1,0 +1,35 @@
+<!-- header -->
+<div class="container clearfix">
+    <img src="../../images/common/head-title.png" class="head-title">
+    <div class="search-block clearfix">
+        <input type="text" placeholder="请输入关键字搜索">
+        <button></button>
+    </div>
+</div>
+
+<!-- 右侧悬浮层 -->
+<div class="right-microIcon">
+    <ul class="four-micro" id="four-micro">
+        <li>
+            <a href="" class="moblie">移动端</a>
+            <div class="tip-div moblie">
+                <img src="../../images/common/code-two.jpg" alt="图片加载失败">
+                <i class="sanjiao"></i>
+            </div>
+        </li>
+        <li>
+            <a href="" class="wechat">微信版</a>
+        </li>
+        <li>
+            <a href="" class="error" id="erroe-correction">纠错</a>
+        </li>
+        <li>
+            <a href="" class="complaint-call">投诉电话</a>
+            <div class="tip-div call">政务咨询热线：027-67880300
+                <i class="sanjiao special"></i>
+            </div>
+        </li>
+    </ul>
+    <div class="slide-btn" id="slide-btn">收起</div>
+</div>
+

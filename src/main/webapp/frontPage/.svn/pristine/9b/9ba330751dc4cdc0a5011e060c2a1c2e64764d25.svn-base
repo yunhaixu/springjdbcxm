@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../js/libs/chosen/chosen.css">
+    <link rel="stylesheet" href="../../css/item-detail.css">
+    <link rel="stylesheet" href="../../css/mricode.pagination.css">
+    <link rel="stylesheet" href="../../css/my-item.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>办件详情</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <!-- 当前位置 -->
+            <div class="now-position">
+                当前位置：<a href="">首页</a> &gt; <a href="">用户中心</a> &gt; <a href="">办事服务</a> &gt; <span class="now-loc">我的办件</span>
+            </div>
+            <div class="userCenter-main">
+                <div class="center-nav clearfix">
+                    <span class="name">会飞的小鱼</span>
+                    <ul class="nav clearfix">
+                        <li>
+                            <a href="">主页</a>
+                        </li>
+                        <li>
+                            <a class="active" href="">办件服务</a>
+                        </li>
+                        <li>
+                            <a href="">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="">我的证照</a>
+                        </li>
+                    </ul>
+                    <div class="msg-loginOut clearfix">
+                        <a href="javascript:;" class="msg">消息<i>18</i></a>
+                        <a href="javascript:;" class="loginOut">注销</a>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="inner-content clearfix">
+                    <ul class="nav-l">
+                        <li class="nav-item cur-nav"><a href="#">我的办件</a></li>
+                        <li class="nav-item"><a href="#">我的预约</a></li>
+                        <li class="nav-item"><a href="#">我的咨询</a></li>
+                        <li class="nav-item"><a href="#">我的投诉</a></li>
+                        <li class="nav-item"><a href="#">我的收藏</a></li>
+                        <li class="nav-item"><a href="#">我的评价</a></li>
+                    </ul>
+                    <!-- 各个页面内容 -->
+                    <div class="con-r">
+                        <div class="content-top clearfix">
+                            <div class="buttons l" id="buttons">
+                                <button class="small-btn all-btn" id="all" data-value='0'>全部</button>
+                                <button class="small-btn accept-btn" id="accept" data-value='1'>受理中</button>
+                                <button class="small-btn handle-btn" id="handle" data-value='2'>办理中</button>
+                                <button class="small-btn done-btn" id="done" data-value='3'>已办结</button>
+                                <button class="small-btn back-btn" id="back" data-value='4'>退回</button>
+                                <button class="small-btn draft-btn" id="draft" data-value='5'>草稿箱</button>
+                            </div>
+                            <p class="r">（共<span class="item-count">0</span>个办件事项）</p>
+                        </div>
+                        <div class="content-main">
+                            <!-- 部门选择、办件编号 -->
+                            <ul class="choose-box clearfix">
+                                <li class="operate-item clearfix">
+                                    <span class="operate-name l">部门</span>
+                                    <select data-placeholder="- 请选择 -" id="departmentSelect" class="department l">
+                                        <option value=""></option>
+                                        <option value="1">交通局</option>
+                                        <option value="2">交通局</option>
+                                        <option value="3">交通局</option>
+                                    </select>
+                                </li>
+                                <li class="operate-item clearfix">
+                                    <span class="operate-name l">办件编号</span>
+                                    <div class="search-con l clearfix">
+                                        <input type="text" class="int-search l" />
+                                        <span class="btn-search r"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- 办件列表 -->
+                            <div class="item-box">
+                                <ul class="item-list" id="dothing-list">
+                                </ul>
+                                <!-- 分页 -->
+                                <div class="pagelist-mricode clearfix" id="pager">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <!-- 受理中 -->
+    <script type="text/x-template" id="accept-temp">
+        {{#item}}
+        <li class="dothing-item clearfix">
+            <div class="dothing-title">
+                <span class="dothing-num l">办件编号：{{officeNum}}</span>
+                <span class="application-time l">申请时间：{{applicationTime}}</span>
+                <span class="dothing-state accept-in r">办件状态：{{state}}</span>
+            </div>
+            <div class="dothing-con">
+                <p>
+                    <span class="distance">事项名称：{{itemName}}</span>
+                    <span>事项编号：{{itemNum}}</span>
+                </p>
+                <p>
+                    <span class="distance">办理部门：{{department}}</span>
+                    <span>咨询电话：{{telephone}}</span>
+                </p>
+            </div>
+        </li>
+        {{/item}}
+    </script>
+    <!-- 审批中 -->
+    <script type="text/x-template" id="handle-temp">
+        {{#item}}
+        <li class="dothing-item clearfix">
+            <div class="dothing-title">
+                <span class="dothing-num l">办件编号：{{officeNum}}</span>
+                <span class="application-time l">申请时间：{{applicationTime}}</span>
+                <span class="dothing-state in-approval r">办件状态：{{state}}</span>
+            </div>
+            <div class="dothing-con">
+                <p>
+                    <span class="distance">事项名称：{{itemName}}</span>
+                    <span>事项编号：{{itemNum}}</span>
+                </p>
+                <p>
+                    <span class="distance">办理部门：{{department}}</span>
+                    <span>咨询电话：{{telephone}}</span>
+                    <span class="count-down">距承诺办结时间：<span>{{countDown}}</span></span>
+                </p>
+            </div>
+        </li>
+        {{/item}}
+    </script>
+    <!-- 已完结 -->
+    <script type="text/x-template" id="done-temp">
+        {{#item}}
+        <li class="dothing-item clearfix">
+            <div class="dothing-title">
+                <span class="dothing-num l">办件编号：{{officeNum}}</span>
+                <span class="application-time l">申请时间：{{applicationTime}}</span>
+                <span class="dothing-state finished r">办件状态：{{state}}</span>
+            </div>
+            <div class="dothing-con">
+                <p>
+                    <span class="distance">事项名称：{{itemNum}}</span>
+                    <span>事项编号：{{itemNum}}</span>
+                </p>
+                <p class="clearfix">
+                    <span class="distance l">办理部门：{{department}}</span>
+                    <span class="l">咨询电话：{{telephone}}</span>
+                    <button class="small-btn evaluation-btn r">评价</button>
+                </p>
+            </div>
+        </li>
+        {{/item}}
+    </script>
+    <!-- 退 -->
+    <script type="text/x-template" id="back-temp">
+        {{#item}}
+        <li class="dothing-item clearfix">
+            <div class="dothing-title">
+                <span class="dothing-num l">办件编号：{{officeNum}}</span>
+                <span class="application-time l">申请时间：{{applicationTime}}</span>
+                <span class="dothing-state refund red r">办件状态：{{state}}</span>
+            </div>
+            <div class="dothing-con">
+                <p>
+                    <span class="distance">事项名称：{{itemName}}</span>
+                    <span>事项编号：{{itemNum}}</span>
+                </p>
+                <p>
+                    <span class="distance">办理部门：{{department}}</span>
+                    <span>咨询电话：{{telephone}}</span>
+                    <span class="count-down">距承诺办结时间：<span class="red">{{countDown}}</span></span>
+                </p>
+                <p>
+                    <span>驳回状态：<span class="red">{{rejectState}}</span></span>
+                    <span class="reject-why">驳回原因：<span class="red">{{rejectWhy}}</span></span>
+                </p>
+            </div>
+        </li>
+        {{/item}}
+    </script>
+    <!-- 草稿箱 -->
+    <script type="text/x-template" id="draft-temp">
+        {{#item}}
+        <li class="dothing-item clearfix">
+            <div class="dothing-title">
+                <span class="dothing-num l">办件编号：{{officeNum}}</span>
+                <span class="application-time l">申请时间：{{applicationTime}}</span>
+                <div class="operate-btns r clearfix" id="operate-btns">
+                    <button class="operate-btn l">编辑</button>
+                    <button class="operate-btn r">删除</button>
+                </div>
+            </div>
+            <div class="dothing-con">
+                <p>
+                    <span class="distance">事项名称：{{itemName}}</span>
+                    <span>事项编号：{{itemNum}}</span>
+                </p>
+                <p>
+                    <span class="distance">办理部门：{{department}}</span>
+                    <span>咨询电话：{{telephone}}</span>
+                </p>
+            </div>
+        </li>
+        {{/item}}
+    </script>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/chosen/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/mricode.pagination.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/my-item.js"></script>
+</body>
+
+</html>

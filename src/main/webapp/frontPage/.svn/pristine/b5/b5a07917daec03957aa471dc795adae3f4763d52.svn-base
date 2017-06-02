@@ -1,0 +1,343 @@
+/**!
+ * [页面名称]:我的证照
+ * author: [赵阳];
+ */
+
+
+/*个人中心页面覆盖样式*/
+
+.content .container {
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+
+/*内部内容*/
+
+.inner-content {
+    padding-top: 20px;
+}
+
+.nav-l {
+    float: left;
+    width: 150px;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+}
+
+.nav-item {
+    height: 60px;
+    margin: 0 9px;
+    padding-left: 10px;
+    border-bottom: 1px solid #d6d6d6;
+    line-height: 60px;
+    margin-bottom: -1px;
+    background: url(../images/userCenter/file.png) 14px center no-repeat;
+}
+
+.nav-item:hover,
+.nav-item.cur-nav {
+    background: url(../images/userCenter/file-h.png) 14px center no-repeat;
+}
+
+.recycle-bin {
+    background: url(../images/userCenter/recycle.png) 14px center no-repeat;
+}
+
+.recycle-bin:hover,
+.recycle-bin.cur-nav {
+    background: url(../images/userCenter/recycle-h.png) 14px center no-repeat;
+}
+
+.nav-item>a {
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.nav-item.cur-nav>a,
+.nav-item>a:hover {
+    color: #5ab085;
+    font-weight: bold;
+}
+
+.con-r {
+    float: left;
+    width: 968px;
+    min-height: 700px;
+    margin-left: 40px;
+}
+
+.btn-area {
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 10px;
+}
+
+.upload-btn {
+    float: left;
+    position: relative;
+    width: 54px;
+    height: 26px;
+    margin-right: 5px;
+    padding-left: 26px;
+    line-height: 26px;
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+    font-size: 13px; 
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    background: url(../images/userCenter/upload.png) 12px center no-repeat;
+}
+
+.upload-menu {
+    display: none;
+    position: absolute;
+    width: 80px;
+    border: 1px solid #5ab085;
+    left: -1px;
+    top: 26px;
+    background-color: #fff;
+    margin-bottom: -1px;
+}
+
+.upload-menu>a {
+    display: block;
+    font-size: 12px;
+    line-height: 33px;
+    text-align: center;
+    margin: 0 6px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.upload-menu>a:hover {
+    color: #5ab085;
+}
+
+.upload-btn:hover {
+    background: url(../images/userCenter/upload-h.png) 12px center no-repeat;
+    background-color: #ebf6f1;
+    color: #5ab085;
+    border-color: #5ab085;
+}
+
+.upload-btn:hover>.upload-menu {
+    display: block;
+}
+
+.create-folder-btn {
+    width: 120px;
+    background: url(../images/userCenter/create-folder.png) 12px center no-repeat;
+}
+
+.create-folder-btn:hover {
+    background: url(../images/userCenter/create-folder-h.png) 12px center no-repeat;
+    background-color: #fdf7ed;
+    border-color: #e4bd9b;
+    color: #d1942d;
+}
+
+.trans-folder {
+    width: 82px;
+    background: url(../images/userCenter/trans.png) 12px center no-repeat;
+}
+
+.trans-folder:hover {
+    background: url(../images/userCenter/trans-h.png) 12px center no-repeat;
+    background-color: #f4ebf6;
+    color: #ac4ec1;
+    border-color: #cea3e6;
+}
+
+.delete-btn {
+    width: 82px;
+    background: url(../images/userCenter/delete.png) 12px center no-repeat;
+}
+
+.delete-btn:hover {
+    background: url(../images/userCenter/delete-h.png) 12px center no-repeat;
+    background-color: #f6ebeb;
+    color: #df3737;
+    border-color: #e3aaaa;
+}
+
+.download-btn {
+    width: 82px;
+    background: url(../images/userCenter/download.png) 12px center no-repeat;
+}
+
+.download-btn:hover {
+    background: url(../images/userCenter/download-h.png) 12px center no-repeat;
+    background-color: #ebf6f1;
+    color: #5ab085;
+    border-color: #5ab085;
+}
+
+.btn-area>button {
+    float: left;
+    height: 28px;
+    margin-right: 5px;
+    padding-left: 26px;
+    line-height: 28px;
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+    font-size: 13px; 
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.search-area {
+    float: right;
+}
+
+.search-input {
+    float: left;
+    width: 156px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    border: 1px solid #d4d4d4;
+}
+
+.search-btn {
+    float: left;
+    width: 44px;
+    height: 28px;
+    cursor: pointer;
+    background: url(../images/userCenter/search.png) center no-repeat;
+    background-color: #71c49a;
+    border: none;
+}
+
+.top-info {
+    line-height: 32px;
+    font-size: 13px;
+}
+
+.top-info-l {
+    float: left;
+}
+
+.top-info-r {
+    float: right;
+}
+
+.top-info-r>span {
+    color: #e01c1c;
+}
+
+.check-all {
+    display: inline-block;
+    line-height: 36px;
+    padding-left: 24px;
+    background: url(../images/userCenter/unchecked.png) 0 center no-repeat;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.check-all.checked-all {
+    background: url(../images/userCenter/checked.png) 0 center no-repeat;
+}
+
+.imgs {
+    padding-top: 30px;
+}
+
+.img-item {
+    position: relative;
+    float: left;
+    width: 154px;
+    height: 145px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    padding: 17px 18px;
+    border: 1px solid #fff;
+}
+
+.checked-mask {
+    position: absolute;
+    display: none;
+    width: 16px;
+    height: 16px;
+    top: 1px;
+    left: 2px;
+    background: url(../images/userCenter/checked-mask.png) center no-repeat;
+}
+
+.img-item.checked {
+    background-color: #f9f9f9;
+    border: 1px solid #d4d4d4;
+}
+
+.img-item.checked>.checked-mask {
+    display: block;
+}
+
+.img-item>img {
+    display: block;
+    width: 154px;
+    height: 112px;
+    border: 1px solid #d4d4d4;
+}
+
+.img-item>p {
+    line-height: 33px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*没有内容样式*/
+.no-item {
+    display: none;
+    width: 464px;
+    margin: 20px auto;
+}
+
+.no-item>p {
+    font-size: 13px;
+    line-height: 77px;
+    text-align: center;
+}
+
+.no-item>p>span {
+    color: #5ab085;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.imgs.is-empty+.no-item {
+    display:  block;
+}
+
+/*回收站样式*/
+button.clear-btn {
+    width: 120px;
+    float: right;
+    background: url(../images/userCenter/delete.png) 12px center no-repeat;
+}
+
+button.clear-btn:hover {
+    background: url(../images/userCenter/delete-h.png) 12px center no-repeat;
+    background-color: #f6ebeb;
+    color: #df3737;
+    border-color: #e3aaaa;
+}
+
+button.restore-btn {
+    width: 80px;
+    float: left;
+    background: url(../images/userCenter/restore.png) 12px center no-repeat;
+}
+
+.restore-btn:hover {
+    background-color: #ebf6f1;
+    color: #5ab085;
+    border-color: #5ab085;
+    background: url(../images/userCenter/restore-h.png) 12px center no-repeat;
+}

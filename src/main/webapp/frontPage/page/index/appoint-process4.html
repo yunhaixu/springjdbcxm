@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/appoint-service2.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>预约流程5</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header"></div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <a href="">预约服务</a> &gt; <span class="now-loc">预约</span>
+                </div>
+                <div class="right-con">
+                    <div class="step-flow">
+                        <ul class="step-items clearfix">
+                            <li class="step-item first cur">
+                                <span class="num">1</span>
+                                <span class="note">区域引导</span>
+                            </li>
+                            <li class="step-item cur">
+                                <span class="num">2</span>
+                                <span class="note">事项选择</span>
+                            </li>
+                            <li class="step-item cur">
+                                <span class="num">3</span>
+                                <span class="note">选择时间</span>
+                            </li>
+                            <li class="step-item cur">
+                                <span class="num">4</span>
+                                <span class="note">填写信息</span>
+                            </li>
+                            <li class="step-item last">
+                                <span class="num">5</span>
+                                <span class="note">预约完成</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-bd">
+                        <div class="ewb-form-row clearfix">
+                            <label class="ewb-form-label l">姓名 </label>
+                            <input type="text" name="confirmpwd" class="ewb-form-input l" value="" />
+                            <label id="mobile-error" class="error" for="mobile">请输入姓名</label>
+                        </div>
+                        <div class="ewb-form-row clearfix">
+                            <label class="ewb-form-label l">身份证号 </label>
+                            <input type="text" name="contacts" class="ewb-form-input l" placeholder="" value="" />
+                        </div>
+                        <div class="ewb-form-row clearfix">
+                            <label class="ewb-form-label l">手机号码 </label>
+                            <input type="text" name="identity" class="ewb-form-input l" placeholder="" value="" />
+                        </div>
+                        <div class="ewb-form-row clearfix">
+                            <label class="ewb-form-label l">验证码 </label>
+                            <input type="text" name="code" class="msg-code ewb-form-input l" placeholder="" value="" />
+                            <button type="button" class="code-img">获取验证码</button>
+                        </div>
+                        <div class="button-area mt30 clearfix">
+                            <button class="grey-btnStyle" type="button">提交</button>
+                            <button class="cancel-btnStyle r" type="button">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer"></div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</body>
+
+</html>

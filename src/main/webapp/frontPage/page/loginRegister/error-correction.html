@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/error-correction.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>纠错</title>
+</head>
+
+<body>
+    <div class="login-content">
+        <div class="log-item clearfix">
+            <label>姓名</label>
+            <input type="text" name="username" placeholder="姓名" class="login-input" />
+            <br/>
+            <span class="tip"></span>
+        </div>
+        <div class="log-item clearfix">
+            <label>密码</label>
+            <input type="password" name="password" placeholder="请输入密码" class="login-input" />
+            <br/>
+        </div>
+        <div class="textarea-container log-item clearfix">
+            <label>纠错内容</label>
+            <textarea class="err-textarea" id="txt" maxlength="200"></textarea>
+            <p class="txt-num"><span id="txt-num">0</span>/200</p>
+        </div>
+        <div class="log-item clearfix">
+            <label>验证码</label>
+            <input type="text" name="code" placeholder="请输入验证码" class="code-input"/><img src="../../images/login/word.png" class="code-img" />
+        </div>
+        <div class="log-item clearfix">
+            <div class="log-item">
+                <button type="button" class="grey-btnStyle" id="login-btn">提 交</button>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript" src="../../js/error-correction.js"></script>
+</body>
+
+</html>

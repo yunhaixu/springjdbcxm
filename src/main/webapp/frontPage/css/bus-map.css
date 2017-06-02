@@ -1,0 +1,28 @@
+.map {
+	float: left;
+	width: 551px;
+	height: 410px;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.traffic-info {
+	width: 347px;
+	float: left;
+	margin: 30px 15px 0 15px;
+}
+
+.info-name {
+	font-size: 20px;
+}
+
+.traffic-info>p {
+	font-size: 14px;
+	padding-left: 20px;
+	line-height: 20px;
+	margin: 8px 0;
+}
+
+.notice {
+	color: #64b5f6;
+}

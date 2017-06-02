@@ -1,0 +1,220 @@
+/**!
+ * [页面名称]:预约服务
+ * author: [陈轩];
+ */
+
+
+/* 上面的流程 */
+
+.right-con {
+    width: 870px;
+    margin: 0 auto;
+}
+
+.step-flow {
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 22px;
+}
+
+.step-item {
+    float: left;
+    position: relative;
+    width: 160px;
+    height: 60px;
+    border-top: 1px solid #d7d7d7;
+    text-align: center;
+    font-size: 16px;
+}
+
+.step-item .num {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: -22px auto 0;
+    background-color: #d7d7d7;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.step-item .note {
+    display: block;
+    padding-top: 15px;
+    line-height: 26px;
+    color: #999;
+}
+
+.step-item.first:before,
+.step-item.last:before {
+    content: "";
+    top: -7px;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.step-item.last,
+.step-item.first {
+    width: 195px;
+}
+
+.step-item.first .num {
+    margin: -22px 0 0 82px;
+}
+
+.step-item.first .note {
+    text-indent: 20px;
+}
+
+.step-item.last .num {
+    margin: -22px 0 0 60px;
+}
+
+.step-item.last .note {
+    text-indent: -35px;
+}
+
+.step-item.first:before {
+    background-color: #5ab085;
+}
+
+.step-item.last:before {
+    background-color: #b6e3cc;
+}
+
+.step-item.last.cur:before {
+    background-color: #5ab085;
+}
+
+.step-item.first:before {
+    left: 0;
+}
+
+.step-item.last:before {
+    right: 0;
+}
+
+.step-item.cur {
+    border-top-color: #5ab085;
+}
+
+.step-item.cur .num {
+    background-color: #5ab085;
+    border: 6px solid #b6e3cc;
+    margin-top: -28px;
+}
+
+.step-item.cur .note {
+    font-weight: bold;
+    color: #5ab085;
+    padding-top: 9px;
+}
+
+.step-item.cur:before,
+.step-item.cur:before {
+    background-color: #5ab085;
+}
+
+
+/*step1*/
+
+.four-area {
+    margin-right: -30px;
+}
+
+.four-area>a {
+    float: left;
+    width: 420px;
+    height: 160px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    background: url(../images/index/turn-rightbg.png) 312px 35px no-repeat;
+    background-color: #d9f5e6;
+}
+
+.four-area>a:hover {
+    background: none;
+    transition: background .8s;
+    background-color: #5aa87d;
+    color: transparent;
+}
+
+.four-area>a:hover .area {
+    color: transparent;
+}
+
+.four-area>a:hover .hover {
+    color: #fff;
+}
+
+.four-area .brief {
+    float: left;
+    width: 295px;
+    margin-top: 10px;
+    margin-left: 15px;
+    line-height: 28px;
+}
+
+.four-area .hover {
+    position: absolute;
+    width: 420px;
+    line-height: 160px;
+    font-size: 30px;
+    color: transparent;
+    text-align: center;
+}
+
+.four-area .area {
+    float: left;
+    font-size: 30px;
+    margin-left: 30px;
+    color: #009241;
+    line-height: 90px;
+}
+/*事项选择*/
+.tab-item {
+    float: left;
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+    background-color: #d9f5e6;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 6px;
+}
+
+.tab-item.active {
+    color: #fff;
+    background-color: #5aa87d;
+}
+
+.tab-panel {
+    margin-top: 20px;
+}
+
+.tab-panel li {
+    float: left;
+    width: 50%;
+    line-height: 32px;
+}
+.tab-panel li>a {
+    padding-left: 8px;
+    background: url(../images/index/dot-normal.png) left center no-repeat;
+}
+.tab-panel li:hover a {
+    background-image: url(../images/index/dot-hover.png);
+    color: #ff9900;
+}
+
+.item-class {
+    padding-left: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #009241;
+    line-height: 35px;
+    background: url(../images/\index/duobianxing.png) left center no-repeat;
+}

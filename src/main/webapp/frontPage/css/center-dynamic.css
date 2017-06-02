@@ -1,0 +1,48 @@
+/**!
+ * [页面名称]:中心动态
+ * author: [高婧];
+ */
+.content .right-content {
+	height: 549px;
+}
+.now-position {
+	margin-left: 10px;
+}
+
+/*tab样式*/
+.hd-items {
+	margin-right: 30px;
+	width: 148px;
+	text-align: center;
+	border: 1px solid #dedede;
+	background-color: #f9f9f9;
+}
+.hd-item {
+	height: 60px;
+	line-height: 60px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.hd-cur {
+	color: #fff;
+	font-weight: bold;
+	background: #5ab085 url("../images/gov-hall/center-right.png") no-repeat 122px 25px;
+}
+.bd-item {
+	width: 834px;
+}
+.dynamic-list li {
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.dynamic-list li a {
+	padding-left: 15px;
+	background: url("../images/gov-hall/point.png") no-repeat 0 center;
+}
+.dynamic-list .date {
+	color: #666;
+}
+/* 分页 */
+.pagelist-mricode {
+	margin-top: 30px;
+}

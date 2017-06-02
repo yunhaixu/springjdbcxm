@@ -1,0 +1,55 @@
+/**!
+ * [页面名称]:用户中心首页
+ * author: [陈轩];
+ */
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+
+
+/*内部内容*/
+
+.inner-content {
+    padding-top: 20px;
+}
+
+.nav-l {
+    float: left;
+    width: 150px;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+}
+
+.nav-item {
+    height: 60px;
+    margin: 0 9px;
+    border-bottom: 1px solid #d6d6d6;
+    line-height: 60px;
+}
+.nav-item.bb0 {
+    border-bottom: 0;
+}
+.nav-item>a {
+    display: block;
+    line-height: 60px;
+    text-align: center;
+}
+
+.nav-item.cur-nav>a,
+.nav-item>a:hover {
+    color: #5ab085;
+    font-weight: bold;
+}
+
+.con-r {
+    float: left;
+    width: 968px;
+    margin-left: 40px;
+}

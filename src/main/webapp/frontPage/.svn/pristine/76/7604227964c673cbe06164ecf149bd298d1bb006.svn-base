@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/gov-hall2.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>政务大厅</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <div class="con-l">
+                    <div class="l-top">
+                        <div class="hd-area">
+                            <ul class="hd-items clearfix">
+                                <li class="hd-item">个人办事</li>
+                                <li class="hd-item">法人办事</li>
+                                <li class="hd-item">场景式服务</li>
+                            </ul>
+                            <div class="search-area">
+                                <input type="text" name="" placeholder="请输入关键字" class="search-input" />
+                                <button class="search-btn"></button>
+                            </div>
+                        </div>
+                        <ul class="bd-area">
+                            <li class="bd-item">
+                                <ul class="clearfix">
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bd-item">
+                                <ul class="clearfix">
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                    <li class="personal-item">
+                                        <a href="#">医疗卫生</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bd-item service-items">
+                                <a href="#" class="service1">开餐馆</a>
+                                <a href="#" class="service2">开网吧</a>
+                                <a href="#" class="service3">新房办证</a>
+                                <a href="#" class="service4">房产过户</a>
+                                <a href="#" class="service5">开药店</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="l-bottom">
+                        <h2 class="lists-hd"><span>热门事项</span></h2>
+                        <ul class="lists-bd1">
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="con-r">
+                    <div class="r-top">
+                        <h2 class="lists-hd2"><span>政策法规</span></h2>
+                        <ul class="lists-bd2">
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="r-mid">
+                        <h2 class="lists-hd2"><span>通知公告</span></h2>
+                        <ul class="lists-bd2">
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="inline-text">此处为热门办事事项</a>
+                                <span class="list-time">03-08</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="r-bottom clearfix">
+                        <a href="#" class="bot-link1"></a>
+                        <a href="#" class="bot-link2"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/myTab.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/gov-hall2.js"></script>
+</body>
+
+</html>

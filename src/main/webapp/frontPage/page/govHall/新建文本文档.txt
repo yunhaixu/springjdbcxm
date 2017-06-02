@@ -1,0 +1,16 @@
+gov-hall 政务大厅 重构 交互完成
+style-ecucation 文体教育 重构 交互完成 数据模拟完成（hasChild 字段来判断是否顶级列表）
+appoint-step1 在线预约-流程1 重构 交互完成
+appoint-step2 在线预约-流程2 重构 交互完成
+appoint-step3 在线预约-流程3 重构 交互完成
+appointment-time.html 预约时间 重构 交互完成
+booking-success.html 预约成功 重构 交互完成
+cancel-apply.html 取消申请弹窗 重构 交互完成
+cancel-appoint.html 取消预约弹窗 重构 交互完成
+confirm-appointment.html 确认预约 重构 交互完成
+gov-hall2.html 政务大厅子页面 重构 交互完成
+item-guide.html 事项指南页面 重构 交互完成
+mail-reply.html 信件回复 重构 交互完成
+reply-query.html 信件回复查询 重构 交互完成
+fair-show.html 办件公示 重构 交互完成
+show-details.html 办件公示详情 重构 交互完成

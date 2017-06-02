@@ -1,0 +1,60 @@
+(function(win, $) {
+    // 选中
+    var $img_item = $('.img-item'),
+        $check_all = $('.check-all');
+    $img_item.click(function() {
+        if ($(this).hasClass('checked')) {
+            $check_all.removeClass('checked-all');
+        };
+        $(this).toggleClass('checked');
+        var isAllChecked = true;
+        $img_item.each(function(i) {
+            isAllChecked = isAllChecked && ($img_item.eq(i).hasClass('checked'));
+        })
+        if (isAllChecked) {
+            $check_all.addClass('checked-all');
+        }
+    });
+    $check_all.click(function() {
+        if ($(this).hasClass('checked-all')) {
+            $img_item.removeClass('checked');
+        } else {
+            $img_item.addClass('checked');
+        }
+        $(this).toggleClass('checked-all');
+    });
+
+    // 删除
+    var $delete_btn = $('.delete-btn');
+    $delete_btn.click(function() {
+        $('.checked').remove();
+    });
+
+    // 右键菜单
+    var menuData = [
+        [{
+            text: "下载",
+            func: function() {
+            	console.log('下载');
+            }
+        }, {
+            text: "删除",
+            func: function() {
+            	$(this).remove();
+            }
+        },{
+            text: "移动到",
+            func: function() {
+            	console.log('移动');
+            }
+        }, {
+            text: "重命名",
+            func: function() {
+            	$(this).find('p').html(prompt('重命名',''));
+            }
+        }]
+    ];
+    $img_item.each(function() {
+        $(this).smartMenu(menuData);
+    })
+}(this, jQuery));

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../js/libs/chosen/chosen.css">
+    <link rel="stylesheet" href="../../css/appoint-step.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>在线预约-step1</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">政务大厅</a> &gt;<a href="">个人办事</a> &gt;<a href="">文体教育</a> &gt;<span class="now-loc">在线申请</span>
+                </div>
+                <div class="index-content clearfix">
+                    <!-- 左侧预约进度条 -->
+                    <ul class="progress-bar l">
+                        <li><span class="line-edge"></span></li>
+                        <li class="completed">
+                            <span class="step">1</span>
+                            <p>填写申请人信息</p>
+                        </li>
+                        <li><span class="line-middle"></span></li>
+                        <li class="completed">
+                            <span class="step">2</span>
+                            <p>填写表格和上传材料</p>
+                        </li>
+                        <li><span class="line-middle"></span></li>
+                        <li class="">
+                            <span class="step">3</span>
+                            <p>完成</p>
+                        </li>
+                        <li><span class="line-edge"></span></li>
+                    </ul>
+                    <!-- 右侧预约成功提醒 -->
+                    <div class="booking-success pt40 l">
+                        <div class="appoint-type">
+                            <p class="bold">民办职业培训学校的设立审批</p>
+                            <p>事项编码：6200000000000138976890XK00008</p>
+                        </div>
+                        <div class="step-head clearfix">
+                            <h5>申请人信息</h5>
+                            <a href="">新增申请人</a>
+                            <a href="">修改申请人</a>
+                        </div>
+                        <div class="step-body niceScroll height376">
+                            <div class="input-row clearfix">
+                                <label>申请人</label>
+                                <input type="text" class="input-one" placeholder="张三">
+                                <span class="no-null">*必填</span>
+                            </div>
+                            <div class="input-row clearfix">
+                                <label>身份证号</label>
+                                <input type="text" class="input-one" placeholder="320564198632258856">
+                                <span class="no-null">*必填</span>
+                            </div>
+                            <div class="input-row clearfix">
+                                <label>联系人</label>
+                                <input type="text" class="input-one" placeholder="张恒">
+                            </div>
+                            <div class="input-row clearfix">
+                                <label>手机号码</label>
+                                <input type="text" class="input-one" placeholder="1901582545">
+                                <span class="no-null">*必填</span>
+                            </div>
+                            <p class="tip">请使用常用手机号，以方便我们事项办理过程中的沟通及办理完成后您能及时收到办理结果的反馈</p>
+                            <div class="input-row clearfix">
+                                <label class="mr16">详细地址</label>
+                                <select class="chosensel ml16">
+                                    <option value="1">江苏省</option>
+                                </select>
+                                <span class="line-text">省</span>
+                                <select class="chosensel">
+                                    <option value="1">南京市</option>
+                                </select>
+                                <span class="line-text">市</span>
+                                <select class="chosensel">
+                                    <option value="1">玄武区</option>
+                                </select>
+                                <span class="line-text">区(县)</span>
+                            </div>
+                            <div class="input-row clearfix">
+                                <label></label>
+                                <input type="text" class="input-one">
+                                <span class="no-null">*必填</span>
+                            </div>
+                            <p class="tip">地址需填写完成，例：江苏省苏州市苏州工业园区xx街道xx社区44栋304室</p>
+                            <div class="input-row clearfix">
+                                <label>备注</label>
+                                <input type="text" class="input-one">
+                            </div>
+                            <div class="two-btn clearfix">
+                                 <button class="grey-btnStyle mr20">下一步</button>
+                           <button class="cancel-btnStyle">保存草稿</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/chosen/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/appoint-step.js"></script>
+</body>
+
+</html>

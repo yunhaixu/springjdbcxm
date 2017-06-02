@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/hall-distribution1.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>大厅分布</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="container niceScroll">
+        <div class="right-content">
+            <!-- 当前位置 -->
+            <div class="now-position">
+                当前位置：<a href="">首页</a> &gt; <span class="now-loc">大厅分布</span>
+            </div>
+            <div class="two-link clearfix">
+                <a class="cur l" href="#">F1</a>
+                <a class="r" href="hall-distribution2.html">F2</a>
+            </div>
+        </div>
+        <div class="content clearfix" id="content">
+            <div class="left-a">
+                <div class="top-area">
+                    <ul class="clearfix">
+                        <li class="bottom" data-num="A29">A29</li>
+                        <li class="top mr8" data-num="A30">A30</li>
+                        <li class="bottom mr8" data-num="A31">A31</li>
+                        <li class="top mr8" data-num="A32">A32</li>
+                        <li class="bottom" data-num="A33">A33</li>
+                        <li class="top" data-num="A34">A34</li>
+                        <li class="bottom" data-num="A35">A35</li>
+                        <li class="top mr8" data-num="A36">A36</li>
+                        <li class="bottom" data-num="A37">A37</li>
+                        <li class="top mr8" data-num="A38">A38</li>
+                        <li class="bottom mr8" data-num="A39">A39</li>
+                        <li class="top mr8" data-num="A40">A40</li>
+                        <li data-num="bottom A41">A41</li>
+                    </ul>
+                </div>
+                <div class="clearfix mt70">
+                    <div class="left-area">
+                        <ul>
+                            <li class="mb8" data-num="A28">A28</li>
+                            <li class="mb8" data-num="A27">A27</li>
+                            <li data-num="A26">A26</li>
+                            <li data-num="A25">A25</li>
+                            <li data-num="A24">A24</li>
+                            <li class="mb8" data-num="A23">A23</li>
+                            <li class="mb8" data-num="A22">A22</li>
+                            <li data-num="A21">A21</li>
+                            <li data-num="A20">A20</li>
+                            <li data-num="A19">A19</li>
+                            <li data-num="A18">A18</li>
+                            <li data-num="A17">A17</li>
+                            <li class="mb8" data-num="A16">A16</li>
+                            <li data-num="A15">A15</li>
+                            <li data-num="A14">A14</li>
+                            <li data-num="A13">A13</li>
+                        </ul>
+                    </div>
+                    <div class="special-area">
+                        <ul>
+                            <li class="special" data-num="出入境资助预受理台">出入境资助预受理台</li>
+                        </ul>
+                    </div>
+                    <div class="right-area">
+                        <ul>
+                            <li data-num="A42">A42</li>
+                            <li data-num="A43">A43</li>
+                            <li data-num="A44">A44</li>
+                            <li data-num="A45">A45</li>
+                            <li data-num="A46">A46</li>
+                            <li data-num="A47">A47</li>
+                            <li data-num="A48">A48</li>
+                            <li data-num="A49">A49</li>
+                            <li data-num="A50">A50</li>
+                            <li data-num="A51">A51</li>
+                            <li data-num="A52">A52</li>
+                            <li data-num="A53">A53</li>
+                            <li data-num="A54">A54</li>
+                            <li data-num="A55">A55</li>
+                            <li data-num="A56">A56</li>
+                            <li data-num="A57">A57</li>
+                            <li data-num="A58">A58</li>
+                            <li data-num="A59">A59</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-area mt67">
+                    <ul class="clearfix">
+                        <li class="bottom mr8" data-num="A12">A12</li>
+                        <li class="top mr8" data-num="A11">A11</li>
+                        <li class="bottom mr8" data-num="A10">A10</li>
+                        <li class="top mr8" data-num="A09">A09</li>
+                        <li class="bottom" data-num="A08">A08</li>
+                        <li class="top" data-num="A07">A07</li>
+                        <li class="bottom" data-num="A06">A06</li>
+                        <li class="top mr8" data-num="A05">A05</li>
+                        <li class="bottom" data-num="A04">A04</li>
+                        <li class="top" data-num="A03">A03</li>
+                        <li class="bottom" data-num="A02">A02</li>
+                        <li class="top" data-num="A01">A01</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-b">
+                <div class="top-area">
+                    <ul class="clearfix">
+                        <li class="mr8 bottom" data-num="B42">B42</li>
+                        <li class="top" data-num="B41">B41</li>
+                        <li class="mr8 bottom" data-num="B40">B40</li>
+                        <li class="mr8 top" data-num="B39">B39</li>
+                        <li class="mr8bottom" data-num="B38">B38</li>
+                        <li class="bottom" data-num="B37">B37</li>
+                        <li class="top" data-num="B36">B36</li>
+                        <li class="bottom" data-num="B35">B35</li>
+                        <li class="mr8 top" data-num="B34">B34</li>
+                        <li class="bottom" data-num="B33">B33</li>
+                        <li class="mr8 top" data-num="B32">B32</li>
+                        <li class="bottom" data-num="B31">B31</li>
+                        <li class="top" data-num="B30">B30</li>
+                    </ul>
+                </div>
+                <div class="clearfix mt70">
+                    <div class="left-area">
+                        <ul>
+                            <li class="mb5" data-num="B43">B43</li>
+                            <li class="mb5" data-num="B44">B44</li>
+                            <li class="mb5" data-num="B45">B45</li>
+                            <li class="mb5" data-num="B46">B46</li>
+                            <li data-num="B47">B47</li>
+                            <li data-num="B48">B48</li>
+                            <li data-num="B49">B49</li>
+                            <li data-num="B50">B50</li>
+                            <li data-num="B51">B51</li>
+                            <li data-num="B52">B52</li>
+                            <li data-num="B53">B53</li>
+                            <li data-num="B54">B54</li>
+                            <li data-num="B55">B55</li>
+                            <li data-num="B56">B56</li>
+                            <li data-num="B57">B57</li>
+                            <li class="mb5" data-num="B58">B58</li>
+                            <li data-num="B59">B59</li>
+                            <li data-num="B60">B60</li>
+                        </ul>
+                    </div>
+                    <div class="right-area">
+                        <ul>
+                            <li data-num="B29">B29</li>
+                            <li data-num="B28">B28</li>
+                            <li class="mb8" data-num="B27">B27</li>
+                            <li data-num="B26">B26</li>
+                            <li class="mb8" data-num="B25">B25</li>
+                            <li data-num="B24">B24</li>
+                            <li class="mb8" data-num="B23">B23</li>
+                            <li data-num="B22">B22</li>
+                            <li data-num="B21">B21</li>
+                            <li data-num="B20">B20</li>
+                            <li data-num="B19">B19</li>
+                            <li data-num="B18">B18</li>
+                            <li data-num="B17">B17</li>
+                            <li data-num="B16">B16</li>
+                            <li class="mb8" data-num="B15">B15</li>
+                            <li data-num="B14">B14</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-area mt67">
+                    <ul>
+                        <li class="mr6 bottom" data-num="B01">B01</li>
+                        <li data-num="B02 top">B02</li>
+                        <li class="bottom" data-num="B03">B03</li>
+                        <li class="top" data-num="B04">B04</li>
+                        <li class="bottom" data-num="B05">B05</li>
+                        <li class="top" data-num="B06">B06</li>
+                        <li class="bottom" data-num="B07">B07</li>
+                        <li class="top" data-num="B08">B08</li>
+                        <li class="mr6 bottom" data-num="B09">B09</li>
+                        <li class="mr6 top" data-num="B10">B10</li>
+                        <li class="mr6 bottom" data-num="B11">B11</li>
+                        <li class="mr6 top" data-num="B12">B12</li>
+                        <li class="bottom" data-num="B13">B13</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <!-- temp1 -->
+    <script type="text/x-template" id="temp1">
+        <div class="hall-tip">
+            <i class="sanjiao"></i>
+            <h5>{{title}}</h5>
+            <h6>办理事项:</h6>
+            <ol>
+                {{#detail}}
+                <li>{{name}}</li>
+                {{/detail}}
+            </ol>
+        </div>
+    </script>
+    <!-- temp2 -->
+    <script type="text/x-template" id="temp2">
+        <div class="hall-tip">
+            <h5>{{title}}</h5>
+            <h6>办理事项:</h6>
+            <ol>
+                {{#detail}}
+                <li>{{name}}</li>
+                {{/detail}}
+            </ol>
+            <i class="sanjiao"></i>
+        </div>
+    </script>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/hall-distribution1.js"></script>
+</body>
+
+</html>

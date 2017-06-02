@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../js/libs/chosen/chosen.css">
+    <link rel="stylesheet" href="../../css/style-education.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>文体教育</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">政务大厅</a> &gt; <a href="">个人办事</a> &gt; <span class="now-loc">文体教育</span>
+                </div>
+                <div class="goval-content">
+                    <div class="goval-hd clearfix">
+                        <div class="left-hd">
+                            <span class="title">文体教育</span>共<span class="red">14</span>个事项，其中有<span class="red">3</span>个（含3个子项）可在线申请
+                        </div>
+                        <div class="right-hd clearfix">
+                            <select id="TestSelect" class="province l">
+                                <option value="1">婚育服务</option>
+                                <option value="2">婚育服务1</option>
+                            </select>
+                            <div class="search-block r clearfix">
+                                <input type="text" placeholder="请输入关键字搜索">
+                                <button></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gover-bd niceScroll">
+                        <ul id="gover-bd">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <!--无子项的模板-->
+    <script type="text/x-template" id="tmpl1">
+        <li class="first-li">
+            <div class="list-hd">
+                <span class="list-title">{{title}}</span>
+                <span class="type-tip">一</span>
+                <span class="collection">收藏</span>
+            </div>
+            <div class="list-bd clearfix">
+                <p class="department">办理部门：{{department}}</p>
+                <p class="item-type">事项类型：{{itemType}}</p>
+                <p class="report-main">申报主体：{{reportMain}}</p>
+            </div>
+        </li>
+    </script>
+    <!--有子项的模板-->
+    <script type="text/x-template" id="tmpl2">
+        <li class="first-li">
+            <div class="list-hd">
+                <i class="slide-plus"></i><span class="list-title">{{title}}</span>
+            </div>
+            <ul>
+                {{#childList}}
+                <li class="second-li">
+                    <div class="list-hd clearfix">
+                        <span class="list-title">{{title}}</span>
+                        <span class="type-tip"><i class="sanjiao-tip">在线预约</i>预</span>
+                        <span class="collection">收藏</span>
+                    </div>
+                    <div class="list-bd clearfix">
+                        <p class="department">办理部门：{{department}}</p>
+                        <p class="item-type">事项类型：{{itemType}}</p>
+                        <p class="report-main">申报主体：{{reportMain}}</p>
+                    </div>
+                </li>
+                {{/childList}}
+            </ul>
+        </li>
+    </script>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/chosen/chosen.jquery.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/style-education.js"></script>
+</body>
+
+</html>

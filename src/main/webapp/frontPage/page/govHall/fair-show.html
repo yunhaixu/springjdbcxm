@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/chosen/chosen.css">
+    <link rel="stylesheet" href="../../js/libs/datepicker/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/fair-show.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>政务大厅</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">首页</a> &gt; <a href="">政务大厅</a> &gt; <span class="now-loc">办件公示</span>
+                </div>
+                <div class="index-content">
+                    <!-- 顶部内容 -->
+                    <div class="con-top">办件公示</div>
+                    <div class="con-body">
+                        <ul class="clearfix">
+                            <li class="operate-item">
+                                <span class="operate-name">部门</span>
+                                <select data-placeholder="全部" id="departmentSelect" class="department">
+                                    <option value=""></option>
+                                    <option value="1">气象局</option>
+                                    <option value="2">工商局</option>
+                                    <option value="3">人力资源与社会保障局</option>
+                                </select>
+                            </li>
+                            <li class="operate-item">
+                                <span class="operate-name">申请时间</span>
+                                <input type="text" class="txt-date" id="time">
+                            </li>
+                            <li class="operate-item clearfix">
+                                <span class="operate-name l">办件编号</span>
+                                <div class="search-con l clearfix">
+                                    <input type="text" class="int-search l" />
+                                    <span class="btn-search r"></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="table-con niceScroll">
+                            <table class="show-table">
+                                <thead class="show-hd">
+                                    <tr>
+                                        <th>办件编号</th>
+                                        <th>办理部门</th>
+                                        <th>申请人/企业</th>
+                                        <th>申请时间</th>
+                                        <th>办理状态</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="show-bd">
+                                    <tr>
+                                        <td>M2671818972</td>
+                                        <td>气象局</td>
+                                        <td>新创资源再生有限公司</td>
+                                        <td>2017-03-11</td>
+                                        <td>办件中</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M2671818972</td>
+                                        <td>人力资源与社会保障局</td>
+                                        <td>新创资源再生有限公司</td>
+                                        <td>2017-03-11</td>
+                                        <td>办件中</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M2671818972</td>
+                                        <td>工商局</td>
+                                        <td>新创资源再生有限公司</td>
+                                        <td>2017-03-11</td>
+                                        <td>办件中</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M2671818972</td>
+                                        <td>工商局</td>
+                                        <td>新创资源再生有限公司</td>
+                                        <td>2017-03-11</td>
+                                        <td>办件中</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M2671818972</td>
+                                        <td>气象局</td>
+                                        <td>新创资源再生有限公司</td>
+                                        <td>2017-03-11</td>
+                                        <td>办件中</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M2671818972</td>
+                                        <td>人力资源与社会保障局</td>
+                                        <td>新创资源再生有限公司</td>
+                                        <td>2017-03-11</td>
+                                        <td>办件中</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M2671818972</td>
+                                        <td>人力资源与社会保障局</td>
+                                        <td>新创资源再生有限公司</td>
+                                        <td>2017-03-11</td>
+                                        <td>办件中</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/tabview.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/chosen/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/datepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/fair-show.js"></script>
+</body>
+
+</html>

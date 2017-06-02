@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/item-detail.css">
+    <link rel="stylesheet" href="../../css/mricode.pagination.css">
+    <link rel="stylesheet" href="../../css/message.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>办件详情</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <!-- 当前位置 -->
+            <div class="now-position">
+                当前位置：<a href="">首页</a> &gt; <a href="">用户中心</a> &gt; <a href="">办事服务</a> &gt; <span class="now-loc">我的办件</span>
+            </div>
+            <div class="userCenter-main">
+                <div class="center-nav clearfix">
+                    <span class="name">会飞的小鱼</span>
+                    <ul class="nav clearfix">
+                        <li>
+                            <a href="">主页</a>
+                        </li>
+                        <li>
+                            <a class="active" href="">办件服务</a>
+                        </li>
+                        <li>
+                            <a href="">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="">我的证照</a>
+                        </li>
+                    </ul>
+                    <div class="msg-loginOut clearfix">
+                        <a href="javascript:;" class="msg">消息<i>18</i></a>
+                        <a href="javascript:;" class="loginOut">注销</a>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="inner-content clearfix">
+                    <div class="content-top clearfix">
+                        <div class="buttons l" id="buttons">
+                            <button class="small-btn all-btn" id="all" data-value='0'>全部</button>
+                            <button class="small-btn" id="unread" data-value='1'>未读（19）</button>
+                        </div>
+                        <div class="operate r">
+                            <span class="read">全部置为已读</span>
+                            <span class="empty">清空所有消息</span>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <!-- 列表 -->
+                        <ul class="item-list" id="msg-list">
+                            
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="pagelist-mricode clearfix" id="pager"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    
+    <script type="text/x-template" id="msg-temp">
+        {{#item}}
+        <li class="clearfix">
+            <div class="item-text l">
+                <p class="item-title">{{title}}</p>
+                <p class="item-content">{{content}} </p>
+            </div>
+            <span class="date r">{{date}}</span>
+        </li>
+        {{/item}}
+    </script>
+    
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/mricode.pagination.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/message.js"></script>
+</body>
+
+</html>

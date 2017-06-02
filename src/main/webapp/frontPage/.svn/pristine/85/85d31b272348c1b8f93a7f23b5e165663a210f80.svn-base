@@ -1,0 +1,204 @@
+/**!
+ * [css]:文体教育
+ * author: [陈轩];
+ */
+
+.goval-content {
+    width: 950px;
+    margin: 15px auto 0 auto;
+}
+
+.goval-hd {
+    height: 31px;
+    line-height: 31px;
+}
+
+.left-hd {
+    float: left;
+    padding-left: 34px;
+    font-size: 13px;
+    color: #999;
+    background: url(../images/gov-hall/goval-hdBg.png) left center no-repeat;
+}
+
+.left-hd .title {
+    padding-right: 15px;
+    color: #009241;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.left-hd .red {
+    color: #cd2020;
+}
+
+.right-hd {
+    float: right;
+    width: 335px;
+    margin-right: 36px;
+}
+
+.goval-content .search-block {
+    background: none;
+    height: 29px;
+    margin-top: 0;
+    width: 220px;
+    border: 1px solid #dbdbdb;
+}
+
+.goval-content .search-block > input {
+    width: 163px;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 12px;
+}
+
+.goval-content .search-block > button {
+    width: 163px;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 13px;
+    background: url(../images/gov-hall/government-searchBg.png) center no-repeat #65ba8f;
+    height: 29px;
+    width: 45px;
+}
+
+
+/*list-hd*/
+
+.gover-bd {
+    margin-top: 20px;
+    height: 405px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.gover-bd>ul {
+    margin-right: 35px;
+}
+
+.first-li {
+    margin-bottom: 8px;
+    border: 1px solid #dcdcdc;
+}
+
+.list-hd {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    background-color: #e8f7ee;
+}
+
+.list-title {
+    float: left;
+    font-weight: bold;
+    padding-left: 33px;
+}
+
+.type-tip {
+    float: left;
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+    margin-top: 4px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #009241;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: url(../images/common/box-radius.png) center no-repeat\9;
+}
+
+.collection {
+    float: right;
+    margin-right: 23px;
+    color: #009241;
+    cursor: pointer;
+}
+
+.list-bd {
+    margin-left: 33px;
+    padding-bottom: 20px;
+}
+
+.list-bd>p {
+    padding-top: 12px;
+}
+
+.department {
+    float: left;
+    width: 40%;
+}
+
+.item-type {
+    float: left;
+    width: 60%;
+}
+
+.report-main {
+    float: left;
+}
+
+.slide-plus {
+    position: absolute;
+    display: block;
+    left: 10px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background-image: url(../images/gov-hall/slide-plus.png);
+}
+
+.slide-plus.change {
+    background-image: url(../images/gov-hall/slide-minius.png);
+}
+
+.second-li .list-hd {
+    margin: 0 24px;
+    padding: 6px 0 8px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #dcdcdc;
+}
+.second-li .list-bd {
+	padding-bottom: 16px;
+}
+
+.second-li .list-title {
+    color: #009241;
+    padding-left: 9px;
+}
+
+.second-li .collection {
+    color: #333;
+    margin-right: 0;
+}
+
+.second-li .list-bd>p {
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.type-tip:hover .sanjiao-tip {
+    display: block;
+}
+
+.sanjiao-tip {
+    display: none;
+    position: absolute;
+    margin-top: 19px;
+    margin-left: -23px;
+    width: 66px;
+    height: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #333;
+    background-image: url(../images/gov-hall/snajiao-tip.png);
+}
+
+/*chosen*/
+.chosen-container {
+    float: left;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/material-prepared.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>准备材料预知</title>
+</head>
+
+<body>
+    <div class="material-prepared">
+        <div class="header clearfix">
+            <span class="title l">准备材料预知</span>
+            <i class="close r" id="close-btn"></i>
+        </div>
+        <div class="table-body">
+            <h5>自己准备</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="th1">序号</th>
+                        <th class="th2">名称</th>
+                        <th class="th3">说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>住所使用证明</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>身份证明</td>
+                        <td>投资人、法人、主要负责人、店长、网管身份证明</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>公司章程</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>ISP接入意向书</td>
+                        <td>接入速率、固定IP地址和EMAIL地址</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>营业场所建筑平面图、计算机和摄录像设备分布图</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>帮办处领取/网上下载</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="th1">序号</th>
+                        <th class="th2">名称</th>
+                        <th class="th3">说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>名称预先核准申请书</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>授权委托书</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>公司登记（备案）申请书</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>董事、监事、经理任职文件</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>经营管理技术系统安装证明文件</td>
+                        <td>管软件使用承诺书三份</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="remark">备注：公安、消防类的准备材料详见具体办理步骤</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/material-prepared.js"></script>
+</body>
+
+</html>

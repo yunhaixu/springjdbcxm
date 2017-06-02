@@ -1,0 +1,80 @@
+/* 左侧预约进度条 */
+.progress-bar {
+	padding-top: 40px;
+	width: 67px;
+	text-align: center;
+}
+.progress-bar li {
+	line-height: 25px;
+}
+.line-edge {
+	display: inline-block;
+	width: 1px;
+	height: 18px;
+	border-left: 1px solid #dbdbdb;
+}
+.line-middle {
+	display: inline-block;
+	width: 1px;
+	height: 76px;
+	border-left: 1px solid #dbdbdb;
+}
+.step {
+	padding-left: 1px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	background: url("../images/gov-hall/step-bg.png") no-repeat center;
+}
+.completed {
+	color: #39ab6c;
+}
+.completed .step {
+	color: #fff;
+	background: url("../images/gov-hall/completed-step-bg.png") no-repeat center;
+}
+
+/* 右侧预约成功提醒 */
+.booking-success {
+	margin-top: 11px;
+	width: 935px;
+	height: 467px;
+	overflow: auto;
+}
+.booking-success .success {
+	margin-left: 120px;
+	width: 686px;
+}
+.success-text {
+    text-indent: 28px;
+	margin-top: 50px;
+	width: 100%;
+	color: #e77918;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+.success-content {
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+}
+.success-content .matters,
+.success-content .mine {
+	color: #e77918;
+}
+.notice-items {
+	margin-top: 70px;
+	margin-left: 120px;
+	width: 648px;
+}
+.notice-title {
+	color: #e77918;
+	font-size: 13px;
+	font-weight: bold;
+}
+.notice-items li {
+	line-height: 30px;
+}

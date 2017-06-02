@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/appoint-step.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>在线申请-step2</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <!-- 当前位置 -->
+                <div class="now-position">
+                    当前位置：<a href="">政务大厅</a> &gt;<a href="">个人办事</a> &gt;<a href="">文体教育</a> &gt;<span class="now-loc">在线申请</span>
+                </div>
+                <div class="index-content clearfix">
+                    <!-- 左侧预约进度条 -->
+                    <ul class="progress-bar l">
+                        <li><span class="line-edge"></span></li>
+                        <li class="completed">
+                            <span class="step">1</span>
+                            <p>填写申请人信息</p>
+                        </li>
+                        <li><span class="line-middle"></span></li>
+                        <li class="completed">
+                            <span class="step">2</span>
+                            <p>填写表格和上传材料</p>
+                        </li>
+                        <li><span class="line-middle"></span></li>
+                        <li class="">
+                            <span class="step">3</span>
+                            <p>完成</p>
+                        </li>
+                        <li><span class="line-edge"></span></li>
+                    </ul>
+                    <!-- 右侧预约成功提醒 -->
+                    <div class="booking-success pt40 l">
+                       <div class="step-head clearfix">
+                           <h5>表格填写</h5>
+                       </div>
+                       <div class="step-body">
+                           <table>
+                               <thead>
+                                   <tr>
+                                       <th>序号</th>
+                                       <th>表格名称</th>
+                                       <th>操作</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>常住人口登记表</td>
+                                       <td><span class="fill-btn">填写</span></td>
+                                   </tr>
+                                    <tr>
+                                       <td>2</td>
+                                       <td>户口审批申报表</td>
+                                       <td>已填写 <span class="download-btn">下载</span></td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                       <div class="step-head clearfix">
+                           <h5>表格填写</h5>
+                       </div>
+                       <div class="step-body">
+                           <table>
+                               <thead>
+                                   <tr>
+                                       <th>序号</th>
+                                       <th>材料名称</th>
+                                       <th>状态</th>
+                                       <th>操作</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>夫妻双方身份证（男）</td>
+                                       <td>未上传</td>
+                                       <td><span class="upload-btn">上传</span></td>
+                                   </tr>
+                                    <tr>
+                                       <td>2</td>
+                                       <td>夫妻双方身份证（女）</td>
+                                       <td>已上传：正面</td>
+                                       <td><span class="upload-btn">从证照里选择</span>       <span class="upload-btn">继续上传</span></td>
+                                   </tr>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>结婚证</td>
+                                       <td>已经完成</td>
+                                       <td></td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                       <div class="three-btn clearfix">
+                           <button class="grey-btnStyle">确认申请</button>
+                           <button class="return-btnStyle">返回上一步</button>
+                           <button class="cancel-btnStyle" id="cancel">放弃申请</button>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script src="../../js/appoint-step2.js"></script>
+</body>
+
+</html>

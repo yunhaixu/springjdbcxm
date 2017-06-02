@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/killercarousel.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>首页</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header"></div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content">
+                <div class="index-tab">
+                    <div class="four-link">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="" class="one">大厅分布</a>
+                            </li>
+                            <li>
+                                <a href="" class="two">窗口电话</a>
+                            </li>
+                            <li>
+                                <a href="" class="three">服务百科</a>
+                            </li>
+                            <li>
+                                <a href="" class="four">公交地图</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 请注意结构中的data-role属性，与样式无关，样式可自定义-->
+                    <div id="doc-tabs" class="tabview">
+                        <div class="tabview-hd" data-role="head">
+                            <ul class="clearfix">
+                                <li class="tab-items" data-role="tab" data-target="html">个人办事<i></i></li>
+                                <li class="tab-items" data-role="tab" data-target="css">场景式服务<i></i></li>
+                                <li class="tab-items" data-role="tab" data-target="js">法人办事<i></i></li>
+                            </ul>
+                        </div>
+                        <div data-role="body">
+                            <div data-role="tab-content" data-id="html" class="tab-panels seven-link tabOne hidden">
+                                <ul>
+                                    <li class="one">
+                                        <a href="">医疗卫生</a>
+                                    </li>
+                                    <li class="two">
+                                        <a href="">交通运输</a>
+                                    </li>
+                                    <li class="three">
+                                        <a href="">出境入境</a>
+                                    </li>
+                                    <li class="four">
+                                        <a href="">社会保障</a>
+                                    </li>
+                                    <li class="five">
+                                        <a href="">婚育服务</a>
+                                    </li>
+                                    <li class="six">
+                                        <a href="">投资审批</a>
+                                    </li>
+                                    <li class="seven">
+                                        <a href="">农林牧渔</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div data-role="tab-content" data-id="css" class="tab-panels">
+                                <div id="wrapper" style="width:860px;margin-top: 20px">
+                                    <div class="kc-wrap">
+                                        <div class="kc-item">
+                                            <img src="../../images/index/image3.jpg" alt="房产过户">
+                                        </div>
+                                        <a href="gov-hall.html" class="kc-item">
+                                            <img src="../../images/index/image4.jpg" alt="新房办证">
+                                        </a>
+                                        <div class="kc-item">
+                                            <img src="../../images/index/image5.jpg" alt="开药店">
+                                        </div>
+                                        <div class="kc-item">
+                                            <img src="../../images/index/image3.jpg" alt="房产过户">
+                                        </div>
+                                        <div class="kc-item">
+                                            <img src="../../images/index/image4.jpg" alt="新房办证">
+                                        </div>
+                                        <div class="kc-item">
+                                            <img src="../../images/index/image5.jpg" alt="开药店">
+                                        </div>
+                                        <div class="kc-item">
+                                            <img src="../../images/index/image1.jpg" alt="开餐馆">
+                                        </div>
+                                        <div class="kc-item">
+                                            <img src="../../images/index/image2.jpg" alt="开网吧">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-role="tab-content" data-id="js" class="tab-panels seven-link tabTwo hidden">
+                                <ul>
+                                    <li class="one">
+                                        <a href="">就业创业</a>
+                                    </li>
+                                    <li class="two">
+                                        <a href="">商事登记</a>
+                                    </li>
+                                    <li class="three">
+                                        <a href="">公安消防</a>
+                                    </li>
+                                    <li class="four">
+                                        <a href="">税收财政</a>
+                                    </li>
+                                    <li class="five">
+                                        <a href="">国土规划</a>
+                                    </li>
+                                    <li class="six">
+                                        <a href="">社会保障</a>
+                                    </li>
+                                    <li class="seven">
+                                        <a href="">环保绿化</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer"></div>
+    
+    <script type="text/javascript" src="../../js/libs/tabview.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/killercarousel.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/echarts.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/index.js"></script>
+</body>
+
+</html>

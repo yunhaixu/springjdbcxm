@@ -1,0 +1,80 @@
+/**!
+ * [页面名称]:新增申请人
+ * author: [程姣姣];
+ */
+
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+/* 新增申请人 */
+.tab-hd {
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 15px;
+	margin: 14px 0 38px 0;
+}
+.tab-target {
+	font-size: 15px;
+	padding: 0 16px 13px;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+}
+.cur {
+	font-weight: bold;
+	border-bottom-color: #70c49a;
+}
+.tab-bd {
+	min-height: 578px;
+	margin-left: 18px;
+}
+.editor-item {
+	margin-bottom: 20px;
+}
+.editor-label,
+.company-label {
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+	cursor: pointer;
+}
+.editor-input,
+.company-input {
+	margin-right: 30px;
+	padding-left: 12px;
+    border: 1px solid #d5d5d5;
+    height: 38px;
+    line-height: 38px;
+    width: 315px;
+}
+.btn-save,
+.btn-company {
+	width: 170px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    border: none;
+    background-color: #70c49a;
+    margin: 30px 0 0 370px;
+}
+.btn-save:hover,
+.btn-company:hover {
+    background-color: #5ab085;
+}
+.company-label {
+	width: 230px;
+}
+.company-input {
+	width: 490px;
+}
+.btn-company {
+	margin-left: 233px;
+}

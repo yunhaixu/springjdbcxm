@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<!--引入JS-->
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/anhui.js"></script>
+
+</head>
+<body>
+<div>首页</div>
+<div>
+
+ <div id="main" style="width: 600px;height:400px;"></div>
+
+</div>
+<script type="text/javascript">
+
+	 var myChart = echarts.init(document.getElementById('main'));
+	 
+
+	 var option = {
+			 geo: {
+			        map: '安徽',
+			        label: {
+			        	normal:{
+			        		show:true,
+			        		textStyle:{
+			        			color:"#fff"
+			        		}
+			        	},
+			            emphasis: {
+			                show: false
+			            }
+			        },
+			        roam: true,
+			        itemStyle: {
+			            normal: {
+			                areaColor: '#323c48',
+			                borderColor: '#404a59'
+			            },
+			            emphasis: {
+			                areaColor: '#2a333d'
+			            }
+			        }
+			    },
+			    series:[{
+        name: '点',
+        type: 'lines',
+        zlevel: 2,
+        symbol: ['none', 'arrow'],
+        symbolSize: 10,
+        effect: {
+            show: true,
+            period: 6,
+            trailLength: 0,
+           
+            symbolSize: 15
+        },
+        lineStyle: {
+            normal: {
+                
+                width: 3,
+                opacity: 0.6,
+                curveness: 0.2
+            }
+        },
+        data: [
+               {
+            	   fromName: "合肥市",
+                   toName: "滁州市",
+                   coords: [[117.283042,31.86119], [[118.316264,32.303627]]] ,  
+               	   lineStyle:{
+               		   normal:{
+               			   color:"yellow"
+               		   }
+               	   }
+               }
+               ]
+    },
+    {
+        name: '点',
+        type: 'effectScatter',
+        coordinateSystem: 'geo',
+        zlevel: 2,
+        rippleEffect: {
+            brushType: 'stroke'
+        },
+        symbolSize: function (val) {
+            return val[2] / 8;
+        },
+        data: [
+               {value:[117.283042,31.86119]
+               ,itemStyle:{
+            	   normal:{
+            		   color:"yellow"
+            	   }
+               }
+               },
+               {value:[118.316264,32.303627]
+               ,itemStyle:{
+            	   normal:{
+            		   color:"yellow"
+            	   }
+               }
+               }
+               ]
+        /* item[1].map(function (dataItem) {
+            return {
+                name: dataItem[1].name,
+                value: geoCoordMap[dataItem[1].name].concat([dataItem[1].value])
+            };
+        }) */
+    }] 
+	 };
+
+  myChart.setOption(option);
+
+
+</script>
+
+</body>
+</html>

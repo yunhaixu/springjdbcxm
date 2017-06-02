@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/register.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>注册</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header"></div>
+    <!-- notice -->
+    <div class="container" id="notice"></div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <div class="left-nav" id="nav"></div>
+            <div class="right-content niceScroll">
+                <div class="register-hd clearfix">
+                    <span class="hd-item hd-cur">个人注册</span>
+                    <span class="hd-item">法人注册</span>
+                    <p class="has-account">已有账号，请直接<a href="#">登录</a></p>
+                </div>
+                <!-- 表单 -->
+                <div class="ewb-cm-bd">
+                    <div class="ewb-form">
+                        <form name="form" id="registerForm">
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">手机号 </label>
+                                <input type="text" name="mobile" class="ewb-form-input l" placeholder="" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">密码 </label>
+                                <input type="password" name="password" id="password" class="ewb-form-input" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">确认密码 </label>
+                                <input type="password" name="confirmpwd" class="ewb-form-input l" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">真实姓名 </label>
+                                <input type="text" name="contacts" class="ewb-form-input l" placeholder="" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">身份证号码 </label>
+                                <input type="text" name="identity" class="ewb-form-input l" placeholder="" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">短信验证码 </label>
+                                <input type="text" name="code" class="msg-code ewb-form-input l" placeholder="" value="" />
+                                <button type="button" class="code-img">获取验证码</button>
+                            </div>
+                            <div class="ewb-form-row">
+                                <button name="register" class="reg-btn grey-btnStyle">注册</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ewb-form">
+                        <form name="form" id="registerForm2">
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">手机号 </label>
+                                <input type="text" name="mobile" class="ewb-form-input l" placeholder="" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">密码 </label>
+                                <input type="password" name="password2" id="password2" class="ewb-form-input" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">确认密码 </label>
+                                <input type="password" name="confirmpwd2" class="ewb-form-input l" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">企业名称 </label>
+                                <input type="text" name="contacts" class="ewb-form-input l" placeholder="" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">统一社会信用代码 </label>
+                                <input type="text" name="identity" class="ewb-form-input l" placeholder="" value="" />
+                            </div>
+                            <div class="ewb-form-row clearfix">
+                                <label class="ewb-form-label l">短信验证码 </label>
+                                <input type="text" name="code2" class="msg-code ewb-form-input l" placeholder="" value="" />
+                                <button type="button" class="code-img">获取验证码</button>
+                            </div>
+                            <div class="ewb-form-row">
+                                <button name="register" class="reg-btn grey-btnStyle">注册</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer"></div>
+    <script type="text/javascript" src="../../js/libs/myTab.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.validate.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/register.js"></script>
+</body>
+
+</html>

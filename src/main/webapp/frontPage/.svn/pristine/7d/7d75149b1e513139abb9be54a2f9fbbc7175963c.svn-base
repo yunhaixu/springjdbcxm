@@ -1,0 +1,30 @@
+<!-- nav -->
+<ul id="nav-ul">
+    <li>
+        <a href="javascript:;" class="login">
+            <img src="../../images/common/left-personBg.png" class="left-person" id="login">
+        </a>
+        <a href="javascript:;" class="register">
+            <p class="loginName"><img src="../../images/common/login-personBg.png"><span class="name">会飞的小鱼</span></p>
+            <p class="register-btn">退出</p>
+        </a>
+    </li>
+    <li>
+        <a href="" class="nav-li">首页</a>
+    </li>
+    <li>
+        <a href="" class="nav-li">政务大厅</a>
+    </li>
+    <li>
+        <a href="" class="nav-li">自贸区(武汉片区)</a>
+    </li>
+    <li>
+        <a href="" class="nav-li">数据分析</a>
+    </li>
+    <li>
+        <a href="" class="nav-li">权利阳光</a>
+    </li>
+    <li>
+        <a href="" class="nav-li">实景大厅</a>
+    </li>
+</ul>

@@ -1,0 +1,86 @@
+/**!
+ * [页面名称]:全文检索
+ * author: [赵阳];
+ */
+
+
+/*个人中心页面覆盖样式*/
+
+.content .container {
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.serach-content {
+	margin: 35px 20px 0 20px;
+}
+
+.search-detail {
+	margin: 0 80px;
+}
+
+.list-item {
+	border-bottom: 1px solid #d4d4d4;
+	padding: 17px 0 7px 0;
+}
+
+.con-hd {
+    height: 60px;
+    padding-top: 11px;
+    padding-left: 50px;
+    background: url(../images/userCenter/hd-bg.png) 0 12px no-repeat;
+}
+
+.con-hd>h2 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.con-hd>p {
+    font-size: 12px;
+    color: #999999;
+    line-height: 21px;
+}
+
+.list-item>p {
+	font-size: 13px;
+	line-height: 22px;
+}
+
+.item-department,
+.item-person {
+	float: left;
+	min-width: 150px;
+	margin-right: 20px;
+}
+
+.item-loc {
+	color: #5ab085;
+	margin-top: 20px;
+}
+
+.item-loc>a {
+	color: #5ab085;
+}
+
+span.matched {
+	color: #e77918;
+}
+
+.rule-title {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.rule-info {
+	margin-top: 15px;
+}
+
+.pager {
+	margin: 20px 80px 0 80px;
+}

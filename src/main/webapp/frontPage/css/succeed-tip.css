@@ -1,0 +1,37 @@
+.tip-content {
+	width: 502px;
+	height: 221px;
+	font-size: 15px;
+}
+.tip-hd {
+	height: 44px;
+	line-height: 44px;
+	padding-left: 200px;
+	background: url(../images/index/smile.png) no-repeat 140px 0;
+	margin: 26px 0 12px 0;
+}
+.tip-text {
+	font-size: 13px;
+	padding: 0 58px 0 55px;
+	line-height: 24px;
+}
+.serial-number {
+	color: #e77918;
+}
+.btn-know {
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	margin-left: 176px;
+	margin-top: 26px;
+	border: 0;
+	background-color: #70c49a;
+	outline: none;
+	cursor: pointer;
+}
+.btn-know:hover {
+	background-color: #5ab085;
+}

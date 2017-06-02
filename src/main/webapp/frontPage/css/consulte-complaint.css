@@ -1,0 +1,150 @@
+/**!
+ * [页面名称]:咨询投诉
+ * author: [程姣姣];
+ */
+
+.index-content {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.label-hd {
+    margin-bottom: 18px;
+}
+
+.label-item {
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+    margin-right: 32px;
+}
+
+.radio-label {
+    padding-left: 24px;
+    margin-right: 22px;
+    background: url(../images/index/radio.png) no-repeat left center;
+    cursor: pointer;
+}
+
+.radio-chk {
+    background: url(../images/index/radio-chk.png) no-repeat left center;
+}
+
+.label-row {
+    margin-bottom: 10px;
+}
+
+.label-row .label-item {
+    width: 284px;
+    margin-right: 12px; 
+}
+
+.label-row>input,
+.label-row>textarea {
+    height: 38px;
+    line-height: 38px;
+    width: 308px;
+    color: #9c9c9c;
+    font-size: 15px;
+    padding-left: 20px;
+    border: 1px solid #d5d5d5;
+    border-radius: 2px;
+}
+/*下拉*/
+.select {
+	width: 330px;
+}
+.chosen-container-single .chosen-single {
+	height: 40px;
+	line-height: 40px;
+}
+.chosen-container-single .chosen-single span {
+	color: #9c9c9c;
+	font-size: 15px;
+	margin-left: 8px;
+}
+.chosen-container .chosen-results li {
+	padding-left: 20px; 
+}
+.label-text {
+	vertical-align: top;
+	margin-top: 12px;
+}
+.label-row>textarea {
+	width: 536px;
+	height: 100px;
+	padding-top: 6px;
+	line-height: 20px;
+	resize: none;
+	margin-left: 4px;
+	overflow: auto;
+}
+.text-num {
+	display: inline-block;
+	width: 60px;
+	text-align: right;
+	font-size: 12px;
+	margin: 78px 0 0 -70px;
+}
+.label-row .code-input {
+	width: 108px;
+	margin-left: 4px;
+}
+.get-code {
+	display: inline-block;
+	width: 114px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border: 1px solid #d5d5d5;
+	border-radius: 4px;
+	background-color: #f3f3f3;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.label-Willing {
+	margin-top: 22px;
+}
+.label-Willing .Willing {
+	width: 284px;
+	margin-right: 38px;
+}
+.radio-Willing {
+	padding-left: 28px;
+	margin-right: 30px;
+	background: url(../images/userCenter/unchecked.png) no-repeat left center;
+	cursor: pointer;
+}
+.radio-Willing.radio-chk {
+	background: url(../images/userCenter/checked.png) no-repeat left center;
+}
+.btn-area {
+	margin-top: 36px;
+}
+.ensure,
+.cancel {
+	width: 126px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+.ensure {
+	color: #fff;
+	background-color: #70c49a;
+	margin-left: 300px;
+	margin-right: 12px;
+}
+.ensure:hover {
+	background-color: #5ab085;
+}
+.cancel {
+	color: #666;
+	background-color: #eaeaea;
+}
+.cancel:hover {
+	background-color: #e3e3e3;
+}

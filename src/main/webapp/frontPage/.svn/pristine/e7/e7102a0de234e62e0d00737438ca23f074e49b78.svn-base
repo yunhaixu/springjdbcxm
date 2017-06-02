@@ -1,0 +1,78 @@
+/**!
+ * [页面名称]:我的咨询
+ * author: [程姣姣];
+ */
+
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+/* 我的咨询 */
+.consultation-hd {
+    height: 38px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.small-btn {
+	margin-right: 3px;
+}
+.consultation-count {
+    margin-top: 8px;
+}
+.consultation-num {
+    color: #e01c1c;
+}
+.consultation-list {
+	margin-top: 20px;
+	margin-bottom: 58px;
+}
+.consultation-item {
+	border: 1px solid #d4d4d4;
+	margin-top: 10px;
+}
+.consultation-title {
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #d4d4d4;
+	background-color: #f4f4f4;
+}
+.consultation-text {
+	margin-left: 16px;
+}
+.consultation-state {
+	margin-right: 20px;
+	margin-left: 94px;
+}
+.reply-state {
+	color: #009241;
+}
+.not-reply-state {
+	color: #e01c1c;
+}
+.consultation-con {
+	padding: 18px 20px 14px 16px;
+}
+.consultation-question {
+	padding-bottom: 18px;
+	border-bottom: 1px solid #d4d4d4;
+	margin-bottom: 18px;
+}
+.answer-source {
+	text-align: right;
+	margin-top: 15px;
+}
+.answer-origin {
+	margin-right: 20px;
+}
+.consultation-detail {
+	width: 792px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 30px;
+}

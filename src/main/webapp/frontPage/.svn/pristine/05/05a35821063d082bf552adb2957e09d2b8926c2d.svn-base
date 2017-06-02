@@ -1,0 +1,48 @@
+/**!
+ * [css]:注册协议&注册成功
+ * author: [陈轩];
+ */
+.right-content>h5 {
+	font-size: 22px;
+	line-height: 82px;
+	text-align: center;
+}
+
+.agreement-detail {
+	width: 825px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 25px 35px;
+	overflow: hidden;
+	font-size: 15px;
+	line-height: 24px;
+	border: 1px solid #cbcbcb;
+}
+.grey-btnStyle {
+	display: block;
+	margin: 30px auto 0 auto;
+}
+
+/*注册成功*/
+.register-success {
+	margin-top: 240px;
+	padding-left: 397px;
+	background: url(../images/login/register-sucess.png) 325px center no-repeat;
+}
+.register-success .line1 {
+	font-size: 17px;
+	font-weight: bold;
+}
+.register-success .line2 {
+	margin-top: 20px;
+	font-size: 13px;
+	color: #999;
+}
+.register-success .loginSpan {
+	color: #34b373;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.red {
+	color: #df3f3f;
+}

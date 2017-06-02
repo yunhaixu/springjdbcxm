@@ -1,0 +1,132 @@
+/**!
+ * [页面名称]:我的收藏
+ * author: [程姣姣];
+ */
+
+/*个人中心页面覆盖样式*/
+.content .container {
+    background-color: #fff;
+    padding-bottom: 22px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+/* 我的收藏 */
+.collection-hd {
+	height: 38px;
+	border-bottom: 1px solid #d4d4d4;
+}
+.collection-count {
+	margin-top: 8px;
+}
+.collection-num {
+	color: #e01c1c;
+}
+.collection-search {
+	padding: 22px 0 24px 264px;
+}
+.search-con {
+    width: 376px;
+    height: 28px;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.search-name {
+    line-height: 30px;
+	margin-right: 15px;
+}
+.int-search {
+    width: 320px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 6px;
+    border: 0;
+    outline: none;
+}
+.btn-search {
+    display: inline-block;
+    width: 44px;
+    height: 28px;
+    background: #71c49a url(../images/userCenter/search-icon.png) no-repeat center;
+    cursor: pointer;
+}
+.collection-list {
+	margin-bottom: 50px;
+}
+.collection-item {
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #d4d4d4;
+	border-left: 4px solid #5ab085;
+	background-color: #f4f4f4;
+	margin-top: 10px;
+}
+.collection-text {
+	padding-left: 14px;
+}
+.fun-list {
+	margin-right: 20px;
+}
+.fun-item {
+	float: left;
+	font-size: 13px;
+	color: #818182;
+	cursor: pointer;
+}
+.fun-item a {
+	color: #818182;
+}
+.consult {
+	padding-left: 30px;
+	background: url(../images/userCenter/zixun.png) 0 no-repeat;
+}
+.apply {
+	padding-left: 21px;
+	background: url(../images/userCenter/shenqing.png) 0 no-repeat;
+}
+.appointment {
+	padding-left: 23px;
+	background: url(../images/userCenter/yuyue.png) 0 no-repeat;
+}
+.cancel {
+	padding-left: 24px;
+	background: url(../images/userCenter/cancel-collect.png) 0 no-repeat;
+}
+.line {
+	display: inline-block;
+	height: 14px;
+	border-left: 1px solid #818182;
+	vertical-align: middle;
+	margin: -2px 6px 0;
+}
+.fun-item:hover,
+.fun-item:hover a {
+	color: #39ab6c;
+}
+.consult:hover {
+	background: url(../images/userCenter/zixun-hov.png) 0 no-repeat;
+}
+.apply:hover {
+	background: url(../images/userCenter/shenqing-hov.png) 0 no-repeat;
+}
+.appointment:hover {
+	background: url(../images/userCenter/yuyue-hov.png) 0 no-repeat;
+}
+.cancel:hover {
+	background: url(../images/userCenter/cancel-collect-hov.png) 0 no-repeat;
+}
+.inoperable.apply {
+	background: url(../images/userCenter/no-shenqing.png) 0 no-repeat;
+}
+.inoperable.appointment,
+.inoperable.appointment:hover {
+	background: url(../images/userCenter/no-yuyue.png) 0 no-repeat;
+}
+.inoperable a,
+.inoperable:hover a{
+	color: #c9c9c9;
+	cursor: default;
+}

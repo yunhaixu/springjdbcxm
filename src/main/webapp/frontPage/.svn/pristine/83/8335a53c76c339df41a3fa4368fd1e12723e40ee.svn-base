@@ -1,0 +1,18 @@
+(function(win, $) {
+    var $con = $("#con-ul"),
+        $hd = $("#hd-ul"),
+        $radio = $("#todo-radio"),
+        radioVal = 1;
+    $con.on('click', '.grey-btnStyle', function() {
+        var $this = $(this),
+            dataID = $this.data('id');
+        $hd.children('li').removeClass('hd-cur').eq(dataID).addClass('hd-cur');
+        $con.children('li').addClass('hidden').eq(dataID).removeClass('hidden');
+        if(dataID === 2) {
+        	var value = $('input:radio:checked').val();
+        	$('.case-metail').eq(value).removeClass('hidden');
+        	$('.case-process').eq(value).removeClass('hidden');
+        }
+    });
+
+}(this, jQuery));

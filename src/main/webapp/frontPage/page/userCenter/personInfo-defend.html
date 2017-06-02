@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../js/libs/skin/layer.css">
+    <link rel="stylesheet" href="../../css/personInfo-defend.css">
+    <script src="../../js/libs/jquery-1.11.0.min.js"></script>
+    <title>个人信息维护</title>
+</head>
+
+<body class="body">
+    <!-- header -->
+    <div class="header" id="header">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="container clearfix">
+            <!-- 当前位置 -->
+            <div class="now-position">
+                当前位置：<a href="">首页</a> &gt; <a href="">用户中心</a> &gt; <a href="">用户管理</a> &gt; <span class="now-loc">个人信息维护</span>
+            </div>
+            <div class="userCenter-main">
+                <div class="center-nav clearfix">
+                    <span class="name">会飞的小鱼</span>
+                    <ul class="nav clearfix">
+                        <li>
+                            <a href="">主页</a>
+                        </li>
+                        <li>
+                            <a href="">办件服务</a>
+                        </li>
+                        <li>
+                            <a class="active" href="">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="">我的证照</a>
+                        </li>
+                    </ul>
+                    <div class="msg-loginOut clearfix">
+                        <a href="javascript:;" class="msg">消息<i>18</i></a>
+                        <a href="javascript:;" class="loginOut">注销</a>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="inner-content clearfix">
+                    <ul class="nav-l">
+                        <li class="nav-item cur-nav"><a href="#">个人信息维护</a></li>
+                        <li class="nav-item"><a href="#">修改密码</a></li>
+                        <li class="nav-item bb0"><a href="#">管理申请人</a></li>
+                    </ul>
+                    <!-- 各个页面内容 -->
+                    <div class="con-r">
+                        <div class="con-hd clearfix">
+                            <h5>个人信息维护</h5>
+                            <span class="tel">技术支持热线：1233333333</span>
+                        </div>
+                        <!-- 请注意结构中的data-role属性，与样式无关，样式可自定义-->
+                        <div class="tabview">
+                            <div class="tabview-hd" data-role="head">
+                                <ul class="first-ul clearfix">
+                                    <li class="label">用户类型</li>
+                                    <li class="tab-item" data-role="tab" data-target="html">
+                                        <label for="person" class="">个人</label>
+                                    </li>
+                                    <li class="tab-item" data-role="tab" data-target="css">
+                                        <label for="company" class="">企业</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div data-role="body">
+                                <div data-role="tab-content" data-id="html" class="tab-panel">
+                                    <div class="input-row clearfix">
+                                        <label>姓名</label>
+                                        <input type="text"/>
+                                    </div>
+                                    <div class="input-row clearfix">
+                                        <label>身份证号</label>
+                                        <input type="text"/>
+                                    </div>
+                                    <div class="input-row clearfix">
+                                        <label>手机号码</label>
+                                        <input type="text"/>
+                                    </div>
+                                    <div class="input-row clearfix">
+                                        <label>电子邮箱</label>
+                                        <input type="text"/>
+                                    </div>
+                                    <div class="input-row clearfix">
+                                        <label>联系地址</label>
+                                        <input type="text"/>
+                                    </div>
+                                    <button type="button" class="grey-btnStyle">保存</button>
+                                </div>
+                                <div data-role="tab-content" data-id="css" class="tab-panel hidden">
+                                    <div class="tabview">
+                                        <div class="tabview-hd1" data-role="head">
+                                            <ul class="clearfix">
+                                                <li class="tab-item1" data-role="tab" data-target="html">企业法人</li>
+                                                <li class="tab-item1" data-role="tab" data-target="css">非企业法人</li>
+                                            </ul>
+                                        </div>
+                                        <div data-role="body">
+                                            <div data-role="tab-content" data-id="html" class="tab-panel1">
+                                                <div class="input-row clearfix">
+                                                    <label>企业名称</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业负责人联系电话</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业负责人</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业负责人证件号码</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业工商注册号/统一社会信用代码</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业地址</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <button type="button" class="grey-btnStyle">保存</button>
+                                            </div>
+                                            <div data-role="tab-content" data-id="css" class="tab-panel1">
+                                                <div class="input-row clearfix">
+                                                    <label>企业名称</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业负责人联系电话</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业负责人</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业负责人证件号码</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业工商注册号/统一社会信用代码</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>企业地址</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>委托人姓名</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>委托人身份证</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>委托人联系电话</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="input-row clearfix">
+                                                    <label>委托人邮箱</label>
+                                                    <input type="text"/>
+                                                </div>
+                                                <button type="button" class="grey-btnStyle">保存</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+    </div>
+    <script type="text/javascript" src="../../js/libs/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/tabview.js"></script>
+    <script src="../../js/libs/layer.js"></script>
+    <script type="text/javascript" src="../../js/libs/mustache.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/personInfo-defend.js"></script>
+</body>
+</body>
+
+</html>

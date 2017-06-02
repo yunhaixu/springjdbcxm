@@ -1,0 +1,248 @@
+/**!
+ * [页面名称]:大厅分布
+ * author: [高婧];
+ */
+
+body {
+    height: 1049px;
+}
+
+.content {
+    height: 803px;
+    font-size: 14px;
+    background: url(../images/index/cd-hallBg.jpg) center no-repeat #fff;
+}
+.content li {
+    cursor: pointer;
+}
+.left-c {
+    float: left;
+    width: 475px;
+    margin-left: 81px;
+    margin-top: 68px;
+}
+.left-c li {
+    background-color: #f3c65a;
+}
+.left-c li:hover {
+    background-color: #e7a606;
+}
+
+.top-area li,
+.bottom-area li {
+    float: left;
+    height: 36px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+}
+.top-area li {
+    margin-right: 2px;
+    width: 31px;
+}
+.bottom-area li {
+    margin-right: 1px;
+    width: 27px;
+}
+.bottom-area li.mr6 {
+    margin-right: 6px;
+}
+.top-area li.mr8 {
+	margin-right: 8px;
+}
+
+.left-area {
+    float: left;
+    width: 39px;
+}
+.right-area {
+    float: right;
+    width: 39px;
+    margin-right: 3px;
+}
+.left-area li,
+.right-area li {
+    margin-bottom: 2px;
+    width: 39px;
+    color: #fff;
+    text-align: center;
+}
+.left-c .mt68,
+.right-d .mt68 {
+    margin-top: 68px;
+}
+.left-area li.mb9 {
+    margin-bottom: 9px;
+}
+.right-area li.mb8 {
+    margin-bottom: 8px;
+}
+.left-area li {
+    height: 20px;
+    line-height: 20px;
+}
+.right-area li {
+    margin-right: 3px;
+    height: 25px;
+    line-height: 25px;
+}
+.right-area li.central-tax {
+    padding: 32px 13px 0;
+    width: 13px;
+    height: 139px;
+    line-height: 16px;
+}
+.special-area {
+    float: left;
+    margin-top: 288px;
+    margin-left: 153px;
+}
+.special-area ul>li {
+    float: left;
+    margin-right: 4px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.right-d {
+    float: right;
+    width: 473px;
+    margin-right: 66px;
+    margin-top: 68px;
+}
+.right-d li {
+    background-color: #f8976c;
+}
+.right-d li:hover {
+    background-color: #e95f1a;
+}
+.right-d .top-area li {
+    margin-right: 1px;
+    width: 25px;
+}
+.right-d .top-area li.mr7 {
+    margin-right: 7px;
+}
+.right-d .left-area li {
+    margin-bottom: 1px;
+    height: 14px;
+    line-height: 14px;
+}
+.right-d .left-area li.mb6 {
+    margin-bottom: 6px;
+}
+.right-d .right-area {
+    margin-right: 0px;
+}
+.right-d .right-area li {
+    height: 23px;
+    line-height: 23px;
+}
+.right-d .right-area li.mb7 {
+    margin-bottom: 7px;
+}
+.right-d .bottom-area li {
+    margin-right: 4px;
+    width: 28px;
+}
+.right-d .bottom-area li.mr2 {
+    margin-right: 2px;
+}
+.right-d .bottom-area li.mr8 {
+    margin-right: 8px;
+}
+.right-d .bottom-area li.mr0 {
+    margin-right: 0px;
+}
+.right-d .bottom-area li.mr3 {
+    margin-right: 3px;
+}
+
+.right-d .special-area {
+    margin-left: 48px;
+    margin-top: 6px;
+}
+
+
+/*hall-tip*/
+.content li:hover .hall-tip {
+    display: block;
+}
+.hall-tip {
+    position: absolute;
+    display: none;
+    width: 140px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    text-align: left;
+    background-color: #909090;
+}
+.hall-tip .sanjiao {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -6px;
+    display: block;
+    width: 38px;
+    height: 25px;
+    background-image: url(../images/index/hall-tipTop.png);
+}
+
+.left-area .hall-tip {
+    margin-left: 46px;
+    margin-top: 9px;
+}
+.special-area .hall-tip {
+    margin-left: 40px;
+    margin-top: 24px;
+}
+.right-area .hall-tip {
+    margin-left: -170px;
+    margin-top: 8px;
+}
+.right-area .hall-tip .sanjiao {
+    margin-left: 112px;
+    background-image: url(../images/index/hall-tipRight.png);
+}
+.bottom-area .hall-tip {
+    margin-left: -142px;
+    margin-top: -236px;
+}
+.bottom-area .hall-tip .sanjiao {
+    margin-top: 0;
+    margin-left: 112px;
+    background-image: url(../images/index/hall-tipBottom.png);
+}
+.hall-tip h5 {
+    line-height: 30px;
+    font-size: 14px;
+}
+.hall-tip h6 {
+    line-height: 22px;
+}
+.hall-tip ol {
+    list-style-type: decimal;
+}
+
+.hall-tip li {
+    margin-left: 10px;
+    width: auto;
+    text-align: left;
+    height: inherit;
+    line-height: 25px;
+    float: inherit;
+    background-color: transparent;
+}
+
+.hall-tip li:hover {
+    background-color: transparent;
+}
+
+.central-tax .hall-tip {
+    margin-top: -58px;
+    margin-left: -183px;
+}

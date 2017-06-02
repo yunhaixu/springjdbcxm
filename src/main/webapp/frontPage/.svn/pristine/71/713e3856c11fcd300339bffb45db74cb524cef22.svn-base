@@ -1,0 +1,13 @@
+{
+    "ReturnInfo": {
+        "Code": "1",
+        "Description": ""
+    },
+    "BusinessInfo": {
+        "Code": "1",
+        "Description": ""
+    },
+    "UserArea": {
+        "success": "注册成功"
+    }
+}

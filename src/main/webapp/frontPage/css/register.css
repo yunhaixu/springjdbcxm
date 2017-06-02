@@ -1,0 +1,222 @@
+/**!
+ * [页面名称]:注册
+ * author: [陈轩];
+ */
+.register-hd {
+    width: 724px;
+    height: 37px;
+    margin: 44px auto 0 auto;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.hd-item {
+    float: left;
+    line-height: 36px;
+    border: 1px solid #fff;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 0 26px;
+    font-size: 17px;
+}
+
+.hd-item.hd-cur {
+    border: 1px solid #d1d1d1;
+    border-bottom: 1px solid #fff;
+    color: #70c49a;
+    font-weight: bold;
+}
+
+.has-account {
+    float: right;
+    line-height: 36px;
+    font-size: 15px;
+}
+
+.has-account>a {
+    color: #70c49a;
+    padding-left: 2px;
+    text-decoration: underline;
+}
+
+
+/*表单*/
+
+.ewb-container {
+    width: 958px;
+    margin: 0 auto;
+}
+
+.row {
+    overflow: hidden;
+}
+
+input,
+button,
+textarea {
+    outline: 0;
+}
+
+
+/* 公共标题样式 */
+
+.ewb-cm-hd {
+    height: 34px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ewb-cm-tt {
+    float: left;
+    margin-right: 27px;
+    height: 33px;
+    line-height: 33px;
+    padding-right: 6px;
+    font-size: 17px;
+    color: #333;
+}
+
+.ewb-cm-tt.current {
+    font-weight: bold;
+    border-bottom: 2px solid #3c88c6;
+}
+
+.ewb-cm {
+    padding: 10px 20px 0 20px;
+}
+
+.ewb-cm-bd {
+    padding-top: 10px;
+    height: 396px;
+    overflow: hidden;
+}
+
+
+/*  表单 */
+
+.ewb-form {
+    overflow: hidden;
+}
+
+.ewb-form-row {
+    margin-top: 10px;
+}
+
+.ewb-form-label {
+    width: 208px;
+    margin-right: 18px;
+    margin-left: 136px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.ewb-form-input {
+    width: 326px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d9d9d9;
+    font-family: "Microsoft Yahei";
+    text-indent: 10px;
+    font-size: 15px;
+    color: #999;
+}
+
+.ewb-form-spe {
+    *margin-left: -5px;
+}
+
+.ewb-form-safe {
+    margin: 10px 0;
+    *margin-left: 5px;
+}
+
+.ewb-form-safe span {
+    display: block;
+    margin-right: 4px;
+    width: 57px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    background: #bebebe;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+}
+
+.ewb-form-checkbox {
+    margin-left: 226px;
+    font-size: 13px;
+    color: #999;
+}
+
+.ewb-form-checkbox input[type="checkbox"] {
+    vertical-align: -2px;
+}
+
+.ewb-form-checkbox span {
+    color: #2566d1;
+}
+
+.grey-btnStyle {
+    margin-left: 467px;
+    margin-top: 20px; 
+}
+
+
+/* 校验 */
+
+.ewb-weak.cur {
+    background: #cf0b0b;
+}
+
+.ewb-medium.cur {
+    background: #ff8523;
+}
+
+.ewb-strong.cur {
+    background: #1da216;
+}
+
+.ewb-form-input.error {}
+
+#registerForm .error,
+#registerForm2 .error {
+    line-height: 36px;
+    vertical-align: top
+}
+
+#agree-error.error,
+#topic-error.error {
+    color: red;
+    line-height: 16px;
+}
+
+.warn-img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.ewb-form-row label.error {
+    padding-left: 20px;
+    color: #df3f3f;
+    margin-left: 5px;
+    line-height: 42px;
+    background: url(../images/login/warn.png) left center no-repeat;
+}
+
+.msg-code {
+    width: 154px;
+}
+
+.code-img {
+    width: 154px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    border: 1px solid #d1d1d1;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.code-img:hover {
+    background-color: #ebebeb;
+}
