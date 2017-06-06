@@ -6,15 +6,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.modle.Blog;
 import com.service.BlogService;
-
-import freemarker.template.utility.StringUtil;
 
 @RestController
 @RequestMapping("/rest/blog")
@@ -27,7 +24,7 @@ public class BlogRestController
     public Map<String, Object> blogadd(Blog blog){
        
         Map<String, Object> resultmap=new HashMap<>();
-//        blog.setCreatedate(new Date());
+        blog.setCreatedate(new Date());
         blog.setRowguid(UUID.randomUUID().toString());;
         boolean b=blogService.blogadd(blog);
         if(b){

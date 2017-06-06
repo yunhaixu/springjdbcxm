@@ -15,36 +15,10 @@ public class UserServiceImp implements UserService {
     @Autowired
     private UserDao userDao;
     
-    
-    @Override
-    public User loginCheck(User user) {
-        User u  = userDao.findUserByUserName(user.getUserName());
-        System.out.println("id="+u.getId()+",  userName="+u.getUserName()+", password="+u.getPassword());
-        if(user.getPassword().equals(u.getPassword())){
-            return u;
-        }
-        else{
-            return null;
-        }
-    }
-
-    @Override
-    public boolean register(User user) {
-        User u =  userDao.findUserByUserName(user.getUserName());
-        if(u.getId()==0){
-            userDao.register(user);
-            return true;
-        }
-        else{
-            System.out.println("id="+u.getId()+",  userName="+u.getUserName()+", password="+u.getPassword());
-            return false;
-        }
-    }
 
     @Override
     public List<User> userlist() {
-        List<User> userlist=userDao.getAll();
-//        List<User> userlist= userDao.getuserlist();
+        List<User> userlist=userDao.findAll();
         return userlist;
     }
 

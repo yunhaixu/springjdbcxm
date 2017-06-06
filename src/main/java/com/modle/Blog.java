@@ -1,25 +1,18 @@
 package com.modle;
 
+import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
 
-@Table(name = "blog_main")
-public class Blog
+@SuppressWarnings("serial")
+public class Blog implements Serializable
 {
     private String rowguid;
     private String title;
     private String context;
     private Date createdate;
     private String writer;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "rowguid")
     public String getRowguid() {
         return rowguid;
     }
@@ -27,7 +20,6 @@ public class Blog
         this.rowguid = rowguid;
     }
     
-    @Column(name = "title")
     public String getTitle() {
         return title;
     }
@@ -35,7 +27,6 @@ public class Blog
         this.title = title;
     }
     
-    @Column(name = "context")
     public String getContext() {
         return context;
     }
@@ -43,7 +34,6 @@ public class Blog
         this.context = context;
     }
     
-    @Column(name = "createdate")
     public Date getCreatedate() {
         return createdate;
     }
@@ -51,7 +41,6 @@ public class Blog
         this.createdate = createdate;
     }
     
-    @Column(name = "writer")
     public String getWriter() {
         return writer;
     }

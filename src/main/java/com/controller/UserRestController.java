@@ -18,22 +18,6 @@ public class UserRestController
     @Autowired
     private UserService userService;
     
-    @RequestMapping("/login")
-    public Map<String, Object> login(User user){
-        Map<String, Object> resultmap=new HashMap<>();
-        User u = userService.loginCheck(user);
-        if(null==u){
-            resultmap.put("code", "0");
-            resultmap.put("msg", "用户名或密码有误！");
-            return resultmap;
-        }
-        else{
-            resultmap.put("code", "1");
-            resultmap.put("msg", "登陆成功！");
-            return resultmap;
-        }
-    }
-    
     @RequestMapping("/userlist")
     public Map<String, Object> userlist(){
         Map<String, Object> resultmap=new HashMap<>();

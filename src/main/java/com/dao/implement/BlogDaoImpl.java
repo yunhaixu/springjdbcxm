@@ -6,7 +6,7 @@ import com.dao.BlogDao;
 import com.modle.Blog;
 
 @Repository
-public class BlogDaoImpl extends CommonImpl<Blog, String> implements BlogDao
+public class BlogDaoImpl extends JdbcBaseDaoImpl<Blog> implements BlogDao
 {
 
 }

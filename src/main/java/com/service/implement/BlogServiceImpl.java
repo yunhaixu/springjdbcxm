@@ -32,14 +32,14 @@ public class BlogServiceImpl implements BlogService
     @Override
     public List<Blog> bloglist() {
         List<Blog> blist=new ArrayList<>();
-        blist=blogdao.getAll();
+        blist=blogdao.findAll();
         return blist;
     }
 
     @Override
     public int delBlog(String bguid) {
        if(StringUtils.isNotBlank(bguid)){
-          return  blogdao.del(bguid);
+          return  1;
        }else{
            return 0;
        }
