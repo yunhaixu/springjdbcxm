@@ -34,6 +34,6 @@ public interface BlogService
      * @exception/throws [违例类型] [违例说明]
      * @see [类、类#方法、类#成员]
      */
-    public void delBlog(String bguid);
+    public int delBlog(String bguid);
 
 }

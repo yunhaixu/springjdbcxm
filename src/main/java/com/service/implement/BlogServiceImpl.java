@@ -1,7 +1,9 @@
 package com.service.implement;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,13 +31,18 @@ public class BlogServiceImpl implements BlogService
 
     @Override
     public List<Blog> bloglist() {
-        // TODO Auto-generated method stub
-        return null;
+        List<Blog> blist=new ArrayList<>();
+        blist=blogdao.getAll();
+        return blist;
     }
 
     @Override
-    public void delBlog(String bguid) {
-        // TODO Auto-generated method stub
+    public int delBlog(String bguid) {
+       if(StringUtils.isNotBlank(bguid)){
+          return  blogdao.del(bguid);
+       }else{
+           return 0;
+       }
         
     }
 

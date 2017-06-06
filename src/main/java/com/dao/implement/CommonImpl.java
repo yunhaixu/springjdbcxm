@@ -844,10 +844,12 @@ public  abstract class CommonImpl<T, ID extends Serializable> implements CommonD
         }
     }
     
+    @SuppressWarnings("unchecked")
     private Map<String, Object> toModelMap(T t){
         Map<String, Object> modelMap = null;
         try {
             Map<String, Object> map = BeanUtils.describe(t);
+            map.remove("class");
             modelMap = new HashMap<String, Object>();
             for(Entry<String, Object> e: map.entrySet()){
                 modelMap.put(property2ColumnMap.get(e.getKey()), e.getValue());

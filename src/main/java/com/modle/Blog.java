@@ -1,6 +1,5 @@
 package com.modle;
 
-import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -9,9 +8,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@SuppressWarnings("serial")
-@Table(name = "user")
-public class Blog implements Serializable
+
+@Table(name = "blog_main")
+public class Blog
 {
     private String rowguid;
     private String title;
