@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.modle.Blog;
 import com.service.BlogService;
+import com.sun.tools.jdeps.resources.jdeps;
+import com.util.JedisUtil;
+
+import redis.clients.jedis.Jedis;
 
 @RestController
 @RequestMapping("/rest/blog")
@@ -32,6 +36,14 @@ public class BlogRestController
         }else{
             resultmap.put("code","0");
         }
+        
+//        Jedis jedis=JedisUtil.getInstance().getJedis();   
+//        for (int i = 0; i < 10; i++) {   
+//            jedis.set("test", "test");   
+//            System.out.println(i+"=="+jedis.get("test"));    
+//          
+//        }  
+//        JedisUtil.getInstance().returnJedis(jedis);  
         return resultmap;
     }
     
