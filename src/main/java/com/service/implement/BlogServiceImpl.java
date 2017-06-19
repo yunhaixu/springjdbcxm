@@ -46,4 +46,15 @@ public class BlogServiceImpl implements BlogService
         
     }
 
+    @Override
+    public Blog blogDetail(String guid) {
+        Blog  blog=new Blog();
+        if(StringUtils.isNotBlank(guid)){
+              blog=blogdao.findById(guid);
+         }else{
+             blog=null;
+         }
+        return blog;
+    }
+
 }

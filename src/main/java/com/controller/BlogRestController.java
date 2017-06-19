@@ -24,6 +24,7 @@ public class BlogRestController
     @Autowired
     private BlogService blogService;
     
+    
     @RequestMapping("/blogadd")
     public Map<String, Object> blogadd(Blog blog){
        
@@ -54,6 +55,19 @@ public class BlogRestController
         if(blist!=null&blist.size()>0){
             resultmap.put("code","1");
             resultmap.put("blist",blist);
+        }else{
+            resultmap.put("code","0");
+        }
+        return resultmap;
+    }
+    
+    @RequestMapping("/blogdetail")
+    public Map<String, Object> blogdetail(String guid){
+        Map<String, Object> resultmap=new HashMap<>();
+        Blog blog=blogService.blogDetail(guid);
+        if(blog!=null){
+            resultmap.put("code","1");
+            resultmap.put("blog", blog);
         }else{
             resultmap.put("code","0");
         }

@@ -6,4 +6,6 @@ import com.modle.User;
 
 public interface UserService {
     public List<User> userlist();
+
+    public User queryByUserName(String username);
 }

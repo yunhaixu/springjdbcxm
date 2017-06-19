@@ -19,15 +19,19 @@ $(function () {
 	    	console.log(r);
 	    	var str="";
 	    	$.each(r.blist,function(index,value){
-	    		str+="<li>"+value.title+"["+value.writer+"]"+value.createdate+"</li>";
+	    		str+="<li class='blogli' id='"+value.rowguid+"'>"+value.title+"["+value.writer+"]"+value.createdate+"</li>";
 	    		$("#bloglistmain").html(str);
 	    	});
-	    	
+	    	$(".blogli").on('click',function(){
+	    		window.location.href="blogdetail.html?guid="+this.id;
+	    	});
 		}
 	});
 	$(".button").on('click',function(){
-		window.location.href="blogadd.html";
+		window.location.href="../private/blogadd.html";
 	});
+	
+	
 });
 
 

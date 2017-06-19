@@ -153,6 +153,14 @@ public abstract class JdbcBaseDaoImpl<T> implements JdbcBaseDao<T> {
         RowMapper<T> rowMapper = BeanPropertyRowMapper.newInstance(entityClass);
         return jdbcTemplate.query(sql, rowMapper, id).get(0);
     }
+    
+    @Override
+    public T findByOneField(String field,String value) {
+        String sql = "SELECT * FROM " + entityClass.getSimpleName() + " WHERE "+field+"=?";
+        RowMapper<T> rowMapper = BeanPropertyRowMapper.newInstance(entityClass);
+        return jdbcTemplate.query(sql, rowMapper, value).get(0);
+    }
+
 
     @Override
     public List<T> findAll() {

@@ -22,4 +22,14 @@ public class UserServiceImp implements UserService {
         return userlist;
     }
 
+
+    @Override
+    public User queryByUserName(String username) {
+        User user=userDao.findByOneField("username", username);
+        if(user!=null){
+            return  user;
+        }
+        return null;
+    }
+
 }

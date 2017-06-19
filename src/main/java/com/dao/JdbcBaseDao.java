@@ -39,4 +39,6 @@ public interface JdbcBaseDao<T> {
 
     JdbcTemplate getJdbcTemplate();
 
+    T findByOneField(String field,String value);
+
 }
